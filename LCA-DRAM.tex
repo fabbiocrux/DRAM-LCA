@@ -1,0 +1,161 @@
+\documentclass[]{elsarticle} %review=doublespace preprint=single 5p=2 column
+%%% Begin My package additions %%%%%%%%%%%%%%%%%%%
+\usepackage[hyphens]{url}
+
+  \journal{An awesome journal} % Sets Journal name
+
+
+\usepackage{lineno} % add
+
+\usepackage{graphicx}
+%%%%%%%%%%%%%%%% end my additions to header
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \usepackage{fontspec}
+  \ifxetex
+    \usepackage{xltxtra,xunicode}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\fi
+% use microtype if available
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+\bibliographystyle{elsarticle-harv}
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={},
+            pdftitle={Life Cycle Assessment of Distributed Plastic Recycling via Additive Manufacturing.},
+            colorlinks=true,
+            urlcolor=blue,
+            linkcolor=blue,
+            pdfborder={0 0 0}}
+\urlstyle{same}  % don't use monospace font for urls
+
+\setcounter{secnumdepth}{5}
+% Pandoc toggle for numbering sections (defaults to be off)
+
+
+% tightlist command for lists without linebreak
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% From pandoc table feature
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+
+
+
+
+
+\begin{document}
+
+
+\begin{frontmatter}
+
+  \title{Life Cycle Assessment of Distributed Plastic Recycling via Additive Manufacturing.}
+    \author[Some Institute of Technology]{Alice Anonymous\corref{1}}
+   \ead{alice@example.com} 
+    \author[Another University]{Bob Security}
+   \ead{bob@example.com} 
+    \author[Another University]{Cat Memes\corref{2}}
+   \ead{cat@example.com} 
+    \author[Some Institute of Technology]{Derek Zoolander\corref{2}}
+   \ead{derek@example.com} 
+      \address[Some Institute of Technology]{Department, Street, City, State, Zip}
+    \address[Another University]{Department, Street, City, State, Zip}
+      \cortext[1]{Corresponding Author}
+    \cortext[2]{Equal contribution}
+  
+  \begin{abstract}
+  This is the abstract.
+
+  It consists of two paragraphs.
+  \end{abstract}
+  
+ \end{frontmatter}
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+Today, the demand for plastic has increased by a factor of 20 over the past 50 years (Geyer et al., 2017).
+According to Plastic Europe (2020), in 2019, 368 million tons of plastic were produced worldwide, including 59 million tons in Europe, with a market value of approximately 350 billion euros.
+Plastic stands out as a product in demand in different sectors such as the packaging industry, the construction industry, the automotive industry, and the electronics industry, with a 39.6\%, 20.4\%, 9.6\% and 6.2\% of the demand respectively (PlasticEurope 2020).
+
+Plastic is associated with multiple environmental damages throughout its life cycle, from the pollution produced in its production phase to its disposal, being considered an exponential waste generator (Feuille, 2018).
+For example, every year 13 million tons of plastic end up in the oceans, which is equivalent to an entire garbage truck full of plastic being dumped into the sea every minute, accumulating a total of 150 million tons of plastic dumped into the sea to date (João et al., 2020).
+The presence of these solid plastic wastes has become a threat to marine ecosystems (Chen et al., 2020).
+The rates are the result of multiple instances where plastic is used as a single-use product (50\% of plastic produced) (Feuille, 2018).
+Considering the plastic disposed, only 9\% of the plastic that has been produced since 1950 has been recycled, the rest has been incinerated, found in landfills or thrown into the sea (Geyer et al., 2017; João et al., 2020)
+
+To address the environmental problems related to plastic and other wastes, the European Union (EU) intends to develop a circular economy (CE) based on a production and consumption model with key activities such as: ``share'', ``reduce'', ``reuse'', ``repair'', ``renew'' and ``recycle'' the existing materials and products as many times as possible, in order to create added value by extending the life cycle of products (European Commission 2018).
+Indeed, as part of the European Green Pact presented on March 20, 2020, it is planned to establish an action plan involving the circular economy, mainly promoting the development of sustainable products, waste reduction and empowering citizens as a key player (European Commission 2018).
+Considering the French context, French government has set a target that by 2025 all plastic waste should be recycled but so up to today, according to PlasticEurope 2020, recycling in France reaches levels close to 25\%.
+Despite these ambitious objectives, plastics recycling has been historically an expensive process due to the inherent separate collection, transportation, processing and remanufacturing (João et al., 2020). The economies of scale have been leveraged to reduce these costs With centralized and global recycling chains (Kreiger and Pearce, 2013).
+Nevertheless, in order to carry out this recycling system, multiple steps need to be accomplished that integrate the sorting phase, long-distance transport, waste treatment and remanufacturing.
+The high costs of these processes and the low selling price (mainly due to the dependence of recycled plastic price on the petroleum and virgin prices) seldom generate benefits and often requires costly public subsidies (Hamilton et al., 2019).
+In addition, these centralized plastic manufacturing and recycling lines lead to soil, water and air pollution (Arena et al., 2003; Reich, 2005).
+Added to the current problem into the plastic recycling network, we can highlight that generally supply chains are under increasing pressure from various stakeholders to make decisions from a sustainable perspective, that is to say, based on economic, environmental and social objectives (Hassini et al., 2012).
+
+The additive manufacturing technology (also known as 3D printing) enables the potential of distributed manufacturing (DM) towards high value-added products (Kreiger et al., 2014).
+Nowadays, the accessibility of freely available designs has increased significantly, together with the development of open-source technologies and the supply of raw materials (virgin and recycled filaments) for 3D printing (Hunt et al., 2015).
+Distributed manufacturing is defined as the decentralization of production through the installation of multiple production factories with similar technology distributed geographically (Bonnín Roca et al., 2019).
+It is characterized by local production that thrives on the synergy of the emerging capabilities of digital manufacturing, information and communication technologies, and the peer-to-peer production approach (Pavlo et al., 2018).
+Indeed, DM offers the possibility to decentralize production structures, the flexibility to reflect local customer needs, lower logistics costs, shorter lead times and lower environmental impacts (Kreiger and Pearce, 2013).
+Based on the DM paradigm, a new possibility of plastic recycling supported by additive manufacturing, called distributed recycling by additive manufacturing (DRAM), has emerged in the literature.
+Promoted by the development of 3D printing in an open-source context, DRAM is proposed to provide recycled plastic feedstock to the different 3D printers in a DM context.
+This recycled plastic can be in the form of filament, and recent works are dealing with the validation of granular form (Alexandre et al., 2020; Justino Netto et al., 2021). The 3D printing feedstock is then obtained via plastic recycling at local scale using open-source machines, such as shredders and extruders (Zhong and Pearce, 2018).
+
+The main feature of DRAM is the reduction of the impact in the collection phase, favoring shorter and simpler supply chains (Despeisse et al., 2017; Garmulewicz et al., 2018).
+Several works have focused on the validation of DRAM approach from the technical, economic and environmental perspective (Cruz Sanchez et al., 2020).
+Cruz Sanchez et al., (2020) conducted a systematic literature review about the level of development of the different DRAM stages from the technical perspective (see Figure 1).
+Their results shown that significant progresses have been made in the stages of compounding, feedstock, printing and quality assessment.
+However, they also shown that on despite of that little work has been done for the preparation and recovery stages.
+In other, Santander et al., (2020) proposed an initial model to study the economic and environmental feasibility of DRAM from the logistic point of view. Their results have shown the feasibility of the system in economic terms and in CO2 emissions avoided implementing the system.
+From the environmental point of view, DRAM and DM approaches have been evaluated mainly using the Life Cycle Assessment (LCA) approach.
+
+LCA is one of the most widely used environmental impact assessment methodologies. LCA corresponds to an ISO 14040 certified methodology, which has even been used for environmental regulations in different parts of the world.
+In the context of DM/DRAM-related research, LCA has been applied in different ways. For example, Kreiger \& Pearce (2013) conducted a life cycle analysis (LCA), in terms of energy consumed and emissions involved, to compare centralized manufacturing and distributed manufacturing using RepRaps (3D printers) for the distributed production of goods.
+The results showed that the use of Poly Lactic Acid (PLA) in a distributed manufacturing context reduces energy demand and system emissions, which can be greatly diminished if a solar photovoltaic (PV) array is used.
+Later, Kreiger et al.~(2014) explored the environmental benefit of distributed recycling using open-source extruders (RecycleBots), which have been used to obtain 3D printing filament from post-consumer goods. Focusing on High Density Poly Ethylene (HDPE) as material, they performed an LCA of energy consumption and CO2 emissions to compare distributed recycling to standard centralized recycling.
+Their results showed that distributed recycling of HDPE uses less energy than the best-case scenario investigated for centralized recycling, and it can achieve savings of over 80\%.
+Kerdlap et al.~(2021), through a simulation approach, quantified the plastic life-cycle environmental impact of small-scale sorting and recycling systems compared to traditional large-scale centralized systems in Singapore, with the aim of determining under what conditions distributed recycling can be environmentally beneficial.
+Their results showed that the environmental impacts in terms of climate change, water depletion and terrestrial ecotoxicity were higher compared to the centralized systems.
+However, these results are mainly related to the means of transport considered for each system (commercial van for distributed recycling and large trucks for centralized recycling), since the use large trucks decrease the total impact.
+
+In conclusion, even though different studies have been conducted aiming to validate the distributed recycling approach from the technical, economic, and environmental perspective, only the work of Kreiger et al.~(2014) is focused on the environmental assessment of distributed recycling for 3D printing purposes.
+However, their research is limited to the consideration of energy and CO2 emissions as environmental indicators. Therefore, major effort needs to be made in order to evaluate, in a holistic way, the environmental impacts of the global DRAM value chain.
+Therefore, the contribution of this research lies in the evaluation of environmental impacts from the implementation of distributed recycling via additive manufacturing approach in a territory.
+Specifically, an environmental evaluation using life cycle assessment (LCA) is conducted comparing a distributed plastic recycling system to produce 3D filament with a traditional production system of virgin plastic filament for 3D printing.
+From this evaluation, the environmental impacts (positives or negatives) of implementing DRAM have been analyzed and discussed.
+
+This article is structured as follows.\\
+Section 2 presents the system (case study) evaluated.
+Section 3 materials and methods, where life cycle analysis methodology is explained. Section 4 presents the life cycle analysis performed. Section 5 presents the discussion of results.
+Finally, Section 6 presents the main conclusions and recommendations for future works.
+
+
+\end{document}

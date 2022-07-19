@@ -1,0 +1,161 @@
+---
+title: Life Cycle Assessment of Distributed Plastic Recycling via Additive Manufacturing.
+author:
+  - name: Alice Anonymous
+    email: alice@example.com
+    affiliation: Some Institute of Technology
+    footnote: 1
+  - name: Bob Security
+    email: bob@example.com
+    affiliation: Another University
+  - name: Cat Memes
+    email: cat@example.com
+    affiliation: Another University
+    footnote: 2
+  - name: Derek Zoolander
+    email: derek@example.com
+    affiliation: Some Institute of Technology
+    footnote: 2
+address:
+  - code: Some Institute of Technology
+    address: Department, Street, City, State, Zip
+  - code: Another University
+    address: Department, Street, City, State, Zip
+footnote:
+  - code: 1
+    text: "Corresponding Author"
+  - code: 2
+    text: "Equal contribution"
+abstract: |
+  This is the abstract.
+
+  It consists of two paragraphs.
+
+journal: "An awesome journal"
+date: "`r Sys.Date()`"
+bibliography: assets/mybibfile.bib
+#linenumbers: true
+#numbersections: true
+csl: assets/elsevier-harvard.csl
+link-citations: yes
+linkcolor: blue
+output:
+  bookdown::pdf_book:
+    keep_tex: true
+    number_sections: yes
+    toc: false
+    base_format: rticles::elsevier_article
+#output:
+  # bookdown::pdf_document2:
+  #   toc: false
+  #   keep_tex: true
+  #bookdown::html_document2: default
+  #bookdown::word_document2: default
+#output: rticles::tf_article
+always_allow_html: true
+---
+
+
+# Introduction
+
+<!-- Plastics topic -->
+Today, the demand for plastic has increased by a factor of 20 over the past 50 years (Geyer et al., 2017). 
+According to Plastic Europe (2020), in 2019, 368 million tons of plastic were produced worldwide, including 59 million tons in Europe, with a market value of approximately 350 billion euros. 
+Plastic stands out as a product in demand in different sectors such as the packaging industry, the construction industry, the automotive industry, and the electronics industry, with a 39.6%, 20.4%, 9.6% and 6.2% of the demand respectively (PlasticEurope 2020).
+
+<!-- Plastic issues -->
+Plastic is associated with multiple environmental damages throughout its life cycle, from the pollution produced in its production phase to its disposal, being considered an exponential waste generator (Feuille, 2018). 
+For example, every year 13 million tons of plastic end up in the oceans, which is equivalent to an entire garbage truck full of plastic being dumped into the sea every minute, accumulating a total of 150 million tons of plastic dumped into the sea to date (João et al., 2020).
+The presence of these solid plastic wastes has become a threat to marine ecosystems (Chen et al., 2020). 
+   <!-- Plastic waste rates -->
+The rates are the result of multiple instances where plastic is used as a single-use product (50% of plastic produced) (Feuille, 2018). 
+Considering the plastic disposed, only 9% of the plastic that has been produced since 1950 has been recycled, the rest has been incinerated, found in landfills or thrown into the sea (Geyer et al., 2017; João et al., 2020) 
+
+
+<!-- Circular Economy -->
+To address the environmental problems related to plastic and other wastes, the European Union (EU) intends to develop a circular economy (CE) based on a production and consumption model with key activities such as: "share", "reduce", "reuse", "repair", "renew" and "recycle" the existing materials and products as many times as possible, in order to create added value by extending the life cycle of products (European Commission 2018). 
+   <!-- Green Deal -->
+Indeed, as part of the European Green Pact presented on March 20, 2020, it is planned to establish an action plan involving the circular economy, mainly promoting the development of sustainable products, waste reduction and empowering citizens as a key player (European Commission 2018). 
+   <!-- French CE -->
+Considering the French context, French government has set a target that by 2025 all plastic waste should be recycled but so up to today, according to PlasticEurope 2020, recycling in France reaches levels close to 25%.
+   <!-- Plastic issues in the CE -->
+Despite these ambitious objectives, plastics recycling has been historically an expensive process due to the inherent separate collection, transportation, processing and remanufacturing (João et al., 2020). The economies of scale have been leveraged to reduce these costs With centralized and global recycling chains (Kreiger and Pearce, 2013). 
+   <!-- Problems of the Plastic Recycling -->
+Nevertheless, in order to carry out this recycling system, multiple steps need to be accomplished that integrate the sorting phase, long-distance transport, waste treatment and remanufacturing. 
+The high costs of these processes and the low selling price (mainly due to the dependence of recycled plastic price on the petroleum and virgin prices) seldom generate benefits and often requires costly public subsidies (Hamilton et al., 2019). 
+      <!-- Ecosystems affectation -->
+In addition, these centralized plastic manufacturing and recycling lines lead to soil, water and air pollution (Arena et al., 2003; Reich, 2005). 
+Added to the current problem into the plastic recycling network, we can highlight that generally supply chains are under increasing pressure from various stakeholders to make decisions from a sustainable perspective, that is to say, based on economic, environmental and social objectives (Hassini et al., 2012).
+
+
+<!-- Additive Manufacturing & Distribute Manufacturing  -->
+The additive manufacturing technology (also known as 3D printing) enables the potential of distributed manufacturing (DM) towards high value-added products (Kreiger et al., 2014). 
+   <!-- Distributed Recycling -->
+Nowadays, the accessibility of freely available designs has increased significantly, together with the development of open-source technologies and the supply of raw materials (virgin and recycled filaments) for 3D printing (Hunt et al., 2015). 
+   <!-- Distribute Manufacturing -->
+Distributed manufacturing is defined as the decentralization of production through the installation of multiple production factories with similar technology distributed geographically (Bonnín Roca et al., 2019). 
+It is characterized by local production that thrives on the synergy of the emerging capabilities of digital manufacturing, information and communication technologies, and the peer-to-peer production approach (Pavlo et al., 2018). 
+Indeed, DM offers the possibility to decentralize production structures, the flexibility to reflect local customer needs, lower logistics costs, shorter lead times and lower environmental impacts (Kreiger and Pearce, 2013).
+<!-- Distributed Recycling -->
+Based on the DM paradigm, a new possibility of plastic recycling supported by additive manufacturing, called distributed recycling by additive manufacturing (DRAM), has emerged in the literature. 
+Promoted by the development of 3D printing in an open-source context, DRAM is proposed to provide recycled plastic feedstock to the different 3D printers in a DM context.
+   <!-- FFF / FGF -->
+This recycled plastic can be in the form of filament, and recent works are dealing with the validation of granular form (Alexandre et al., 2020; Justino Netto et al., 2021). The 3D printing feedstock is then obtained via plastic recycling at local scale using open-source machines, such as shredders and extruders (Zhong and Pearce, 2018). 
+   
+<!-- DRAM -->
+The main feature of DRAM is the reduction of the impact in the collection phase, favoring shorter and simpler supply chains (Despeisse et al., 2017; Garmulewicz et al., 2018).
+   <!-- Technical -->
+Several works have focused on the validation of DRAM approach from the technical, economic and environmental perspective (Cruz Sanchez et al., 2020). 
+Cruz Sanchez et al., (2020) conducted a systematic literature review about the level of development of the different DRAM stages from the technical perspective (see Figure 1).
+Their results shown that significant progresses have been made in the stages of compounding, feedstock, printing and quality assessment. 
+However, they also shown that on despite of that little work has been done for the preparation and recovery stages. 
+   <!-- Logistical -->
+In other, Santander et al., (2020) proposed an initial model to study the economic and environmental feasibility of DRAM from the logistic point of view. Their results have shown the feasibility of the system in economic terms and in CO2 emissions avoided implementing the system. 
+<!-- DRAM Environmental -->
+From the environmental point of view, DRAM and DM approaches have been evaluated mainly using the Life Cycle Assessment (LCA) approach. 
+
+<!-- Arguing for LCA as conception tool in early design phases -->
+LCA is one of the most widely used environmental impact assessment methodologies. LCA corresponds to an ISO 14040 certified methodology, which has even been used for environmental regulations in different parts of the world. 
+   <!-- Joshua 2013 -->
+In the context of DM/DRAM-related research, LCA has been applied in different ways. For example, Kreiger & Pearce (2013) conducted a life cycle analysis (LCA), in terms of energy consumed and emissions involved, to compare centralized manufacturing and distributed manufacturing using RepRaps (3D printers) for the distributed production of goods. 
+The results showed that the use of Poly Lactic Acid (PLA) in a distributed manufacturing context reduces energy demand and system emissions, which can be greatly diminished if a solar photovoltaic (PV) array is used. 
+   <!-- Joshua 2014 -->
+Later, Kreiger et al. (2014) explored the environmental benefit of distributed recycling using open-source extruders (RecycleBots), which have been used to obtain 3D printing filament from post-consumer goods. Focusing on High Density Poly Ethylene (HDPE) as material, they performed an LCA of energy consumption and CO2 emissions to compare distributed recycling to standard centralized recycling. 
+Their results showed that distributed recycling of HDPE uses less energy than the best-case scenario investigated for centralized recycling, and it can achieve savings of over 80%. 
+   <!-- Kerdlap et al. (2021) -->
+Kerdlap et al. (2021), through a simulation approach, quantified the plastic life-cycle environmental impact of small-scale sorting and recycling systems compared to traditional large-scale centralized systems in Singapore, with the aim of determining under what conditions distributed recycling can be environmentally beneficial. 
+Their results showed that the environmental impacts in terms of climate change, water depletion and terrestrial ecotoxicity were higher compared to the centralized systems. 
+However, these results are mainly related to the means of transport considered for each system (commercial van for distributed recycling and large trucks for centralized recycling), since the use large trucks decrease the total impact. 
+
+
+In conclusion, even though different studies have been conducted aiming to validate the distributed recycling approach from the technical, economic, and environmental perspective,  only the work of  Kreiger et al. (2014) is focused on  the environmental assessment of distributed recycling for 3D printing purposes. 
+<!-- Research gap -->
+However, their research is limited to the consideration of energy and CO2 emissions as environmental indicators. Therefore, major effort needs to be made in order to evaluate, in a holistic way, the environmental impacts of the global DRAM value chain. 
+Therefore, the contribution of this research lies in the evaluation of environmental impacts from the implementation of distributed recycling via additive manufacturing approach in a territory. 
+Specifically, an environmental evaluation using life cycle assessment (LCA) is conducted comparing a distributed plastic recycling system to produce 3D filament with a traditional production system of virgin plastic filament for 3D printing. 
+From this evaluation, the environmental impacts (positives or negatives) of implementing DRAM have been analyzed and discussed.
+
+<!-- Structuration -->
+This article is structured as follows.  
+Section 2 presents the system (case study) evaluated. 
+Section 3 materials and methods, where life cycle analysis methodology is explained. Section 4 presents the life cycle analysis performed. Section 5 presents the discussion of results.
+Finally, Section 6 presents the main conclusions and recommendations for future works.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+
+
