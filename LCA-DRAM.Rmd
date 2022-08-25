@@ -1,5 +1,6 @@
 ---
 title: Life Cycle Assessment of Distributed Plastic Recycling via Additive Manufacturing.
+geometry: "left=3cm,right=2cm,top=2cm,bottom=2cm"
 author:
   - name: Alice Anonymous
     email: alice@example.com
@@ -59,27 +60,42 @@ always_allow_html: true
 # Introduction
 
 <!-- Plastics topic -->
-Today, the demand for plastic has increased by a factor of 20 over the past 50 years (Geyer et al., 2017). 
-According to Plastic Europe (2020), in 2019, 368 million tons of plastic were produced worldwide, including 59 million tons in Europe, with a market value of approximately 350 billion euros. 
-Plastic stands out as a product in demand in different sectors such as the packaging industry, the construction industry, the automotive industry, and the electronics industry, with a 39.6%, 20.4%, 9.6% and 6.2% of the demand respectively (PlasticEurope 2020).
-
+Since the early 20th century, the invention of plastic, or synthetic organic polymers, changed the landscape of different industrial sectors.
+The production growth increased at compound annual growth rate of 8.4%, passing from from $2Mt$ in 1950 to $368Mt$ in 2019 [@Geyer2017; ].
+This versatile material stands out as thanks to its easy processing and handling in shape, color, texture, thermal and barrier properties (making it ideal for food packaging) and its mechanical and chemical resistance [@Andrady2009; @Thompson2009a ]. 
+In consequence, 39.6% of the demand is used for packaging industry followed by construction and automotive industry with of 20.4%, 9.6% respectively of the production share [@ref].
 <!-- Plastic issues -->
-Plastic is associated with multiple environmental damages throughout its life cycle, from the pollution produced in its production phase to its disposal, being considered an exponential waste generator (Feuille, 2018). 
-For example, every year 13 million tons of plastic end up in the oceans, which is equivalent to an entire garbage truck full of plastic being dumped into the sea every minute, accumulating a total of 150 million tons of plastic dumped into the sea to date (João et al., 2020).
+Unfortunately, the main problematic is associated with multiple environmental damages throughout its life cycle.
+Terrestrial, aquatic and atmospheric ecosystems are not exempt from the externalities of this innovation and represents a major issue [@Kumar2021].
+Micro-, meso- and nano-plastics pollution contribute to detriement of ecosystem services such as ability to sequester carbon [@ref], soil productivity [@ref] and eutrophication [@ref].  
+Indeed, plastic pollution in the aquatic ecosystems such as standing waters can act as vector of toxic chemicals that affects  the  biogeochemical cycles. 
+For example, every year 13 million tons of plastic end up in the oceans, which is equivalent to an entire garbage truck full of plastic being dumped into the sea every minute. 
+A total of 150 million tons of plastic dumped into the sea to date (João et al., 2020).
 The presence of these solid plastic wastes has become a threat to marine ecosystems (Chen et al., 2020). 
+<!-- Conclusion -->
+Additionally, the transfer of plastic into the food chain is a clear danger to animal and, certainly, to humans as well. 
+Therefore, the degrowth of plastics is one of great importance in the long term.
+
    <!-- Plastic waste rates -->
-The rates are the result of multiple instances where plastic is used as a single-use product (50% of plastic produced) (Feuille, 2018). 
-Considering the plastic disposed, only 9% of the plastic that has been produced since 1950 has been recycled, the rest has been incinerated, found in landfills or thrown into the sea (Geyer et al., 2017; João et al., 2020) 
+<!-- The main reason relies on the single-use product (50% of plastic produced) (Feuille, 2018).  -->
+<!-- Considering the plastic disposed, only 9% of the plastic that has been produced since 1950 has been recycled, the rest has been incinerated, found in landfills or thrown into the sea (Geyer et al., 2017; João et al., 2020)  -->
 
 
+The adequate use and disposal of plastics is a wicked problem characterized by high complexity and multifaceted feedback loops.
+A systemic view is needed of the entire plastics value chain including petrochemical companies [@Iles2013; @DeVargasMores2018], converters [@Paletta2019], brand owners or manufacturers [@Gong2020; @Ma2020], retailers and consumers [@Confente2020; @Friedrich2020; @Filho2021], and recycling operators [@Huysveld2019; @Pazienza2020], as well as the influences of policy-makers in wider economic and societal changes [@Paletta2019].
 <!-- Circular Economy -->
-To address the environmental problems related to plastic and other wastes, the European Union (EU) intends to develop a circular economy (CE) based on a production and consumption model with key activities such as: "share", "reduce", "reuse", "repair", "renew" and "recycle" the existing materials and products as many times as possible, in order to create added value by extending the life cycle of products (European Commission 2018). 
+The European Union (EU) intends to develop a circular economy (CE) based on a production and consumption model with key activities such as: "share", "reduce", "reuse", "repair", "renew" and "recycle" the existing materials and products as many times as possible, in order to create added value by extending the life cycle of products (European Commission 2018). 
+<!-- Critics to Circular Economy -->
+This concept have raised critical [@corvellec2021] as contested concept given their fondational which not include 
+
+
    <!-- Green Deal -->
-Indeed, as part of the European Green Pact presented on March 20, 2020, it is planned to establish an action plan involving the circular economy, mainly promoting the development of sustainable products, waste reduction and empowering citizens as a key player (European Commission 2018). 
+Nevertheless, as part of the European Green Pact presented on March 20, 2020, it is planned to establish an action plan involving the circular economy, mainly promoting the development of sustainable products, waste reduction and empowering citizens as a key player (European Commission 2018). 
    <!-- French CE -->
 Considering the French context, French government has set a target that by 2025 all plastic waste should be recycled but so up to today, according to PlasticEurope 2020, recycling in France reaches levels close to 25%.
    <!-- Plastic issues in the CE -->
-Despite these ambitious objectives, plastics recycling has been historically an expensive process due to the inherent separate collection, transportation, processing and remanufacturing (João et al., 2020). The economies of scale have been leveraged to reduce these costs With centralized and global recycling chains (Kreiger and Pearce, 2013). 
+Despite these ambitious objectives, plastics recycling has been historically an expensive process due to the inherent separate collection, transportation, processing and remanufacturing (João et al., 2020). 
+The economies of scale have been leveraged to reduce these costs With centralized and global recycling chains (Kreiger and Pearce, 2013). 
    <!-- Problems of the Plastic Recycling -->
 Nevertheless, in order to carry out this recycling system, multiple steps need to be accomplished that integrate the sorting phase, long-distance transport, waste treatment and remanufacturing. 
 The high costs of these processes and the low selling price (mainly due to the dependence of recycled plastic price on the petroleum and virgin prices) seldom generate benefits and often requires costly public subsidies (Hamilton et al., 2019). 
@@ -144,7 +160,7 @@ Finally, Section 6 presents the main conclusions and recommendations for future 
 
 
 
-
+## Methodology
 
 
 

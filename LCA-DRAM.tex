@@ -1,9 +1,9 @@
 \documentclass[]{elsarticle} %review=doublespace preprint=single 5p=2 column
 %%% Begin My package additions %%%%%%%%%%%%%%%%%%%
+
 \usepackage[hyphens]{url}
 
   \journal{An awesome journal} % Sets Journal name
-
 
 \usepackage{lineno} % add
 
@@ -29,7 +29,10 @@
 \fi
 % use microtype if available
 \IfFileExists{microtype.sty}{\usepackage{microtype}}{}
-\bibliographystyle{elsarticle-harv}
+\usepackage[left=3cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
+
 \ifxetex
   \usepackage[setpagesize=false, % page size defined by xetex
               unicode=false, % unicode breaks when used with xetex
@@ -45,7 +48,6 @@
             urlcolor=blue,
             linkcolor=blue,
             pdfborder={0 0 0}}
-\urlstyle{same}  % don't use monospace font for urls
 
 \setcounter{secnumdepth}{5}
 % Pandoc toggle for numbering sections (defaults to be off)
@@ -77,18 +79,25 @@
 \begin{frontmatter}
 
   \title{Life Cycle Assessment of Distributed Plastic Recycling via Additive Manufacturing.}
-    \author[Some Institute of Technology]{Alice Anonymous\corref{1}}
+    \author[Some Institute of Technology]{Alice Anonymous%
+  %
+  \fnref{1}}
    \ead{alice@example.com} 
     \author[Another University]{Bob Security}
    \ead{bob@example.com} 
-    \author[Another University]{Cat Memes\corref{2}}
+    \author[Another University]{Cat Memes%
+  %
+  \fnref{2}}
    \ead{cat@example.com} 
-    \author[Some Institute of Technology]{Derek Zoolander\corref{2}}
+    \author[Some Institute of Technology]{Derek Zoolander%
+  %
+  \fnref{2}}
    \ead{derek@example.com} 
-      \address[Some Institute of Technology]{Department, Street, City, State, Zip}
-    \address[Another University]{Department, Street, City, State, Zip}
-      \cortext[1]{Corresponding Author}
-    \cortext[2]{Equal contribution}
+      \affiliation[Some Institute of Technology]{Department, Street, City, State, Zip}
+    \affiliation[Another University]{Department, Street, City, State, Zip}
+    \cortext[cor1]{Corresponding author}
+    \fntext[1]{Corresponding Author}
+    \fntext[2]{Equal contribution}
   
   \begin{abstract}
   This is the abstract.
@@ -101,20 +110,27 @@
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
-Today, the demand for plastic has increased by a factor of 20 over the past 50 years (Geyer et al., 2017).
-According to Plastic Europe (2020), in 2019, 368 million tons of plastic were produced worldwide, including 59 million tons in Europe, with a market value of approximately 350 billion euros.
-Plastic stands out as a product in demand in different sectors such as the packaging industry, the construction industry, the automotive industry, and the electronics industry, with a 39.6\%, 20.4\%, 9.6\% and 6.2\% of the demand respectively (PlasticEurope 2020).
-
-Plastic is associated with multiple environmental damages throughout its life cycle, from the pollution produced in its production phase to its disposal, being considered an exponential waste generator (Feuille, 2018).
-For example, every year 13 million tons of plastic end up in the oceans, which is equivalent to an entire garbage truck full of plastic being dumped into the sea every minute, accumulating a total of 150 million tons of plastic dumped into the sea to date (João et al., 2020).
+Since the early 20th century, the invention of plastic, or synthetic organic polymers, changed the landscape of different industrial sectors.
+The production growth increased at compound annual growth rate of 8.4\%, passing from from \(2Mt\) in 1950 to \(368Mt\) in 2019 {[}\citet{Geyer2017}; {]}.
+This versatile material stands out as thanks to its easy procesability in shape, color, texture, thermal and barrier properties and its mechanical and chemical resistance \citep[ ]{Andrady2009, Thompson2009a}.
+39.6\% of the demand is used for packaging industry followed by construction and automotive industry with of 20.4\%, 9.6\% respectively of the production share \citep{ref}.
+Unfortunately, the main problematic is associated with multiple environmental damages throughout its life cycle.
+Terrestrial, aquatic and atmospheric ecosystems are not exempt from the externalities of this innovation and represents a major issue \citep{Kumar2021}.
+Micro-, meso- and nano-plastics pollution contribute to detriement of ecosystem services such as ability to sequester carbon \citep{ref}, soil productivity \citep{ref} and eutrophication.\\
+Indeed, plastic pollution in the aquatic ecosystems standing waters can act as vector of toxic chemicals that affects the biogeochemical cycles.
+For example, every year 13 million tons of plastic end up in the oceans, which is equivalent to an entire garbage truck full of plastic being dumped into the sea every minute.
+A total of 150 million tons of plastic dumped into the sea to date (João et al., 2020).
 The presence of these solid plastic wastes has become a threat to marine ecosystems (Chen et al., 2020).
-The rates are the result of multiple instances where plastic is used as a single-use product (50\% of plastic produced) (Feuille, 2018).
-Considering the plastic disposed, only 9\% of the plastic that has been produced since 1950 has been recycled, the rest has been incinerated, found in landfills or thrown into the sea (Geyer et al., 2017; João et al., 2020)
+Additionally, the transfer of plastic into the food chain is a clear danger to animal and, certainly, to humans as well.
+Therefore, the degrowth of plastics is one of great importance in the long term.
 
-To address the environmental problems related to plastic and other wastes, the European Union (EU) intends to develop a circular economy (CE) based on a production and consumption model with key activities such as: ``share'', ``reduce'', ``reuse'', ``repair'', ``renew'' and ``recycle'' the existing materials and products as many times as possible, in order to create added value by extending the life cycle of products (European Commission 2018).
-Indeed, as part of the European Green Pact presented on March 20, 2020, it is planned to establish an action plan involving the circular economy, mainly promoting the development of sustainable products, waste reduction and empowering citizens as a key player (European Commission 2018).
+The adequate use and disposal of plastics is a wicked problem characterized by high complexity and multifaceted feedback loops.
+A systemic view is needed of the entire plastics value chain including petrochemical companies \citep{Iles2013, DeVargasMores2018}, converters \citep{Paletta2019}, brand owners or manufacturers \citep{Gong2020, Ma2020}, retailers and consumers \citep{Confente2020, Friedrich2020, Filho2021}, and recycling operators \citep{Huysveld2019, Pazienza2020}, as well as the influences of policy-makers in wider economic and societal changes \citep{Paletta2019}.
+The European Union (EU) intends to develop a circular economy (CE) based on a production and consumption model with key activities such as: ``share'', ``reduce'', ``reuse'', ``repair'', ``renew'' and ``recycle'' the existing materials and products as many times as possible, in order to create added value by extending the life cycle of products (European Commission 2018).
+As part of the European Green Pact presented on March 20, 2020, it is planned to establish an action plan involving the circular economy, mainly promoting the development of sustainable products, waste reduction and empowering citizens as a key player (European Commission 2018).
 Considering the French context, French government has set a target that by 2025 all plastic waste should be recycled but so up to today, according to PlasticEurope 2020, recycling in France reaches levels close to 25\%.
-Despite these ambitious objectives, plastics recycling has been historically an expensive process due to the inherent separate collection, transportation, processing and remanufacturing (João et al., 2020). The economies of scale have been leveraged to reduce these costs With centralized and global recycling chains (Kreiger and Pearce, 2013).
+Despite these ambitious objectives, plastics recycling has been historically an expensive process due to the inherent separate collection, transportation, processing and remanufacturing (João et al., 2020).
+The economies of scale have been leveraged to reduce these costs With centralized and global recycling chains (Kreiger and Pearce, 2013).
 Nevertheless, in order to carry out this recycling system, multiple steps need to be accomplished that integrate the sorting phase, long-distance transport, waste treatment and remanufacturing.
 The high costs of these processes and the low selling price (mainly due to the dependence of recycled plastic price on the petroleum and virgin prices) seldom generate benefits and often requires costly public subsidies (Hamilton et al., 2019).
 In addition, these centralized plastic manufacturing and recycling lines lead to soil, water and air pollution (Arena et al., 2003; Reich, 2005).
@@ -156,6 +172,11 @@ This article is structured as follows.\\
 Section 2 presents the system (case study) evaluated.
 Section 3 materials and methods, where life cycle analysis methodology is explained. Section 4 presents the life cycle analysis performed. Section 5 presents the discussion of results.
 Finally, Section 6 presents the main conclusions and recommendations for future works.
+
+\hypertarget{methodology}{%
+\subsection{Methodology}\label{methodology}}
+
+\bibliography{assets/mybibfile.bib}
 
 
 \end{document}
