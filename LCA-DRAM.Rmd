@@ -142,7 +142,7 @@ Kerdlap et al. (2021), through a simulation approach, quantified the plastic lif
 Their results showed that the environmental impacts in terms of climate change, water depletion and terrestrial ecotoxicity were higher compared to the centralized systems. 
 However, these results are mainly related to the means of transport considered for each system (commercial van for distributed recycling and large trucks for centralized recycling), since the use large trucks decrease the total impact. 
 
-In conclusion, even though different studies have been conducted aiming to validate the distributed recycling approach from the technical, economic, and environmental perspective,  only the work of  Kreiger et al. (2014) is focused on  the environmental assessment of distributed recycling for 3D printing purposes. 
+In conclusion, even though different studies have been conducted aiming to validate the distributed recycling approach from the technical, economic, and environmental perspective,  only the work of  @Kreiger2014 is focused on  the environmental assessment of distributed recycling for 3D printing purposes. 
 <!-- Research gap -->
 However, their research is limited to the consideration of energy and CO2 emissions as environmental indicators. Therefore, major effort needs to be made in order to evaluate, in a holistic way, the environmental impacts of the global DRAM value chain. 
 Therefore, the contribution of this research lies in the evaluation of environmental impacts from the implementation of distributed recycling via additive manufacturing approach in a territory. 
@@ -152,65 +152,70 @@ From this evaluation, the environmental impacts (positives or negatives) of impl
 <!-- Structuration -->
 This article is structured as follows.  
 Section 2 presents the system (case study) evaluated. 
-Section 3 materials and methods, where life cycle analysis methodology is explained. Section 4 presents the life cycle analysis performed. Section 5 presents the discussion of results.
+Section 3 materials and methods, where life cycle analysis methodology is explained. 
+Section 4 presents the life cycle analysis performed. Section 5 presents the discussion of results.
 Finally, Section 6 presents the main conclusions and recommendations for future works.
 
 ##	Case study: The Lorraine Fab Living Lab
 
-
 In order to achieve the objectives of this research, a case study with the following characteristics was selected:  
-
-1.	Existence of a favourable context to implement a DRAM recycling system. A favourable context is defined as a considerable amount of plastic waste to be treated, as well as initiatives for the widespread use of 3D printing.
-2.	Existence of a space dedicated to the recycling of plastic for 3D printing.
-Under these considerations, the selected context for this study was the Lorraine Fab living Lab  (LF2L), an innovation space located in Nancy, France. This university laboratory has been selected mainly due to: (1) Innovation spaces such as Fablabs, Maker spaces, design 
 
 1.	Existence of a favorable context to implement a DRAM recycling system. A favorable context is defined as a considerable amount of plastic waste to be treated, as well as initiatives for the widespread use of 3D printing.
 2.	Existence of a space dedicated to the recycling of plastic for 3D printing.
 
 Under these considerations, the selected context for this study was the Lorraine Fab living Lab  (LF2L), an innovation space located in Nancy, France. This university laboratory has been selected mainly for the following reasons: 
+<!--  Reasongs -->
 (1) Innovation spaces such as Fablabs, Maker spaces, design factories among others have proven to be favorable environments for eco-innovations facilitating the implementation of circular economy strategies. 
    <!-- Fedoua -->
-Previous studies show that these collaborative environments foster sustainable experimental learning, provide methodologies and tools for the co-creation of circular solutions, drive the transition toward sustainable smart cities, foster the creation of new sustainable business models, and facilitate knowledge exchange on circular solutions (Kasmi et al., 2021). 
+Previous studies show that these collaborative environments foster sustainable experimental learning, provide methodologies and tools for the co-creation of circular solutions, drive the transition toward sustainable smart cities, foster the creation of new sustainable business models, and facilitate knowledge exchange on circular solutions [@Kasmi2021]. 
    <!-- Fedoua -->
 (2) Since 2014, the LF2L has been studying the possibility of recycling, in their installations, PLA for reuse in 3D printing. 
-The pilot recycling process present in this center has been developed in the research work of Cruz Sanchez et al. (2017), and the possibility of implementing this recycling process in the region is being evaluated. 
+The pilot recycling process present in this center has been developed in the research work of @CruzSanchez2017, and the possibility of implementing this recycling process in the region is being evaluated. 
    <!-- Pavlo -->
 (3) An investment program has been launched by the Grand Est region to promote the use of 3D printers in the schools and high schools of the region (Robine & Tomasini, 2018). 
+<!-- Reasons -->
 The goal of this investment plan is to ensure that all the schools and high schools in the region will be equipped with this technology in the near future. 
-This corresponds to the future scenario evaluated in the work of Santander et al. (2020). 
-However, in contrast to Santander et al. (2020), in our research work a complete environmental evaluation of the scenario is carried out. 
+This corresponds to the future scenario evaluated in the work of @Santander2020. 
+However, in contrast to @Santander2020, in our research work a complete environmental evaluation of the scenario is carried out. 
 Consequently, this case study has been selected because of their experience in experimenting with the DRAM strategy, as well as the availability of technical and economic data and the aforementioned scientific publications that provide details on its local implementation.  
 For this study, the context described above has been simplified in terms of geographical scale, and the following assumptions are considered.
 
-- Consideration is given to only one type of plastic waste to be recycled. Specifically, PLA has been considered. This is mainly because PLA is one of the most used plastics in 3D printing (Bikas et al., 2016). For the plastic waste sources, PLA waste from schools and high schools (who have 3D printers) has been considered. PLA has been selected as feedstock material due to the fact that (1) in Europe, PLA is considered a "miscellaneous product" (EuRIC, 2020) because of its classification as a Bioplastic and because, at least in Europe, there is no defined recycling strategy for these types of plastics so they are usually sent to a landfill or are incinerated; and (2) PLA is one of the most widely used plastics in 3D printing.
+- Consideration is given to only one type of plastic waste to be recycled. 
+Specifically, PLA has been considered. 
+This is mainly because PLA is one of the most used plastics in 3D printing [@Bikas2016].
+For the plastic waste sources, PLA waste from schools and high schools (who have 3D printers) has been considered. 
+PLA has been selected as feedstock material due to the fact that (1) in Europe, PLA is considered a "miscellaneous product" (EuRIC, 2020) because of its classification as a Bioplastic and because, at least in Europe, there is no defined recycling strategy for these types of plastics so they are usually sent to a landfill or are incinerated; 
+and (2) PLA is one of the most widely used plastics in 3D printing.
+
 - The recycling system modeled does not consider the sorting, separation, and cleaning process because the collected material corresponds to non-contaminated waste: for example, discarded 3D printing parts used for prototyping.
-- From a geographical point of view, only schools and high schools in the Lorraine region of France have been considered, and the route of recovery and delivery considered is obtained in the work of Santander et al. (2020).
+- From a geographical point of view, only schools and high schools in the Lorraine region of France have been considered, and the route of recovery and delivery considered is obtained in the work of @Santander2020.
+
 - Each school and high school requires 1 kg of filament per month.
+
 - The 3D printing activities carried out in these establishments have the specific purpose of making product prototypes and mock-ups, which allows them to generate testing activities, design evaluations, functional evaluations, and corrections. 
-Therefore, after a short lifetime, 3D printing can be a source of significant amounts of plastic waste due to printed parts that do not possess the desired quality, unused raw materials, or products that have already fulfilled their life cycle (Alexandre et al., 2020).
+Therefore, after a short lifetime, 3D printing can be a source of significant amounts of plastic waste due to printed parts that do not possess the desired quality, unused raw materials, or products that have already fulfilled their life cycle [@Alexandre2020].
 
 ##	Material and methods
 
-The chosen methodology is Life Cycle Assessment (LCA) because, unlike other analytical methodologies with an environmental focus, such as Material Flow Analysis (MFA), Substances Flow Analyses, and Environmental Risk, it allows us to evaluate the environmental impacts of the system value chain to be modeled (Andersson et al., 2016)(Andersson et al., 2016)(Andersson et al., 2016)(Andersson et al., 2016)(Andersson et al., 2016).
+The chosen methodology is Life Cycle Assessment (LCA) because, unlike other analytical methodologies with an environmental focus, such as Material Flow Analysis (MFA), Substances Flow Analyses, and Environmental Risk, it allows us to evaluate the environmental impacts of the system value chain to be modeled [@Andersson2016].
 
 
-
- 
-The LCA represents a different tool and different techniques created to determine in an effective and fast way the results to help with managerial decision-making in environmental terms and in the deepening of the sustainable development policy (Guinée, J. B., 2002).
+The LCA represents a different tool and different techniques created to determine in an effective and fast way the results to help with managerial decision-making in environmental terms and in the deepening of the sustainable development policy [@Guinee202].
 Life Cycle Assessment (LCA) is a structured, comprehensive and internationally standardized method in accordance with ISO 14040 and 14044. 
-It defines all the steps for its use: goal and scope definition, inventory analysis, impact assessment, and interpretation (Pennington et al., 2004). LCA is a tool for quantitative evaluation of materials, energy flows, and the potential impact of products, services, or technologies (Dehghanian and Mansour, 2009). 
+It defines all the steps for its use: goal and scope definition, inventory analysis, impact assessment, and interpretation (Pennington et al., 2004). 
+LCA is a tool for quantitative evaluation of materials, energy flows, and the potential impact of products, services, or technologies (Dehghanian and Mansour, 2009). 
 The analysis takes into account the entire life cycle of a product: from resource extraction, through production, use, and recycling, to the disposal of the remaining waste (ILCD handbook, 2010). Several researchers have adopted an LCA-based methodology to characterize environmental considerations for a range of pollutants (Graf, 2019).
 A life cycle analysis has four main stages: the definition of objectives and approach (Stage 1), inventory analysis (Stage 2), impact assessment (Stage 3), and interpretation (Stage 4)
 
  
 
-1.	Goal and Scope Definition: This is the first stage and serves to orient the study bases. It defines the main objectives of the life cycle analysis, the target audience of this report, the functional unit that is the reference point from which the potential environmental impacts will be obtained, the limits of the system under study, the categories of environmental impacts to be evaluated, and the hypotheses to be used in different stages of the LCA.
+1.	**Goal and Scope Definition**: This is the first stage and serves to orient the study bases. It defines the main objectives of the life cycle analysis, the target audience of this report, the functional unit that is the reference point from which the potential environmental impacts will be obtained, the limits of the system under study, the categories of environmental impacts to be evaluated, and the hypotheses to be used in different stages of the LCA.
 
-2.	Inventory Analysis: Inventory is the stage in which the flows are quantified. It sets out the database used, the energy and material input, the calculations performed, and how the system was modeled.
+2.	**Inventory Analysis**: Inventory is the stage in which the flows are quantified. It sets out the database used, the energy and material input, the calculations performed, and how the system was modeled.
 
-3.	Impact Assessment: This stage presents the software used and the calculation methodology used to transform flows and characterize them in the impact categories evaluated. From this characterization, the impact profile of the system under study is obtained.
+3.	**Impact Assessment**: This stage presents the software used and the calculation methodology used to transform flows and characterize them in the impact categories evaluated. From this characterization, the impact profile of the system under study is obtained.
 
-4.	Interpretation: This is the conclusion of steps 2 and 3, presenting the results obtained from the hypotheses used, the considerations, and the functional study that has been defined. The phases of the life cycle that have the most impact are identified, and sensitivity analyses can be carried out to evaluate the behavior of the systems according to the variation of certain parameters. The inter-phase analysis stage is fundamental for decision-making, as it identifies critical points and provides a basis for future improvements. 
+4.	**Interpretation**: This is the conclusion of steps 2 and 3, presenting the results obtained from the hypotheses used, the considerations, and the functional study that has been defined. The phases of the life cycle that have the most impact are identified, and sensitivity analyses can be carried out to evaluate the behavior of the systems according to the variation of certain parameters. The inter-phase analysis stage is fundamental for decision-making, as it identifies critical points and provides a basis for future improvements. 
 
 The LCA methodology is mostly used in an iterative way, allowing a better definition of the objectives to be achieved and the system to be analyzed.
 
