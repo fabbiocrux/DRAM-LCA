@@ -34,23 +34,24 @@ abstract: |
 
 journal: "An awesome journal"
 date: "`r Sys.Date()`"
-bibliography: library2.bib
+bibliography: library.bib
 #linenumbers: true
 #numbersections: true
 csl: RCR.csl
 link-citations: yes
 linkcolor: blue
-# output:
-#   bookdown::pdf_book:
-#     keep_tex: true
-#     number_sections: yes
-#     toc: false
-#     base_format: rticles::elsevier_article
 output:
-  # bookdown::pdf_document2:
-  #   toc: false
-  #   keep_tex: true
-  bookdown::html_document2: default
+  bookdown::pdf_book:
+    keep_tex: true
+    toc: false
+    base_format: rticles::elsevier_article
+    citation_package: default
+# output:
+#   bookdown::pdf_document2:
+#     toc: false
+#     keep_tex: true
+#     base_format: rticles::elsevier_article
+  #bookdown::html_document2: default
   #bookdown::word_document2: default
 #output: rticles::tf_article
 always_allow_html: true
@@ -74,6 +75,7 @@ The presence of these solid plastic wastes has become a threat to marine ecosyst
 <!-- Conclusion -->
 Additionally, the transfer of plastic into the food chain is a clear danger to animal and, certainly, to humans as well. 
 Therefore, the degrowth production of plastics is one of great importance in the long term.
+
 
    <!-- Plastic waste rates -->
 <!-- The main reason relies on the single-use product (50% of plastic produced) (Feuille, 2018).  -->
@@ -195,7 +197,7 @@ and (2) PLA is one of the most widely used plastics in 3D printing.
 - The 3D printing activities carried out in these establishments have the specific purpose of making product prototypes and mock-ups, which allows them to generate testing activities, design evaluations, functional evaluations, and corrections. 
 Therefore, after a short lifetime, 3D printing can be a source of significant amounts of plastic waste due to printed parts that do not possess the desired quality, unused raw materials, or products that have already fulfilled their life cycle [@Alexandre2020].
 
-##	Material and methods
+#	Material and methods
 
 The chosen methodology is Life Cycle Assessment (LCA) because, unlike other analytical methodologies with an environmental focus, such as Material Flow Analysis (MFA), Substances Flow Analyses, and Environmental Risk, it allows us to evaluate the environmental impacts of the system value chain to be modeled [@Andersson2016].
 
@@ -388,9 +390,9 @@ Therefore, this study indicates that, in environmental terms and under certain c
 However, this study is not exempt of limits to be considered in future works. For this reason, the following recommendations can be followed:
 
 
-●	In order to reduce the complexity of the system studied, in different hypotheses, such as in the recycling system, we considered only one material collected in a clean state and fixed demand from schools. However, in the virgin production system the entire supply and production chain was formulated through hypotheses. Future research could conduct an environmental assessment incorporating these complexities.
-●	This study is limited to the comparison of DRAM with virgin filament production. It would be interesting to evaluate the environmental performance of a DRAM system with respect to other possible life-ends for PLA, such as incineration, landfill, or even a system where virgin material is incorporated into the recycling process. This is because the mixture of virgin and recycled material allows for considerable improvement in filament properties and printing quality.
-●	Finally, this evaluation was carried out by placing the DRAM system in the specific context of a developed country. It could be interesting to perform the same analysis in developing countries, which currently have major problems in the treatment of plastic waste (Ritchie et al., 2018). 
+- In order to reduce the complexity of the system studied, in different hypotheses, such as in the recycling system, we considered only one material collected in a clean state and fixed demand from schools. However, in the virgin production system the entire supply and production chain was formulated through hypotheses. Future research could conduct an environmental assessment incorporating these complexities.
+- This study is limited to the comparison of DRAM with virgin filament production. It would be interesting to evaluate the environmental performance of a DRAM system with respect to other possible life-ends for PLA, such as incineration, landfill, or even a system where virgin material is incorporated into the recycling process. This is because the mixture of virgin and recycled material allows for considerable improvement in filament properties and printing quality.
+- Finally, this evaluation was carried out by placing the DRAM system in the specific context of a developed country. It could be interesting to perform the same analysis in developing countries, which currently have major problems in the treatment of plastic waste (Ritchie et al., 2018). 
 
 
 #	Conclusions 
@@ -398,18 +400,5 @@ However, this study is not exempt of limits to be considered in future works. Fo
 Using the LCA methodology, this work has demonstrated the environmental benefits of a distributed closed-loop supply chain network for plastic recycling using open-source 3D printing technologies in a specific context.
 The results obtained by the application of the LCA methodology to the case study and its sensitivity analysis suggest the application of this recycling approach in various energy contexts (solar, wind, and nuclear), acting in parallel to the existing centralized plastic recycling networks in order to increase plastic recycling rates, which are currently low. 
 As already mentioned in the discussion section, it would be interesting for future works to reduce the assumptions used with respect to the production of virgin filament and to integrate the current complexity of carrying out the plastic recycling process. Furthermore, assessing the impacts of this system in various areas allows us to obtain a global vision of the performance of this system and to determine which context would be most favorable for its development.  
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
