@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.3.16)  25 AUG 2022 15:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2022/dev) (preloaded format=pdflatex 2022.3.16)  1 SEP 2022 16:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -570,39 +570,39 @@ LaTeX Info: Redefining \nameref on input line 76.
 \openout4 = `LCA-DRAM.out'.
 
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-08.
+10.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-08.
+10.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-108.
+110.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-108.
+110.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 108.
+(Font)              <8> on input line 110.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 108.
+(Font)              <6> on input line 110.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 108.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 108
+(Font)              <5> on input line 110.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 110
 .
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 108
+LaTeX Font Info:    Trying to load font information for U+msb on input line 110
 .
 (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -610,7 +610,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-08.
+10.
 (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -619,77 +619,124 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 108.
+(Font)              <10> on input line 110.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 108.
+(Font)              <7> on input line 110.
 
 Package natbib Warning: Citation `Geyer2017' on page 1 undefined on input line 
-114.
+116.
 
 
 Package natbib Warning: Citation `Andrady2009' on page 1 undefined on input lin
-e 115.
+e 117.
 
 
 Package natbib Warning: Citation `Thompson2009a' on page 1 undefined on input l
-ine 115.
+ine 117.
 
 
-Package natbib Warning: Citation `ref' on page 1 undefined on input line 116.
+Package natbib Warning: Citation `PlascticEurope2020' on page 1 undefined on in
+put line 118.
 
 
 Package natbib Warning: Citation `Kumar2021' on page 1 undefined on input line 
-118.
+120.
 
 
-Package natbib Warning: Citation `ref' on page 1 undefined on input line 119.
+Package natbib Warning: Citation `wang2022a' on page 1 undefined on input line 
+121.
 
 
-Package natbib Warning: Citation `ref' on page 1 undefined on input line 119.
+Package natbib Warning: Citation `zhang2022b' on page 1 undefined on input line
+ 121.
+
+
+Package natbib Warning: Citation `vuori2022' on page 1 undefined on input line 
+121.
+
+
+Package natbib Warning: Citation `pintodacosta2020' on page 1 undefined on inpu
+t line 124.
+
+
+Package natbib Warning: Citation `shi2022' on page 1 undefined on input line 12
+5.
 
 
 Package natbib Warning: Citation `Iles2013' on page 1 undefined on input line 1
-28.
+30.
 
 
 Package natbib Warning: Citation `DeVargasMores2018' on page 1 undefined on inp
-ut line 128.
+ut line 130.
 
 
 Package natbib Warning: Citation `Paletta2019' on page 1 undefined on input lin
-e 128.
+e 130.
 
 
 Package natbib Warning: Citation `Gong2020' on page 1 undefined on input line 1
-28.
+30.
 
 
-Package natbib Warning: Citation `Ma2020' on page 1 undefined on input line 128
+Package natbib Warning: Citation `Ma2020' on page 1 undefined on input line 130
 .
 
 
 Package natbib Warning: Citation `Confente2020' on page 1 undefined on input li
-ne 128.
+ne 130.
 
 
 Package natbib Warning: Citation `Friedrich2020' on page 1 undefined on input l
-ine 128.
+ine 130.
 
 
 Package natbib Warning: Citation `Filho2021' on page 1 undefined on input line 
-128.
+130.
 
 
 Package natbib Warning: Citation `Huysveld2019' on page 1 undefined on input li
-ne 128.
+ne 130.
 
 
 Package natbib Warning: Citation `Pazienza2020' on page 1 undefined on input li
-ne 128.
+ne 130.
 
 
 Package natbib Warning: Citation `Paletta2019' on page 1 undefined on input lin
-e 128.
+e 130.
+
+
+Package natbib Warning: Citation `corvellec2021' on page 1 undefined on input l
+ine 132.
+
+
+Package natbib Warning: Citation `Giampietro2020' on page 1 undefined on input 
+line 132.
+
+
+Package natbib Warning: Citation `EC2018' on page 1 undefined on input line 133
+.
+
+
+Package natbib Warning: Citation `Hopewell2009' on page 1 undefined on input li
+ne 135.
+
+
+Package natbib Warning: Citation `Singh2017b' on page 1 undefined on input line
+ 135.
+
+
+Package natbib Warning: Citation `Anzalone2013' on page 1 undefined on input li
+ne 136.
+
+
+Package natbib Warning: Citation `Kreiger2013' on page 1 undefined on input lin
+e 136.
+
+
+Package natbib Warning: Citation `Arena2003' on page 1 undefined on input line 
+139.
 
 
 Overfull \hbox (2.22221pt too wide) has occurred while \output is active
@@ -698,51 +745,51 @@ Overfull \hbox (2.22221pt too wide) has occurred while \output is active
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 138.
+(hyperref)                removing `\<let>-command' on input line 141.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\comma' on input line 138.
+(hyperref)                removing `\comma' on input line 141.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 138.
+(hyperref)                removing `\<def>-command' on input line 141.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@fnmark' on input line 138.
+(hyperref)                removing `\@fnmark' on input line 141.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 138.
+(hyperref)                removing `\<let>-command' on input line 141.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\comma' on input line 138.
+(hyperref)                removing `\comma' on input line 141.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 138.
+(hyperref)                removing `\<def>-command' on input line 141.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@fnmark' on input line 138.
+(hyperref)                removing `\@fnmark' on input line 141.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<let>-command' on input line 138.
+(hyperref)                removing `\<let>-command' on input line 141.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\comma' on input line 138.
+(hyperref)                removing `\comma' on input line 141.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\<def>-command' on input line 138.
+(hyperref)                removing `\<def>-command' on input line 141.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@fnmark' on input line 138.
+(hyperref)                removing `\@fnmark' on input line 141.
 
 [1
 
@@ -761,11 +808,11 @@ Package rerunfilecheck Info: File `LCA-DRAM.out' has not changed.
 (rerunfilecheck)             Checksum: 127F9DDE7520F6BFCDEDF9C852552454;215.
  ) 
 Here is how much of TeX's memory you used:
- 14006 strings out of 478276
- 223505 string characters out of 5846490
+ 14018 strings out of 478276
+ 223637 string characters out of 5846490
  554773 words of memory out of 5000000
  31844 multiletter control sequences out of 15000+600000
- 526303 words of font info for 121 fonts, out of 8000000 for 9000
+ 526845 words of font info for 127 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  70i,9n,76p,1005b,373s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
@@ -782,7 +829,7 @@ e1/public/lm/lmri10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/
 lm/lmri7.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmri8.pf
 b></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/loc
 al/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
-Output written on LCA-DRAM.pdf (3 pages, 239547 bytes).
+Output written on LCA-DRAM.pdf (3 pages, 239357 bytes).
 PDF statistics:
  108 PDF objects out of 1000 (max. 8388607)
  77 compressed objects within 1 object stream
