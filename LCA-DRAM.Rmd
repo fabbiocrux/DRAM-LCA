@@ -35,7 +35,8 @@ footnote:
 
 abstract: |
  Distributed recycling via additive manufacturing (DRAM) in a closed-loop supply chain (CLSC) emphasizes a technical path to an emerging plastic recycling system. This technical system aims to reduce the environmental impact, and improve the  valorization of recycled waste. Major progress has recently been reported in various stages to validate the technical feasibility, environmental impact, and economic viability of the DRAM system. However, little work has been done for the preparation and recovery stages, which involve logistics and the study of the whole recycling network. Thus, this work evaluates the environmental performance of implementing a DRAM system. Using life cycle analysis (LCA), an assessment of potential impacts of 1kg of recycled PLA was carried out, examining the case of a university Fab Lab located in Nancy, France, where the DRAM strategy has been deployed. To evaluate this system, four impact categories were considered: climate change, potential eutrophication, resource depletion, and ion radiation. Three of these categories demonstrated environmentally favorable results due to the implementation of the DRAM system in comparison of a virgin supply chain. This article provides an environmental overview of the benefits and disadvantages of developing a DRAM system in a specific context.	
-
+ 
+ **Keywords:** *LCA; Distributed Recycling; Plastic; Additive Manufacturing, Circular Economy*
 journal: "Resources, Conservation & Recycling"
 date: "`r Sys.Date()`"
 bibliography: library2.bib
@@ -601,6 +602,18 @@ Additionally, the sensitivity analysis suggested minor environmental benefits if
 The results obtained by the application of the LCA methodology to the case study and its sensitivity analysis suggest the application of this recycling approach in various energy contexts (solar, wind, and nuclear), acting in parallel to the existing centralized plastic recycling networks in order to increase plastic recycling rates, which are currently low. 
 It seems interesting for future works to reduce the assumptions used with respect to the production of virgin filament and to integrate the current complexity of carrying out the plastic recycling process. 
 Furthermore, assessing the impacts of this system in various areas allows us to obtain a global vision of the performance of this system and to determine which context would be most favorable for its development.  
+
+
+
+# Acknowledgements
+This project has received funding from the European Union's Horizon 2020 research and innovation programme under the grant agreement No 869952 and from the ICEEL Carnot Institute in France under the reference « Everest Bio » project. 
+
+# Declaration of Competing Interest {.unnumbered}
+
+The authors declare that they have no known competing financial
+interests or personal relationships that could have appeared to influence the work reported in this paper.
+
+
 
 
 \newpage
