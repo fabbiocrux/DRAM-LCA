@@ -1,0 +1,208 @@
+\documentclass[]{elsarticle} %review=doublespace preprint=single 5p=2 column
+%%% Begin My package additions %%%%%%%%%%%%%%%%%%%
+
+\usepackage[hyphens]{url}
+
+  \journal{Resources, Conservation \& Recycling} % Sets Journal name
+
+\usepackage{lineno} % add
+
+\usepackage{graphicx}
+%%%%%%%%%%%%%%%% end my additions to header
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \usepackage{fontspec}
+  \ifxetex
+    \usepackage{xltxtra,xunicode}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\fi
+% use microtype if available
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+\usepackage[left=3cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={},
+            pdftitle={Life Cycle Assessment of Distributed Plastic Recycling via Additive Manufacturing},
+            colorlinks=true,
+            urlcolor=blue,
+            linkcolor=blue,
+            pdfborder={0 0 0}}
+
+\setcounter{secnumdepth}{5}
+% Pandoc toggle for numbering sections (defaults to be off)
+
+% Pandoc syntax highlighting
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+
+% tightlist command for lists without linebreak
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% From pandoc table feature
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+
+
+%\usepackage[bitstream-charter]{mathdesign}
+\usepackage{pdflscape} 
+\newcommand{\blandscape}{\begin{landscape}}
+\newcommand{\elandscape}{\end{landscape}}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+
+
+\begin{document}
+
+
+\begin{frontmatter}
+
+  \title{Life Cycle Assessment of Distributed Plastic Recycling via Additive Manufacturing}
+    \author[UL]{Cristian CACERES MENDOZA%
+  %
+  \fnref{1}}
+   \ead{cristian.caceres@univ-lorraine} 
+    \author[USACH]{Pavlo SANTANDER%
+  %
+  }
+  
+    \author[UL]{Fabio A. CRUZ SANCHEZ%
+  %
+  }
+  
+    \author[CREIDD]{Nadège TROUSSIER%
+  %
+  }
+  
+    \author[UL]{Mauricio CAMARGO%
+  %
+  }
+  
+    \author[UL]{Hakim BOUDAOUD%
+  %
+  }
+  
+      \affiliation[UL]{Université de Lorraine, ERPI, F-54000 Nancy, France}
+    \affiliation[CREIDD]{CREIDD, UR InSyTE, University of Technology of Troyes, 12 rue Marie Curie, 10010 Troyes, France}
+    \cortext[cor1]{Corresponding author}
+    \fntext[1]{Corresponding Author}
+  
+  \begin{abstract}
+  Distributed recycling via additive manufacturing (DRAM) in a closed-loop supply chain (CLSC) emphasizes a technical path to an emerging plastic recycling system. This technical system aims to reduce the environmental impact, and improve the valorization of recycled waste. Major progress has recently been reported in various stages to validate the technical feasibility, environmental impact, and economic viability of the DRAM system. However, little work has been done for the preparation and recovery stages, which involve logistics and the study of the whole recycling network. Thus, this work evaluates the environmental performance of implementing a DRAM system. Using life cycle analysis (LCA), an assessment of potential impacts of 1kg of recycled PLA was carried out, examining the case of a university Fab Lab located in Nancy, France, where the DRAM strategy has been deployed. To evaluate this system, four impact categories were considered: climate change, potential eutrophication, resource depletion, and ion radiation. Three of these categories demonstrated environmentally favorable results due to the implementation of the DRAM system in comparison of a virgin supply chain. This article provides an environmental overview of the benefits and disadvantages of developing a DRAM system in a specific context.
+  \end{abstract}
+  
+ \end{frontmatter}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{Table\_1 }\OtherTok{\textless{}{-}} \FunctionTok{tribble}\NormalTok{(}
+   \SpecialCharTok{\textasciitilde{}}\NormalTok{System, }\SpecialCharTok{\textasciitilde{}}\NormalTok{Scenario, }\SpecialCharTok{\textasciitilde{}}\NormalTok{Description,}
+   \StringTok{"Virgin Filament"}\NormalTok{, }
+   \StringTok{"1"}\NormalTok{,}
+   \StringTok{"Scenario 1 begins with the production of PLA at the NatureWorks factory in Nebraska, USA. The PLA is transported by a combination of land and sea to bring the plastic from the United States to the filament manufacturing company, called GEHR, which is located in the city of Mannheim in Germany. In Germany, electricity is produced from wind power. From this location, the virgin filament is shipped directly to Nancy by light road transport."}
+\NormalTok{)}
+
+
+\NormalTok{Table\_1 }\SpecialCharTok{\%\textgreater{}\%} 
+   \CommentTok{\#filter(Loops != \textquotesingle{}B2\textquotesingle{}) \%\textgreater{}\% }
+  \CommentTok{\#add\_row(Loops = " ", Structure = " ", Description = " ", .before = 1) \%\textgreater{}\% }
+  \FunctionTok{kbl}\NormalTok{(}\AttributeTok{caption =} \StringTok{"Scenario definition"}\NormalTok{,  }\AttributeTok{booktabs =}\NormalTok{ T,  }\AttributeTok{escape =} \ConstantTok{FALSE}\NormalTok{) }\SpecialCharTok{\%\textgreater{}\%} 
+  \FunctionTok{kable\_styling}\NormalTok{(}\AttributeTok{font\_size =} \DecValTok{11}\NormalTok{,}\AttributeTok{full\_width =}\NormalTok{ T)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{table}
+
+\caption{\label{tab:unnamed-chunk-1}Scenario definition}
+\centering
+\fontsize{11}{13}\selectfont
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedright}X>{\raggedright}X}
+\toprule
+System & Scenario & Description\\
+\midrule
+Virgin Filament & 1 & Scenario 1 begins with the production of PLA at the NatureWorks factory in Nebraska, USA. The PLA is transported by a combination of land and sea to bring the plastic from the United States to the filament manufacturing company, called GEHR, which is located in the city of Mannheim in Germany. In Germany, electricity is produced from wind power. From this location, the virgin filament is shipped directly to Nancy by light road transport.\\
+\bottomrule
+\end{tabu}
+\end{table}
+
+
+\end{document}

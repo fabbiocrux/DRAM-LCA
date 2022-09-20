@@ -1,0 +1,90 @@
+---
+title: Life Cycle Assessment of Distributed Plastic Recycling via Additive Manufacturing
+geometry: "left=3cm,right=2cm,top=2cm,bottom=2cm"
+author:
+  - name: Cristian CACERES MENDOZA
+    email: cristian.caceres@univ-lorraine
+    affiliation: UL
+    footnote: 1
+  - name: Pavlo SANTANDER
+    #email: bob@example.com
+    affiliation: USACH
+  - name: Fabio A. CRUZ SANCHEZ
+    #email: cat@example.com
+    affiliation: UL
+  - name: Nadège TROUSSIER 
+    affiliation: CREIDD    
+  - name: Mauricio CAMARGO 
+    #email: derek@example.com
+    affiliation: UL
+  - name: Hakim BOUDAOUD  
+    #email: derek@example.com
+    affiliation: UL
+address:
+  - code: UL
+    address: Université de Lorraine, ERPI, F-54000 Nancy, France
+  - code: CREIDD
+    address: CREIDD, UR InSyTE, University of Technology of Troyes, 12 rue Marie Curie, 10010 Troyes, France
+footnote:
+  - code: 1
+    text: "Corresponding Author"
+
+abstract: |
+ Distributed recycling via additive manufacturing (DRAM) in a closed-loop supply chain (CLSC) emphasizes a technical path to an emerging plastic recycling system. This technical system aims to reduce the environmental impact, and improve the  valorization of recycled waste. Major progress has recently been reported in various stages to validate the technical feasibility, environmental impact, and economic viability of the DRAM system. However, little work has been done for the preparation and recovery stages, which involve logistics and the study of the whole recycling network. Thus, this work evaluates the environmental performance of implementing a DRAM system. Using life cycle analysis (LCA), an assessment of potential impacts of 1kg of recycled PLA was carried out, examining the case of a university Fab Lab located in Nancy, France, where the DRAM strategy has been deployed. To evaluate this system, four impact categories were considered: climate change, potential eutrophication, resource depletion, and ion radiation. Three of these categories demonstrated environmentally favorable results due to the implementation of the DRAM system in comparison of a virgin supply chain. This article provides an environmental overview of the benefits and disadvantages of developing a DRAM system in a specific context.	
+
+journal: "Resources, Conservation & Recycling"
+date: "`r Sys.Date()`"
+#bibliography: library.bib
+#linenumbers: true
+numbersections: true
+csl: RCR.csl
+link-citations: yes
+linkcolor: blue
+output:
+  bookdown::pdf_book:
+    keep_tex: true
+    toc: false
+    base_format: rticles::elsevier_article
+    citation_package: default
+# output:
+#   bookdown::pdf_document2:
+#     toc: false
+#     keep_tex: true
+#     base_format: rticles::elsevier_article
+  #bookdown::html_document2: default
+  #bookdown::word_document2: default
+#output: rticles::tf_article
+always_allow_html: true
+header-includes: |
+  %\usepackage[bitstream-charter]{mathdesign}
+  \usepackage{pdflscape} 
+  \newcommand{\blandscape}{\begin{landscape}}
+  \newcommand{\elandscape}{\end{landscape}}
+  \usepackage{longtable}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(kableExtra)
+
+```
+
+```{r}
+Table_1 <- tribble(
+   ~System, ~Scenario, ~Description,
+   "Virgin Filament", 
+   "1",
+   "Scenario 1 begins with the production of PLA at the NatureWorks factory in Nebraska, USA. The PLA is transported by a combination of land and sea to bring the plastic from the United States to the filament manufacturing company, called GEHR, which is located in the city of Mannheim in Germany. In Germany, electricity is produced from wind power. From this location, the virgin filament is shipped directly to Nancy by light road transport."
+)
+
+
+Table_1 %>% 
+   #filter(Loops != 'B2') %>% 
+  #add_row(Loops = " ", Structure = " ", Description = " ", .before = 1) %>% 
+  kbl(caption = "Scenario definition",  booktabs = T,  escape = FALSE) %>% 
+  kable_styling(font_size = 11,full_width = T)
+
+```
+

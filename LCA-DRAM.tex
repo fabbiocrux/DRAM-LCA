@@ -1,9 +1,9 @@
-\documentclass[]{elsarticle} %review=doublespace preprint=single 5p=2 column
+\documentclass[12pt]{elsarticle} %review=doublespace preprint=single 5p=2 column
 %%% Begin My package additions %%%%%%%%%%%%%%%%%%%
 
 \usepackage[hyphens]{url}
 
-  \journal{An awesome journal} % Sets Journal name
+  \journal{Resources, Conservation \& Recycling} % Sets Journal name
 
 \usepackage{lineno} % add
 
@@ -41,7 +41,7 @@
 \hypersetup{breaklinks=true,
             bookmarks=true,
             pdfauthor={},
-            pdftitle={Life Cycle Assessment of Distributed Plastic Recycling via Additive Manufacturing.},
+            pdftitle={Life Cycle Assessment of Distributed Plastic Recycling via Additive Manufacturing},
             colorlinks=true,
             urlcolor=blue,
             linkcolor=blue,
@@ -97,6 +97,29 @@
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 
+%\usepackage[bitstream-charter]{mathdesign}
+\usepackage{pdflscape} 
+\newcommand{\blandscape}{\begin{landscape}}
+\newcommand{\elandscape}{\end{landscape}}
+\usepackage{longtable}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage[english,french]{babel}
+\usepackage{lineno}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
 
 
 
@@ -105,33 +128,39 @@
 
 \begin{frontmatter}
 
-  \title{Life Cycle Assessment of Distributed Plastic Recycling via Additive Manufacturing.}
-    \author[Some Institute of Technology]{Alice Anonymous%
+  \title{Life Cycle Assessment of Distributed Plastic Recycling via Additive Manufacturing}
+    \author[UL]{Cristian CACERES MENDOZA%
   %
   \fnref{1}}
-   \ead{alice@example.com} 
-    \author[Another University]{Bob Security%
+   \ead{cristian.caceres@univ-lorraine} 
+    \author[USACH]{Pavlo SANTANDER%
   %
   }
-   \ead{bob@example.com} 
-    \author[Another University]{Cat Memes%
+  
+    \author[UL]{Fabio A. CRUZ SANCHEZ%
   %
-  \fnref{2}}
-   \ead{cat@example.com} 
-    \author[Some Institute of Technology]{Derek Zoolander%
+  }
+  
+    \author[CREIDD]{Nadège TROUSSIER%
   %
-  \fnref{2}}
-   \ead{derek@example.com} 
-      \affiliation[Some Institute of Technology]{Department, Street, City, State, Zip}
-    \affiliation[Another University]{Department, Street, City, State, Zip}
+  }
+  
+    \author[UL]{Mauricio CAMARGO%
+  %
+  }
+  
+    \author[UL]{Hakim BOUDAOUD%
+  %
+  }
+  
+      \affiliation[UL]{Universite de Lorraine, ERPI, F-54000 Nancy, France}
+    \affiliation[USACH]{University of Santiago of Chile (USACH),Faculty of Engineering; Industrial Engineering Department, Chile}
+    \affiliation[CREIDD]{CREIDD, UR InSyTE, University of Technology of Troyes, 12 rue Marie Curie, 10010 Troyes, France}
     \cortext[cor1]{Corresponding author}
     \fntext[1]{Corresponding Author}
-    \fntext[2]{Equal contribution}
   
   \begin{abstract}
-  This is the abstract.
-
-  It consists of two paragraphs.
+  Distributed recycling via additive manufacturing (DRAM) in a closed-loop supply chain (CLSC) emphasizes a technical path to an emerging plastic recycling system. This technical system aims to reduce the environmental impact, and improve the valorization of recycled waste. Major progress has recently been reported in various stages to validate the technical feasibility, environmental impact, and economic viability of the DRAM system. However, little work has been done for the preparation and recovery stages, which involve logistics and the study of the whole recycling network. Thus, this work evaluates the environmental performance of implementing a DRAM system. Using life cycle analysis (LCA), an assessment of potential impacts of 1kg of recycled PLA was carried out, examining the case of a university Fab Lab located in Nancy, France, where the DRAM strategy has been deployed. To evaluate this system, four impact categories were considered: climate change, potential eutrophication, resource depletion, and ion radiation. Three of these categories demonstrated environmentally favorable results due to the implementation of the DRAM system in comparison of a virgin supply chain. This article provides an environmental overview of the benefits and disadvantages of developing a DRAM system in a specific context.
   \end{abstract}
   
  \end{frontmatter}
@@ -139,75 +168,76 @@
 \hypertarget{introduction}{%
 \section{Introduction}\label{introduction}}
 
-Since the early 20th century, the invention of plastic, or synthetic organic polymers, changed the landscape of different industrial sectors.
-The production growth increased at compound annual growth rate of 8.4\%, passing from from \(2Mt\) in 1950 to \(368Mt\) in 2019 (\protect\hyperlink{ref-Geyer2017}{Geyer et al., 2017}).
-This versatile material stands out as thanks to its easy processing and handling in shape, color, texture, thermal and barrier properties (making it ideal for food packaging) and its mechanical and chemical resistance (\protect\hyperlink{ref-Andrady2009}{Andrady and Neal, 2009}; \protect\hyperlink{ref-Thompson2009a}{Thompson et al., 2009} ).
-In consequence, 39.6\% of the demand is used for packaging industry followed by construction and automotive industry with of 20.4\%, 9.6\% respectively of the production share (\protect\hyperlink{ref-PlascticEurope2020}{Plasctic Europe -, 2020}).
-Unfortunately, the main problematic is associated with multiple environmental damages throughout its life cycle.
-Terrestrial, aquatic and atmospheric ecosystems are not exempt from the externalities of this innovation and represents a major issue (\protect\hyperlink{ref-Kumar2021}{Kumar et al., 2021}).
-Micro-, meso- and nano-plastics pollution contribute to detriement of ecosystem services such as ability to sequester carbon (\protect\hyperlink{ref-wang2022a}{Wang et al., 2022}), soil productivity (\protect\hyperlink{ref-zhang2022b}{Zhang et al., 2022}) and eutrophication (\protect\hyperlink{ref-vuori2022}{Vuori and Ollikainen, 2022}).\\
-Indeed, plastic pollution in the aquatic ecosystems such as standing waters can act as vector of toxic chemicals that affects the biogeochemical cycles.
-For example, every year 13 million tons of plastic end up in the oceans, which is equivalent to an entire garbage truck full of plastic being dumped into the sea every minute.
-A total of 150 million tons of plastic dumped into the sea to date (\protect\hyperlink{ref-pintodacosta2020}{Pinto Da Costa et al., 2020}).
+\linenumbers
+
+Since the early 20th century, the invention of plastic, or synthetic organic polymers, has changed the landscape of various industrial sectors.
+Production increased at a compound annual growth rate of 8.4\%, rising from \(2Mt\) in 1950 to \(368Mt\) in 2019 (\protect\hyperlink{ref-Geyer2017}{Geyer et al., 2017}).
+This versatile material stands out thanks to its easy processing and handling in shape, color, texture, thermal and barrier properties, and its mechanical and chemical resistance (\protect\hyperlink{ref-Andrady2009}{Andrady and Neal, 2009}; \protect\hyperlink{ref-Thompson2009a}{Thompson et al., 2009} ).
+In consequence, 39.6\% of the demand comes from the packaging industry, followed by the construction and automotive industries with 20.4\% and 9.6\% of the production share respectively (\protect\hyperlink{ref-PlascticEurope2020}{Plasctic Europe -, 2020}).
+Unfortunately, the main problem is associated with multiple environmental damages throughout its life cycle.
+Terrestrial, aquatic, and atmospheric ecosystems are not exempt from the externalities of this innovation, which represent a major issue (\protect\hyperlink{ref-Kumar2021}{Kumar et al., 2021}).
+Micro-, meso-, and nano-plastic pollution contribute to the detriment of ecosystem services such as the ability to sequester carbon (\protect\hyperlink{ref-wang2022a}{Wang et al., 2022}), soil productivity (\protect\hyperlink{ref-zhang2022b}{Zhang et al., 2022}), and eutrophication (\protect\hyperlink{ref-vuori2022}{Vuori and Ollikainen, 2022}).\\
+Indeed, plastic pollution in aquatic ecosystems such as standing waters can act as a vector of toxic chemicals that affect biogeochemical cycles.
+In 2010, Jambeck et al. (\protect\hyperlink{ref-jambeck2015}{2015}) estimated that between 1.75--4.62\% mismanaged plastic wasted reached the oceans equivalent to 4.8 to 12.7 million MT in 192 coastal countries.
+A total of 150 million tons of plastic has been dumped into the sea to date (\protect\hyperlink{ref-pintodacosta2020}{Pinto Da Costa et al., 2020}).
 The presence of these solid plastic wastes has become a threat to marine ecosystems (\protect\hyperlink{ref-shi2022}{Shi et al., 2022}).
-Additionally, the transfer of plastic into the food chain is a clear danger to animal and, certainly, to humans as well.
-Therefore, the degrowth production of plastics is one of great importance in the long term.
+Additionally, the transfer of plastic into the food chain is a clear danger to animals, and certainly to humans as well.
+Therefore, reducing the production of plastics is of great importance in the long term.
 
-The adequate use and disposal of plastics is a wicked problem characterized by high complexity and multifaceted feedback loops.
-A systemic view is needed of the entire plastics value chain including petrochemical companies (\protect\hyperlink{ref-DeVargasMores2018}{de Vargas Mores et al., 2018}; \protect\hyperlink{ref-Iles2013}{Iles and Martin, 2013}), converters (\protect\hyperlink{ref-Paletta2019}{Paletta et al., 2019}), brand owners or manufacturers (\protect\hyperlink{ref-Gong2020}{Gong et al., 2020}; \protect\hyperlink{ref-Ma2020}{Ma et al., 2020}), retailers and consumers (\protect\hyperlink{ref-Confente2020}{Confente et al., 2020}; \protect\hyperlink{ref-Filho2021}{Filho et al., 2021}; \protect\hyperlink{ref-Friedrich2020}{Friedrich, 2020}), and recycling operators (\protect\hyperlink{ref-Huysveld2019}{Huysveld et al., 2019}; \protect\hyperlink{ref-Pazienza2020}{Pazienza and De Lucia, 2020}), as well as the influences of policy-makers in wider economic and societal changes (\protect\hyperlink{ref-Paletta2019}{Paletta et al., 2019}).
-The European Union (EU) intends to develop a circular economy (CE) based on a production and consumption model with key activities such as: ``share'', ``reduce'', ``reuse'', ``repair'', ``renew'' and ``recycle'' the existing materials and products as many times as possible, in order to create added value by extending the life cycle of products (European Commission 2018).
-Several critics have been raised given the thermodynamic constraints based on biodiversity and thermosdynamics arguments for a fully circular (\protect\hyperlink{ref-corvellec2021}{Corvellec et al., 2021}; \protect\hyperlink{ref-Giampietro2020}{Giampietro and Funtowicz, 2020}).
-Nevertheless, as part of the European Green Pact presented on March 20, 2020, it is planned to establish an action plan involving the circular economy, mainly promoting the development of sustainable products, waste reduction and empowering citizens as a key player (\protect\hyperlink{ref-EC2018}{European Commission, 2018}).
-Considering the French context,a target was established that by 2025 all plastic waste should be recycled but currently recycling statistics in France reaches levels close only to 25\%.
-Despite these ambitious objectives, plastics recycling has been historically an expensive process due to the inherent separate collection, transportation, processing and remanufacturing (\protect\hyperlink{ref-Hopewell2009}{Hopewell et al., 2009}; \protect\hyperlink{ref-Singh2017b}{Singh et al., 2017}).
-The economies of scale have been leveraged to reduce these costs With centralized and global recycling chains (\protect\hyperlink{ref-Anzalone2013}{Kreiger et al., 2013}; \protect\hyperlink{ref-Kreiger2013}{Kreiger and Pearce, 2013}).
-Nevertheless, in order to carry out this recycling system, multiple steps need to be accomplished that integrate the sorting phase, long-distance transport, waste treatment and remanufacturing.
-The high costs of these processes and the low selling price (mainly due to the dependence of recycled plastic price on the petroleum and virgin prices) seldom generate benefits and often requires costly public subsidies (Hamilton et al., 2019).
-In addition, these centralized plastic manufacturing and recycling lines lead to soil, water and air pollution {[}Arena et al. (\protect\hyperlink{ref-Arena2003}{2003}); {]} (Arena et al., 2003; Reich, 2005).
-Added to the current problem into the plastic recycling network, we can highlight that generally supply chains are under increasing pressure from various stakeholders to make decisions from a sustainable perspective, that is to say, based on economic, environmental and social objectives (Hassini et al., 2012).
+Adequate use and disposal of plastics is a wicked problem, characterized by high complexity and multifaceted feedback loops.
+A systemic view of the entire plastics value chain is needed, including petrochemical companies (\protect\hyperlink{ref-DeVargasMores2018}{de Vargas Mores et al., 2018}; \protect\hyperlink{ref-Iles2013}{Iles and Martin, 2013}), converters (\protect\hyperlink{ref-Paletta2019}{Paletta et al., 2019}), brand owners or manufacturers (\protect\hyperlink{ref-Gong2020}{Gong et al., 2020}; \protect\hyperlink{ref-Ma2020}{Ma et al., 2020}), retailers and consumers (\protect\hyperlink{ref-Confente2020}{Confente et al., 2020}; \protect\hyperlink{ref-Filho2021}{Filho et al., 2021}; \protect\hyperlink{ref-Friedrich2020}{Friedrich, 2020}), and recycling operators (\protect\hyperlink{ref-Huysveld2019}{Huysveld et al., 2019}; \protect\hyperlink{ref-Pazienza2020}{Pazienza and De Lucia, 2020}), as well as the influences of policy-makers on wider economic and societal changes (\protect\hyperlink{ref-Paletta2019}{Paletta et al., 2019}).
+The European Union (EU) intends to develop a circular economy (CE) based on a production and consumption model with key activities such as ``sharing,'' ``reducing,'' ``reusing,'' ``repairing,'' ``renewing,'' and ``recycling'' the existing materials and products as many times as possible, in order to create added value by extending the life cycle of products (\protect\hyperlink{ref-EC2018}{European Commission, 2018}; \protect\hyperlink{ref-matthews2020}{Matthews et al., 2020}).
+Several criticisms have been raised, given the thermodynamic constraints based on biodiversity and thermodynamics, arguments for a fully circular economy (\protect\hyperlink{ref-corvellec2021}{Corvellec et al., 2021}; \protect\hyperlink{ref-Giampietro2020}{Giampietro and Funtowicz, 2020}).
+Nevertheless, as part of the European Green Pact presented on March 20, 2020, there are plans to establish an action plan involving the circular economy, mainly promoting the development of sustainable products, reducing waste, and empowering citizens as key players (\protect\hyperlink{ref-EC2018}{European Commission, 2018}).
+Considering the French context, a target was established that by 2025 all plastic waste should be recycled, but currently recycling statistics in
+France are only reaching levels close to 25\%.
+Despite these ambitious objectives, plastics recycling has historically been an expensive process due to the inherent separate collection, transportation, processing, and remanufacturing (\protect\hyperlink{ref-Hopewell2009}{Hopewell et al., 2009}; \protect\hyperlink{ref-Singh2017b}{Singh et al., 2017}).
+The economies of scale have been leveraged to reduce these costs with centralized and global recycling chains (\protect\hyperlink{ref-Anzalone2013}{Kreiger et al., 2013}; \protect\hyperlink{ref-Kreiger2013}{Kreiger and Pearce, 2013}).
+Nevertheless, in order to carry out this recycling system, multiple steps need to be accomplished that integrate the sorting phase, long-distance transport, waste treatment, and remanufacturing. The high costs of these processes and the low selling price (mainly due to the dependence of the recycled plastic price on the petroleum and virgin prices) seldom generate benefits and often require costly public subsidies (\protect\hyperlink{ref-hamilton2019}{Hamilton and Steven, 2019}).
+In addition, these centralized plastic manufacturing and recycling lines lead to soil, water, and air pollution (\protect\hyperlink{ref-Arena2003}{Arena et al., 2003}; \protect\hyperlink{ref-carlssonreich2005}{Carlsson Reich, 2005}).
+In addition to the current problems in the plastic recycling network, we can highlight that supply chains in general are under increasing pressure from various stakeholders to make decisions from a sustainable perspective; in other words, based on economic, environmental, and social objectives (\protect\hyperlink{ref-hassini2012}{Hassini et al., 2012}).
 
-The additive manufacturing technology (also known as 3D printing) enables the potential of distributed manufacturing (DM) towards high value-added products (Kreiger et al., 2014).
-Nowadays, the accessibility of freely available designs has increased significantly, together with the development of open-source technologies and the supply of raw materials (virgin and recycled filaments) for 3D printing (Hunt et al., 2015).
+Additive manufacturing technology (also known as 3D printing) enables the potential of distributed manufacturing (DM) for products of high added value (\protect\hyperlink{ref-BonninRoca2019}{Bonnín Roca et al., 2019}; \protect\hyperlink{ref-Petersen2017a}{Petersen and Pearce, 2017}; \protect\hyperlink{ref-Woern2017}{Woern and Pearce, 2017}).
+Nowadays, the accessibility of freely available designs has increased significantly, together with the development of open-source technologies and the supply of raw materials (virgin and recycled filaments) for 3D printing (\protect\hyperlink{ref-Hunt2015}{Hunt et al., 2015}).
 Distributed manufacturing is defined as the decentralization of production through the installation of multiple production factories with similar technology distributed geographically (\protect\hyperlink{ref-BonninRoca2019}{Bonnín Roca et al., 2019}).
-It is characterized by local production that thrives on the synergy of the emerging capabilities of digital manufacturing, information and communication technologies, and the peer-to-peer production approach (\protect\hyperlink{ref-Kostakis2018}{Kostakis et al., 2018}; \protect\hyperlink{ref-Kostakis2013b}{Kostakis, 2013}; \protect\hyperlink{ref-Pavlo2018}{Pavlo et al., 2018}).
-Indeed, DM offers the possibility to decentralize production structures, the flexibility to reflect local customer needs, lower logistics costs, shorter lead times and lower environmental impacts (\protect\hyperlink{ref-Petersen2017a}{Petersen and Pearce, 2017}; \protect\hyperlink{ref-Woern2017}{Woern and Pearce, 2017}).
+It is characterized by local production that thrives on the synergy of the emerging capabilities of digital manufacturing, information, and communication technologies, and the peer-to-peer production approach (\protect\hyperlink{ref-Kostakis2018}{Kostakis et al., 2018}; \protect\hyperlink{ref-Kostakis2013b}{Kostakis, 2013}; \protect\hyperlink{ref-Pavlo2018}{Pavlo et al., 2018}).
+Indeed, DM offers the possibility to decentralize production structures, the flexibility to reflect local customer needs, lower logistics costs, shorter lead times, and lower environmental impacts (\protect\hyperlink{ref-Petersen2017a}{Petersen and Pearce, 2017}; \protect\hyperlink{ref-Woern2017}{Woern and Pearce, 2017}).
 Based on the DM paradigm, a new possibility of plastic recycling supported by additive manufacturing, called distributed recycling by additive manufacturing (DRAM), has emerged in the literature (\protect\hyperlink{ref-CruzSanchez2020}{Cruz Sanchez et al., 2020}; \protect\hyperlink{ref-Hart2018}{Hart et al., 2018}).
-Promoted by the development of 3D printing in an open-source context, DRAM is proposed to provide recycled plastic feedstock to the different 3D printers in a DM context.
-This recycled plastic can be in the form of filament, and recent works are dealing with the validation of granular form (\protect\hyperlink{ref-Arthur2020}{Alexandre et al., 2020}; \protect\hyperlink{ref-JustinoNetto2021}{Justino Netto et al., 2021}).
-The 3D printing feedstock is then obtained via plastic recycling at local scale using open-source machines, such as shredders and extruders (\protect\hyperlink{ref-Zhong2018}{Zhong and Pearce, 2018}).
+Promoted by the development of 3D printing in an open-source context, DRAM is proposed to provide recycled plastic feedstock to the various 3D printers in a DM context.
+This recycled plastic can take the form of a filament, and recent works have dealt with the validation of a granular form (\protect\hyperlink{ref-Arthur2020}{Alexandre et al., 2020}; \protect\hyperlink{ref-JustinoNetto2021}{Justino Netto et al., 2021}).
+The 3D printing feedstock is then obtained via plastic recycling on a local scale using open-source machines such as shredders and extruders (\protect\hyperlink{ref-Zhong2018}{Zhong and Pearce, 2018}).
 
-The main feature of DRAM is the reduction of the impact in the collection phase, favoring shorter and simpler supply chains (Despeisse et al., 2017; Garmulewicz et al., 2018).
-Several works have focused on the validation of DRAM approach from the technical, economic and environmental perspective (Cruz Sanchez et al., 2020).
-Cruz Sanchez et al., (2020) conducted a systematic literature review about the level of development of the different DRAM stages from the technical perspective.
-Their results shown that significant progresses have been made in the stages of compounding, feedstock, printing and quality assessment.
-However, they also shown that on despite of that little work has been done for the preparation and recovery stages.
-In other, Santander et al., (2020) proposed an initial model to study the economic and environmental feasibility of DRAM from the logistic point of view. Their results have shown the feasibility of the system in economic terms and in CO2 emissions avoided implementing the system.
-From the environmental point of view, DRAM and DM approaches have been evaluated mainly using the Life Cycle Assessment (LCA) approach.
+The main feature of DRAM is the reduction of the impact in the collection phase, favoring shorter and simpler supply chains (\protect\hyperlink{ref-Despeisse2016}{Despeisse et al., 2017}; \protect\hyperlink{ref-Garmulewicz2018}{Garmulewicz et al., 2018}).
+Several works have focused on the validation of the DRAM approach from a technical (\protect\hyperlink{ref-lopez2022}{López et al., 2022}; \protect\hyperlink{ref-Mohammed2022}{Mohammed et al., 2022}), economic, and environmental perspective (\protect\hyperlink{ref-canado2022}{Cañado et al., 2022}; \protect\hyperlink{ref-Wu2021a}{Wu et al., 2022}).
+Cruz Sanchez et al. (\protect\hyperlink{ref-CruzSanchez2020}{2020}) conducted a systematic literature review to examine the level of development of the different DRAM stages from a technical perspective.
+Their results show that significant progress has been made in the stages of compounding, feedstock, printing and quality assessment.
+However, they also show that little work has been done for the preparation and recovery stages in spite of this.
+In another work, Santander et al. (\protect\hyperlink{ref-Santander2020}{2020}) proposed an initial model to study the economic and environmental feasibility of DRAM from a logistical point of view. Their results have shown the feasibility of the system in economic terms and in the reduction of CO2 emissions when implementing the system.
+From an environmental point of view, the DRAM and DM approaches have been evaluated mainly using the Life Cycle Assessment (LCA) approach.
 
 LCA is one of the most widely used environmental impact assessment methodologies. LCA corresponds to an ISO 14040 certified methodology, which has even been used for environmental regulations in different parts of the world.
-In the context of DM/DRAM-related research, LCA has been applied in different ways. For example, Kreiger \& Pearce (2013) conducted a life cycle analysis (LCA), in terms of energy consumed and emissions involved, to compare centralized manufacturing and distributed manufacturing using RepRaps (3D printers) for the distributed production of goods.
+In the context of DM/DRAM-related research, LCA has been applied in various ways.
+For example, Kreiger and Pearce (\protect\hyperlink{ref-Kreiger2013}{2013}) conducted a life cycle analysis, in terms of energy consumed and emissions involved, to compare centralized manufacturing and distributed manufacturing using RepRaps (3D printers) for the distributed production of goods.
 The results showed that the use of Poly Lactic Acid (PLA) in a distributed manufacturing context reduces energy demand and system emissions, which can be greatly diminished if a solar photovoltaic (PV) array is used.
-Later, Kreiger et al.~(2014) explored the environmental benefit of distributed recycling using open-source extruders (RecycleBots), which have been used to obtain 3D printing filament from post-consumer goods.
-Focusing on High Density Poly-Ethylene (HDPE) as material, they performed an LCA of energy consumption and CO2 emissions to compare distributed recycling to standard centralized recycling.
+Later, Kreiger et al. (\protect\hyperlink{ref-Kreiger2014}{2014}) explored the environmental benefit of distributed recycling using open-source extruders (RecycleBots), which have been used to obtain 3D printing filament from post-consumer goods.
+Focusing on the use of High Density Poly-Ethylene (HDPE) for the material, they performed an LCA of energy consumption and CO2 emissions to compare distributed recycling to standard centralized recycling.
 Their results showed that distributed recycling of HDPE uses less energy than the best-case scenario investigated for centralized recycling, and it can achieve savings of over 80\%.
-Kerdlap et al.~(2021), through a simulation approach, quantified the plastic life-cycle environmental impact of small-scale sorting and recycling systems compared to traditional large-scale centralized systems in Singapore, with the aim of determining under what conditions distributed recycling can be environmentally beneficial.
+Kerdlap et al. (\protect\hyperlink{ref-Kerdlap2021}{2021}), through a simulation approach, quantified the plastic life-cycle environmental impact of small-scale sorting and recycling systems in comparison to traditional large-scale centralized systems in Singapore, with the aim of determining the conditions under which distributed recycling can be environmentally beneficial.
 Their results showed that the environmental impacts in terms of climate change, water depletion and terrestrial ecotoxicity were higher compared to the centralized systems.
-However, these results are mainly related to the means of transport considered for each system (commercial van for distributed recycling and large trucks for centralized recycling), since the use large trucks decrease the total impact.
+Their results showed that the environmental impacts in terms of climate change, water depletion, and terrestrial ecotoxicity were higher compared to the centralized systems. However, these results are mainly related to the means of transport considered for each system (commercial van for distributed recycling and large trucks for centralized recycling), since the use of large trucks decreases the total impact.
 
-In conclusion, even though different studies have been conducted aiming to validate the distributed recycling approach from the technical, economic, and environmental perspective, only the work of Kreiger et al. (\protect\hyperlink{ref-Kreiger2014}{2014}) is focused on the environmental assessment of distributed recycling for 3D printing purposes.
-However, their research is limited to the consideration of energy and CO2 emissions as environmental indicators. Therefore, major effort needs to be made in order to evaluate, in a holistic way, the environmental impacts of the global DRAM value chain.
-Therefore, the contribution of this research lies in the evaluation of environmental impacts from the implementation of distributed recycling via additive manufacturing approach in a territory.
-Specifically, an environmental evaluation using life cycle assessment (LCA) is conducted comparing a distributed plastic recycling system to produce 3D filament with a traditional production system of virgin plastic filament for 3D printing.
-From this evaluation, the environmental impacts (positives or negatives) of implementing DRAM have been analyzed and discussed.
+In conclusion, even though different studies have been conducted aiming to validate the distributed recycling approach from a technical, economic, and environmental perspective, only the work of Kreiger et al. (\protect\hyperlink{ref-Kreiger2014}{2014}) is focused on the environmental assessment of distributed recycling for 3D printing purposes.
+However, their research is limited to the consideration of energy and \(CO_{2}\) emissions as environmental indicators. Therefore, major efforts need to be made in order to evaluate, in a holistic way, the environmental impacts of the global DRAM value chain.
+Thus the contribution of this research lies in the evaluation of environmental impacts from the implementation of distributed recycling via an additive manufacturing approach in a territory. Specifically, an environmental evaluation using life cycle assessment (LCA) is conducted, comparing a distributed plastic recycling system to produce 3D filament with a traditional production system of virgin plastic filament for 3D printing. From this evaluation, the environmental impacts (positives or negatives) of implementing DRAM have been analyzed and discussed.
 
-This article is structured as follows.\\
-Section 2 presents the system (case study) evaluated.
-Section 3 materials and methods, where life cycle analysis methodology is explained.
-Section 4 presents the life cycle analysis performed. Section 5 presents the discussion of results.
-Finally, Section 6 presents the main conclusions and recommendations for future works.
+This article is structured as follows. Section \ref{lf2l} presents the system (case study) evaluated.
+Section \ref{MM} materials and methods, where life cycle analysis methodology is explained.
+Section \ref{LCA} presents the life cycle analysis performed.
+Section \ref{Discussion} presents the discussion of results.
+Finally, Section \ref{conclusions} presents the main conclusions and recommendations for future works.
 
-\hypertarget{case-study-the-lorraine-fab-living-lab}{%
-\subsection{Case study: The Lorraine Fab Living Lab}\label{case-study-the-lorraine-fab-living-lab}}
+\hypertarget{lf2l}{%
+\section{Case study: The Lorraine Fab Living Lab}\label{lf2l}}
 
 In order to achieve the objectives of this research, a case study with the following characteristics was selected:
 
@@ -220,12 +250,12 @@ In order to achieve the objectives of this research, a case study with the follo
   Existence of a space dedicated to the recycling of plastic for 3D printing.
 \end{enumerate}
 
-Under these considerations, the selected context for this study was the Lorraine Fab living Lab (LF2L), an innovation space located in Nancy, France. This university laboratory has been selected mainly for the following reasons:
-(1) Innovation spaces such as Fablabs, Maker spaces, design factories among others have proven to be favorable environments for eco-innovations facilitating the implementation of circular economy strategies.
+Under these considerations, the selected context for this study was the Lorraine Fab living Lab (LF2L)\footnote{https://lf2l.fr/projects/green-fablab/}, an innovation space located in Nancy, France. This university laboratory has been selected mainly for the following reasons:
+(1) Innovation spaces such as Fablabs, Maker spaces, design factories among others have proven to be favorable environments for eco-innovations facilitating the implementation of circular economy strategies (\protect\hyperlink{ref-coskun2022}{Coskun et al., 2022}).
 Previous studies show that these collaborative environments foster sustainable experimental learning, provide methodologies and tools for the co-creation of circular solutions, drive the transition toward sustainable smart cities, foster the creation of new sustainable business models, and facilitate knowledge exchange on circular solutions (\protect\hyperlink{ref-Kasmi2021}{Kasmi et al., 2021}).
 (2) Since 2014, the LF2L has been studying the possibility of recycling, in their installations, PLA for reuse in 3D printing.
 The pilot recycling process present in this center has been developed in the research work of Cruz Sanchez et al. (\protect\hyperlink{ref-CruzSanchez2017}{2017}), and the possibility of implementing this recycling process in the region is being evaluated.
-(3) An investment program has been launched by the Grand Est region to promote the use of 3D printers in the schools and high schools of the region (Robine \& Tomasini, 2018).
+(3) An investment program has been launched by the Grand Est region to promote the implementation of Fablabs, and consequently the use of 3D printers, in the schools and high schools of the region (\protect\hyperlink{ref-canope2022}{Canopé, 2022}).
 The goal of this investment plan is to ensure that all the schools and high schools in the region will be equipped with this technology in the near future.
 This corresponds to the future scenario evaluated in the work of Santander et al. (\protect\hyperlink{ref-Santander2020}{2020}).
 However, in contrast to Santander et al. (\protect\hyperlink{ref-Santander2020}{2020}), in our research work a complete environmental evaluation of the scenario is carried out.
@@ -236,9 +266,9 @@ For this study, the context described above has been simplified in terms of geog
 \item
   Consideration is given to only one type of plastic waste to be recycled.
   Specifically, PLA has been considered.
-  This is mainly because PLA is one of the most used plastics in 3D printing (\protect\hyperlink{ref-Bikas2016}{Bikas et al., 2016}).
+  This is mainly because PLA is one of the most used plastics in 3D printing (\protect\hyperlink{ref-bikas2016}{Bikas et al., 2016}).
   For the plastic waste sources, PLA waste from schools and high schools (who have 3D printers) has been considered.
-  PLA has been selected as feedstock material due to the fact that (1) in Europe, PLA is considered a ``miscellaneous product'' (EuRIC, 2020) because of its classification as a Bioplastic and because, at least in Europe, there is no defined recycling strategy for these types of plastics so they are usually sent to a landfill or are incinerated;
+  PLA has been selected as feedstock material due to the fact that (1) in Europe, PLA is considered a ``miscellaneous product'' (\protect\hyperlink{ref-maga2019}{Maga et al., 2019}) because of its classification as a Bioplastic and because, at least in Europe, there is no defined recycling strategy for these types of plastics so they are usually sent to a landfill or are incinerated;
   and (2) PLA is one of the most widely used plastics in 3D printing.
 \item
   The recycling system modeled does not consider the sorting, separation, and cleaning process because the collected material corresponds to non-contaminated waste: for example, discarded 3D printing parts used for prototyping.
@@ -248,20 +278,23 @@ For this study, the context described above has been simplified in terms of geog
   Each school and high school requires 1 kg of filament per month.
 \item
   The 3D printing activities carried out in these establishments have the specific purpose of making product prototypes and mock-ups, which allows them to generate testing activities, design evaluations, functional evaluations, and corrections.
-  Therefore, after a short lifetime, 3D printing can be a source of significant amounts of plastic waste due to printed parts that do not possess the desired quality, unused raw materials, or products that have already fulfilled their life cycle (\protect\hyperlink{ref-Alexandre2020}{\textbf{Alexandre2020?}}).
+  Therefore, after a short lifetime, 3D printing can be a source of significant amounts of plastic waste due to printed parts that do not possess the desired quality, unused raw materials, or products that have already fulfilled their life cycle (\protect\hyperlink{ref-Jaafarnia2021}{Jaafarnia et al., 2021}).
 \end{itemize}
 
-\hypertarget{material-and-methods}{%
-\subsection{Material and methods}\label{material-and-methods}}
+\hypertarget{MM}{%
+\section{Material and methods}\label{MM}}
 
-The chosen methodology is Life Cycle Assessment (LCA) because, unlike other analytical methodologies with an environmental focus, such as Material Flow Analysis (MFA), Substances Flow Analyses, and Environmental Risk, it allows us to evaluate the environmental impacts of the system value chain to be modeled (\protect\hyperlink{ref-Andersson2016}{\textbf{Andersson2016?}}).
+The chosen methodology is Life Cycle Assessment (LCA) because, unlike other analytical methodologies with an environmental focus, such as Material Flow Analysis (MFA), Substances Flow Analyses, and Environmental Risk, it allows us to evaluate the environmental impacts of the system value chain to be modeled (\protect\hyperlink{ref-Mahmud2021}{Mahmud et al., 2021}; \protect\hyperlink{ref-Pryshlakivsky2021}{Pryshlakivsky and Searcy, 2021}).
 
-The LCA represents a different tool and different techniques created to determine in an effective and fast way the results to help with managerial decision-making in environmental terms and in the deepening of the sustainable development policy (\protect\hyperlink{ref-Guinee202}{\textbf{Guinee202?}}).
+The LCA represents a different tool and different techniques created to determine in an effective and fast way the results to help with managerial decision-making in environmental terms and in the deepening of the sustainable development policy (\protect\hyperlink{ref-guinee2002}{Guinée, 2002}).
 Life Cycle Assessment (LCA) is a structured, comprehensive and internationally standardized method in accordance with ISO 14040 and 14044.
-It defines all the steps for its use: goal and scope definition, inventory analysis, impact assessment, and interpretation (Pennington et al., 2004).
-LCA is a tool for quantitative evaluation of materials, energy flows, and the potential impact of products, services, or technologies (Dehghanian and Mansour, 2009).
-The analysis takes into account the entire life cycle of a product: from resource extraction, through production, use, and recycling, to the disposal of the remaining waste (ILCD handbook, 2010). Several researchers have adopted an LCA-based methodology to characterize environmental considerations for a range of pollutants (Graf, 2019).
-A life cycle analysis has four main stages: the definition of objectives and approach (Stage 1), inventory analysis (Stage 2), impact assessment (Stage 3), and interpretation (Stage 4)
+It defines all the steps for its use: goal and scope definition, inventory analysis, impact assessment, and interpretation (\protect\hyperlink{ref-pennington2004}{Pennington et al., 2004}).
+LCA is a tool for quantitative evaluation of materials, energy flows, and the potential impact of products, services, or technologies (\protect\hyperlink{ref-dehghanian2009}{Dehghanian and Mansour, 2009}).
+The analysis takes into account the entire life cycle of a product: from resource extraction, through production, use, and recycling, to the disposal of the remaining waste (\protect\hyperlink{ref-ILCD2011}{IES, 2010}).
+LCA is considered a legitimate environmental methodology that enables systems analysis for waste policy and strategy (\protect\hyperlink{ref-gontard2022}{Gontard et al., 2022}).
+
+A life cycle analysis has four main stages:
+the definition of objectives and approach (Stage 1), inventory analysis (Stage 2), impact assessment (Stage 3), and interpretation (Stage 4)
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -279,11 +312,11 @@ The LCA methodology is mostly used in an iterative way, allowing a better defini
 
 In the following sections, an LCA is presented for DRAM using the Lorraine Fab Living Lab as a case study.
 
-\hypertarget{lca-application-and-results}{%
-\subsection{LCA application and results}\label{lca-application-and-results}}
+\hypertarget{LCA}{%
+\section{LCA application and results}\label{LCA}}
 
 \hypertarget{goal-and-scope-definition}{%
-\subsubsection{Goal and Scope Definition}\label{goal-and-scope-definition}}
+\subsection{Goal and Scope Definition}\label{goal-and-scope-definition}}
 
 The main objective of this life cycle analysis is to compare the potential impacts produced by a DRAM chain with the impacts produced by a traditional chain of virgin plastic filament for 3D printing.
 
@@ -297,25 +330,45 @@ As mentioned above, this study will compare the environmental impact of two PLA 
 \hypertarget{system-boundary}{%
 \subsubsection{System boundary}\label{system-boundary}}
 
-Figure 2 shows the two systems compared in this study and the processes integrated into the life cycle analysis. As can be observed, there are three different boundaries represented by the colors green, blue, and red. The first boundary (green box) corresponds to the Biosphere, which represents everything related to nature, such as raw materials from natural resources, ecosystems, and solar energy. The second boundary (dark blue box) corresponds to the Technosphere limit, representing human activity (e.g.~use of electricity, fuel, etc.). Here, we can observe all the material flows that are considered for the life cycle analysis, the flows between processes, or the flows that are part of the functional unit mentioned above. Finally, the boundary in a light blue color represents the limit of the services and processes taken into consideration in this study. On the one hand, in the upper process flow, we can observe the processes considered in the system to produce filament from virgin plastic. The process starts with PLA production, which is followed by PLA transportation, filament production, and finally product delivery. On the other hand, Fig. 2 shows the recycling process enclosed in the orange box. The process starts with the collection of waste produced by schools and high schools, then the plastic recycling process, the production of filament, and the delivery of filament are carried out.
+Figure 2 shows the two systems compared in this study and the processes integrated into the life cycle analysis.
+As can be observed, there are three different boundaries represented by the colors green, blue, and red.
+The first boundary (green box) corresponds to the Biosphere, which represents everything related to nature, such as raw materials from natural resources, ecosystems, and solar energy.
+The second boundary (dark blue box) corresponds to the Technosphere limit, representing human activity (e.g.~use of electricity, fuel, etc.).
+Here, we can observe all the material flows that are considered for the life cycle analysis, the flows between processes, or the flows that are part of the functional unit mentioned above.
+Finally, the boundary in a light blue color represents the limit of the services and processes taken into consideration in this study. On the one hand, in the upper process flow, we can observe the processes considered in the system to produce filament from virgin plastic.
+The process starts with PLA production, which is followed by PLA transportation, filament production, and finally product delivery.
+On the other hand, Fig. \ref{fig:figure1} shows the recycling process enclosed in the orange box.
+The process starts with the collection of waste produced by schools and high schools, then the plastic recycling process, the production of filament, and the delivery of filament are carried out.
 
-\hypertarget{selected-impact-categories}{%
-\subsubsection{Selected impact categories}\label{selected-impact-categories}}
+\begin{figure}[H]
 
-The objective of performing a life cycle analysis is to determine and evaluate the potential environmental impacts produced at different stages in the life cycle of a product, service, activity, or process. However, it is extremely difficult to identify, a priori, the categories of impacts in which the system under study is most detrimental (climate change, eutrophication, etc.).
-Two major domains were identified which are present in each of the scenarios evaluated. First, the production of plastics (in this case bioplastics) compared to the recycling of plastics. Second, the integration of these materials in additive manufacturing as raw material for the subsequent printing of products.
-In order to define the indicators which are more pertinent to the DRAM approach, two literature reviews have been performed. In these literature reviews, studies of LCA evaluation applied to bioplastics (such as PLA) and additive manufacturing technology (3D printing) have been analyzed.
+{\centering \includegraphics[width=1\linewidth,]{Figures/Figure-1} 
 
-Considering the studies related to LCA applied to bioplastics evaluation, the literature review conducted by Bishop et al.~(2021) evaluated the trends of the impact categories used across all the articles related to this topic. This review explored 44 LCA articles that compare the performance of selected bioplastics with the performance of petrochemical plastics. The results obtained from this literature review have shown that the most used impact category for bioplastics evaluation is climate change, followed by potential eutrophication variations, resource depletion, human toxicity, photochemical oxidant formation, ozone depletion, ecotoxicity, particulate matter formation, energy consumption, land use, and water consumption.
+}
 
-Regarding additive manufacturing technology, a literature review has been conducted, where articles related to the application of LCA in the context of additive manufacturing have been searched and analyzed. Then, the impact categories considered among the four articles found were analyzed. The results of the literature review have shown that the most evaluated impact category is the cumulative energy demand (CED) of the system (Cerdas et al., 2017; Kellens et al., 2017; Kreiger and Pearce, 2013; Quinlan et al., 2017). In addition, these authors have also considered climate change, potential eutrophication, and human toxicity as the main impact categories included in the life cycle assessment.
+\caption{System limits for life cycle analysis}\label{fig:figure1}
+\end{figure}
 
-Finally, after analyzing the two domains (LCA applied to bioplastics and LCA applied to additive manufacturing), it was decided to use the predominant impact categories in each of the industries, namely climate change, potential eutrophication, and resource depletion (fossil and water).
+\hypertarget{impactcat}{%
+\subsubsection{Selected impact categories}\label{impactcat}}
+
+The objective of performing a life cycle analysis is to determine and evaluate the potential environmental impacts produced at different stages in the life cycle of a product, service, activity, or process.
+However, it is quite difficult to identify, a priori, the categories of impacts in which the system under study is most detrimental (climate change, eutrophication, etc.).
+To resolve, it was decided to analyse relevant literature of LCA applied on the bioplastics and additive manufacturing separatly.
+First, the production of plastics (in this case bioplastics) compared to the recycling of plastics.
+Second, the integration of these materials in additive manufacturing as raw material for the subsequent printing of products.
+
+Concerning the plastic perspective, Bishop et al. (\protect\hyperlink{ref-Bishop2021}{2021}) compared the impact of bioplastics (such as PLA) regarding the petrochemical plastics considering the impact categories across 44 relevant articles that used LCA evaluation.
+Their results pointed out the most used impact category for bioplastics evaluation is climate change, followed by potential eutrophication variations, resource depletion, human toxicity, photochemical oxidant formation, ozone depletion, ecotoxicity, particulate matter formation, energy consumption, land use, and water consumption.\\
+On the other hand, it was found that the the cumulative energy demand (CED) of the system is the most evaluated LCA impact category (\protect\hyperlink{ref-cerdas2017}{Cerdas et al., 2017}; \protect\hyperlink{ref-kellens2017}{Kellens et al., 2017}; \protect\hyperlink{ref-Kreiger2013}{Kreiger and Pearce, 2013} ; \protect\hyperlink{ref-quinlan2017}{Quinlan et al., 2017}) in the context of additive manufacturing. In addition, It was also considered climate change, potential eutrophication, and human toxicity as the main impact categories included in the LCA.
+In conclusion, it was decided to use the predominant impact categories in each of the industries, namely climate change, potential eutrophication, and resource depletion (fossil and water) after analyzing the LCA results of the two domains .
 
 \hypertarget{assumptions-and-limitations}{%
 \subsubsection{Assumptions and limitations}\label{assumptions-and-limitations}}
 
-The realization of a full LCA involves the collection of information and data related to the different processes, flows, and activities. Due to the difficulty of obtaining the necessary data, it is permissible to formulate hypotheses to partially make up for the lack of data, on the condition that the hypotheses used, and the conditions under which they are formulated, are made transparent.
+The realization of a full LCA involves the collection of information and data related to the different processes, flows, and activities.
+Due to the difficulty of obtaining the necessary data, it is permissible to formulate hypotheses to partially make up for the lack of data, on the condition that the hypotheses used, and the conditions under which they are formulated, are made transparent.
+
 The hypothesis formulation was mainly used to model the virgin plastic filament production system. The main hypotheses used are based on:
 
 \begin{itemize}
@@ -324,7 +377,7 @@ The hypothesis formulation was mainly used to model the virgin plastic filament 
 \item
   Location of filament manufacturer: Due to the uncertainty about filament production, two companies with different locations that are engaged in the production of plastic filaments have been modeled.
 \item
-  Filament production machine: The machine PEEK 3d Printer Filament Production Line has been considered, which corresponds to the machine used by the two filament manufacturers considered.
+  Filament production machine: The machine PEEK 3d Printer Filament Production Line\footnote{More information about the machine can be found at www.accextrusion.com/product/peek-3d-printer-filament-production-line.html (Accessed on 09/09/2022)} has been considered, which corresponds to the machine used by the two filament manufacturers considered.
 \item
   Performance of the filament production machine: The machine selected to carry out the filament production process has a range of transformation from plastic pellets to filament. The range of the machine chosen for the evaluation has an output between 20 and 25 kg of filament per hour. This range directly affects power consumption.
 \item
@@ -333,20 +386,50 @@ The hypothesis formulation was mainly used to model the virgin plastic filament 
   Transportation of raw material and filament (virgin and recycled): The different options for methods of raw material transportation and filament transportation are considered in the evaluation.
 \end{itemize}
 
-Based on these hypotheses, two scenarios were created to model the possible operation of the virgin plastic filament production system (see Table 1). A third scenario represents the distributed recycling system for filament production, so the complete system is modeled with information obtained from the LF2L.
+Based on these hypotheses, two scenarios were created to model the possible operation of the virgin plastic filament production system (see Table \ref{tab:Table1}).
+A third scenario represents the distributed recycling system for filament production, so the complete system is modeled with information obtained from the LF2L.
+
+\begin{figure}[H]
+
+{\centering \includegraphics[width=0.9\linewidth,]{Figures/Scenarios} 
+
+}
+
+\caption{Representation of the 3 scenarios}\label{fig:figure}
+\end{figure}
+
+\begingroup\fontsize{9}{11}\selectfont
+
+\begin{longtable}[t]{>{\raggedright\arraybackslash}p{1cm}>{\raggedright\arraybackslash}p{14cm}}
+\caption{\label{tab:Table1}Scenario definition}\\
+\toprule
+Scenario & Description\\
+\midrule
+\addlinespace[1em]
+\multicolumn{2}{l}{\textbf{Virgin Filament}}\\
+\hspace{1em}1 & Scenario 1 begins with the production of PLA at the NatureWorks factory in Nebraska, USA. The PLA is transported by a combination of land and sea to bring the plastic from the United States to the filament manufacturing company, called GEHR, which is located in the city of Mannheim in Germany. In Germany, electricity is produced from wind power. From this location, the virgin filament is shipped directly to Nancy by light road transport.\\
+\hspace{1em}2 & factory in Nebraska, USA. The pellets of PLA are transported by road to the filament manufacturing company, called 3D-Fuel, which is located in Fargo, USA. In the United States, electricity is produced from natural gas. From the USA, the filament is shipped directly to Luxembourg by air freight. Then the filament is transported to Nancy using a lightweight vehicle.\\
+\midrule
+\addlinespace[1em]
+\multicolumn{2}{l}{\textbf{Recycled Filament}}\\
+\hspace{1em}3 & This scenario starts with the collection of PLA 3D printing waste from the schools and high schools. The PLA waste is transported to the recycling point (Lorraine Fab Living Lab) using light road transport. At this center, the size reduction process and the extrusion process necessary to produce the recycled filament are performed. The recycled filament is then delivered to the same schools and by the same means of transport as where the waste was collected.\\
+\bottomrule
+\end{longtable}
+\endgroup{}
 
 \hypertarget{life-cycle-inventory-analysis-lcia}{%
-\subsubsection{Life Cycle Inventory Analysis (LCIA)}\label{life-cycle-inventory-analysis-lcia}}
+\subsection{Life Cycle Inventory Analysis (LCIA)}\label{life-cycle-inventory-analysis-lcia}}
 
 \hypertarget{data-source}{%
 \subsubsection{Data source}\label{data-source}}
 
 To obtain the necessary data, different data sources were used to carry out the LCIA.
-On the one hand, for virgin PLA filament production there are various life cycle analyses published by NatureWorks (Vink et al., 2003; Vink and Davies, 2015), where the results have been incorporated into the EcoInvent database.
+On the one hand, for virgin PLA filament production there are various life cycle analyses published by NatureWorks (\protect\hyperlink{ref-vink2003}{Vink et al., 2003}; \protect\hyperlink{ref-vink2015}{Vink and Davies, 2015}), where the results have been incorporated into the EcoInvent database.
 These articles helped us to understand the PLA production process, considering the production center in Nebraska, USA.
 For virgin PLA filament manufacturing, NatureWorks proposes a catalog of customers who manufacture filament from PLA produced by the company, which facilitated the modeling of the supply chain to sell its product in the city of Nancy, France.
 
-On the other hand, for the plastic recycling process the data concerning the input/output materials and the machines used in the recycling process were obtained directly from the Lorraine Fab Living Lab and from the thesis works conducted at the ERPI laboratory related to DRAM (Cruz Sanchez et al., 2017; Santander et al., 2020). These data allowed us to model and understand the recycling network, its main functions, and its limitations in consideration of the case study presented in Section 3.
+On the other hand, for the plastic recycling process the data concerning the input/output materials and the machines used in the recycling process were obtained directly from the Lorraine Fab Living Lab and from the thesis works conducted at the ERPI laboratory related to DRAM (\protect\hyperlink{ref-CruzSanchez2020}{Cruz Sanchez et al., 2020}, \protect\hyperlink{ref-CruzSanchez2017}{2017}; \protect\hyperlink{ref-Santander2020}{Santander et al., 2020}) (see the Appendix A).
+These data allowed us to model and understand the recycling network, its main functions, and its limitations in consideration of the case study presented in Section \ref{MM}.
 
 \hypertarget{impact-assessment-lcia}{%
 \subsection{Impact Assessment (LCIA)}\label{impact-assessment-lcia}}
@@ -357,24 +440,109 @@ On the other hand, for the plastic recycling process the data concerning the inp
 \hypertarget{choice-of-software}{%
 \paragraph{Choice of software}\label{choice-of-software}}
 
-The software used to perform this life cycle analysis was OpenLCA 1.10.3. The main reason for its use was because it is open-source software, so it's easy for any user to acquire and use. This software makes it possible to perform full life cycle analysis and carbon footprint analysis, allowing us to install a wide variety of databases. For this case, the database used was the EcoInvent 3.5.
+The software used to perform this life cycle analysis was OpenLCA 1.10.3.
+The main reason for its use was because it is open-source software.
+This software makes it possible to perform full life cycle analysis and carbon footprint analysis, allowing us to install a wide variety of databases. For this case, the database used was the EcoInvent 3.5.
 
 \hypertarget{choice-of-calculation-methodology-and-impact-indicators}{%
 \paragraph{Choice of calculation methodology and impact indicators}\label{choice-of-calculation-methodology-and-impact-indicators}}
 
-In analyzing the impact methodologies and considering the selected impact categories for this study (see Section 4.1.3), ReCiPe (Global-Hierarchist version) has been chosen as the impact calculation methodology. The ReCiPe method (Goedkoop et al., 2009) has been chosen mainly because it is widely used in various areas of research (Dekker et al., 2020). In addition, ReCiPe is an LCIA method that is harmonized in terms of modeling principles and choices, offering results at both the midpoint and endpoint level (Goedkoop et al., 2009). In addition, it is used for various life cycle analyses in the area of additive manufacturing with a hierarchical cultural perspective (Saade et al., 2020).
+In analyzing the impact methodologies and considering the selected impact categories for this study (see Section \ref{impactcat}), ReCiPe (Global-Hierarchist version) has been chosen as the impact calculation methodology.
+The ReCiPe method (\protect\hyperlink{ref-goedkoop2009}{Goedkoop et al., 2009}) has been chosen mainly because it is widely used in various areas of research (\protect\hyperlink{ref-dekker2020}{Dekker et al., 2020}).
+In addition, ReCiPe is an LCIA method that is harmonized in terms of modeling principles and choices, offering results at both the midpoint and endpoint level (\protect\hyperlink{ref-goedkoop2009}{Goedkoop et al., 2009}).
+In addition, it is used for various life cycle analyses in the area of additive manufacturing with a hierarchical cultural perspective (\protect\hyperlink{ref-Saade2020}{Saade et al., 2020}).
 Finally, the set of impact categories chosen are presented in Table 2.
 
-\hypertarget{impact-studies}{%
-\subsubsection{Impact studies}\label{impact-studies}}
+\begin{footnotesize}
+\begin{table}
+\caption{ Table of impact indicators and their unit of measure}
+\label{table2}
+\centering
+\begin{tabu} to 0.95\linewidth {X[0.5,l]  X[0.5,l] | X[1,l] | X[0.5,l]}
+\toprule
+\textbf{Impact Category} & & \textbf{Methodology} & \textbf{Unit} \\
+\midrule 
 
-Table 3 presents the results of the comparison, showing for the virgin and recycled scenario the amount of impact that is generated in each impact category evaluated. In addition, the percentage reduction (comparing the recycling scenarios with the virgin scenario) is presented. To construct this table, the best virgin scenario (least impactful) was considered for comparison. As a result, it can be observed that the production of filament from recycled plastic has a significant advantage in five of the six impact categories (climate change, fossil depletion, freshwater eutrophication, marine eutrophication, and water depletion), which corresponds to the categories that are considered essential for DRAM. In each of the categories there is a reduction of at least 97\% compared to the impact produced by the virgin scenario. For the Ion Radiation category, however, the recycling system has a greater impact than the virgin scenario (best scenario in this case). In the recycling scenario, the amount of ion radiation equals approximately 2.8 times the emissions of the virgin scenario.
+ Climate Change  & &    ReCiPe (H) &    $Kg CO_{2} -  Eq$ \\ \midrule
 
-Figure 3 presents the impacts obtained for each scenario studied. As can be observed, the distributed recycling system to produce 3D filament (Recycling Scenario or Scenario 3) is the least impactful scenario, taking into account the five categories considered pertinent to DRAM.
+Resources Depletion & Fossil Depletion &    ReCiPe (H) &    $Kg Oil - Eq$ \\\cmidrule{2-4}
 
-The result shows that, in each impact category, the recycling scenario pollutes less than 5\% compared to the two scenarios that integrate the production of virgin plastic. In other words, the recycling system to produce 3D filament manages to reduce emissions and impacts by at least 95\%.
+&   Water Depletion &  ReCiPe (H) & $Kg P - Eq$ \\ \midrule
 
-Regarding the other impact categories present in the ReCiPe methodology, it is necessary to emphasize that the recycling system has a significant impact on the category that measures the radiation of ions equivalent to Uranium 235. As can be seen in Figure 3, even Scenario 3, which takes recycling into account, reaches a high radioactive emission compared to the scenarios that use virgin filament. Scenario 1 represents approximately 25\% of the impact produced by the recycling system, while Scenario 2 (pessimistic scenario of virgin filament) represents approximately 60\% of the impact produced by Scenario 3.
+Eutrophication Potential &  Freshwater Eutrophication & ReCiPe (H) &    $Kg N - Eq$ \\\cmidrule{2-4}
+    & Marine Eutrophication &  ReCiPe (H)  &    $m3$ \\
+
+\bottomrule 
+\end{tabu}
+\end{table}
+\end{footnotesize}
+
+\hypertarget{impact}{%
+\paragraph{Impact studies}\label{impact}}
+
+Table \ref{tab:Table3} presents the results of the comparison, showing for the virgin and recycled scenario the amount of impact that is generated in each impact category evaluated.
+In addition, the percentage reduction (comparing the recycling scenarios with the virgin scenario) is presented.
+To construct this table, the best virgin scenario (least impactful) was considered for comparison.
+As a result, it can be observed that the production of filament from recycled plastic has a significant advantage in five of the six impact categories (climate change, fossil depletion, freshwater eutrophication, marine eutrophication, and water depletion), which corresponds to the categories that are considered essential for DRAM.
+In each of the categories there is a reduction of at least 97\% compared to the impact produced by the virgin scenario.
+For the Ion Radiation category, however, the recycling system has a greater impact than the virgin scenario (best scenario in this case).
+In the recycling scenario, the amount of ion radiation equals approximately 2.8 times the emissions of the virgin scenario.
+
+\begin{table}
+
+\caption{\label{tab:Table3}Scenario definition}
+\centering
+\fontsize{9}{11}\selectfont
+\begin{tabular}[t]{>{\raggedright\arraybackslash}p{3cm}>{\raggedright\arraybackslash}p{1.5cm}>{\raggedright\arraybackslash}p{1.3cm}>{\raggedright\arraybackslash}p{1.7cm}>{\raggedright\arraybackslash}p{1.7cm}>{\raggedright\arraybackslash}p{1.5cm}>{\raggedright\arraybackslash}p{1.5cm}}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{1}{c}{ } & \multicolumn{4}{c}{Impact of each process} & \multicolumn{1}{c}{ } \\
+\cmidrule(l{3pt}r{3pt}){3-6}
+\textbf{Impact categories} & \textbf{Scenarios} & \textbf{PLA Production} & \textbf{Supply Transport} & \textbf{Filament production} & \textbf{Delivery} & \textbf{Total}\\
+\midrule
+ & Virgin [1-2] & 337.36 & {}[5.69- 18.19] & {}[1.94 – 32.60] & {}[54.43 – 785.24] & {}[411.92- 1160.88]\\
+\cmidrule{2-7}
+\multirow{-2}{3cm}{\raggedright\arraybackslash \textbf{Climate change (kg CO2-Eq)}} & Recycled & - & 5.4523 & 2.289 & 4.957 & 12.699 (-97\%)\\
+\cmidrule{1-7}
+ & Virgin [1-2] & 96.79 & {}[2.30 - 6.96] & {}[0.50 - 13.13] & {}[19.58-285.14] & {}[123.83 - 397.36]\\
+\cmidrule{2-7}
+\multirow{-2}{3cm}{\raggedright\arraybackslash \textbf{Fossil Depletion (kg oil-Eq)}} & Recycled & - & 1.961 & 0.615 & 1.783 & 4.359 (-97\%)\\
+\cmidrule{1-7}
+ & Virgin [1-2] & 0.14 & {}[0.001- 0.002] & {}[0.001-0.003] & {}[0.011-0.024] & {}[0.159 0.168]\\
+\cmidrule{2-7}
+\multirow{-2}{3cm}{\raggedright\arraybackslash \textbf{Freshwater Eutrophication (kg P-Eq)}} & Recycled & - & 0.0011 & 0.0016 & 0.0010 & 0.004(-98\%)\\
+\cmidrule{1-7}
+ & Virgin [1-2] & 26.51 & {}[0.45-1.49] & {}[0.12-0.15] & {}[4.46-52.78] & {}[32.61-79.86]\\
+\cmidrule{2-7}
+\multirow{-2}{3cm}{\raggedright\arraybackslash \textbf{Ionizing Radiation (kg U235-Eq)}} & Recycled & - & 0.476 & 122.98 & 0.406 & 123.83 (+74\%)\\
+\cmidrule{1-7}
+ & Virgin [1-2] & 0.89 & {}[0.004-0.041] & {}[0.003-0.009] & {}[0.09-1.30] & {}[1.02-2.20]\\
+\cmidrule{2-7}
+\multirow{-2}{3cm}{\raggedright\arraybackslash \textbf{Marine Eutrophication (kg N-Eq)}} & Recycled & - & 0.009 & 0.011 & 0.008 & 0.029 (-97\%)\\
+\cmidrule{1-7}
+ & Virgin [1-2] & 37.3669 & {}[0.005-0.028] & {}[0.008-0.112] & {}[0.064-0.439] & {}[37.46-37.92]\\
+\cmidrule{2-7}
+\multirow{-2}{3cm}{\raggedright\arraybackslash \textbf{Water Depletion (m3)}} & Recycled & - & 0.006 & 0.546 & 0.006 & 0.56 (-99\%)\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Figure \ref{fig:figure3} presents the impacts obtained for each scenario studied. As can be observed, the distributed recycling system to produce 3D filament (Recycling Scenario or Scenario 3) is the least impactful scenario, taking into account the five categories considered pertinent to DRAM.
+
+The result shows that, in each impact category, the recycling scenario pollutes less than 5\% compared to the two scenarios that integrate the production of virgin plastic.
+In other words, the recycling system to produce 3D filament manages to reduce emissions and impacts by at least 95\%.
+
+Regarding the other impact categories present in the ReCiPe methodology, it is necessary to emphasize that the recycling system has a significant impact on the category that measures the radiation of ions equivalent to Uranium 235.
+As can be seen in Figure \ref{fig:figure3}, even Scenario 3, which takes recycling into account, reaches a high radioactive emission compared to the scenarios that use virgin filament.
+Scenario 1 represents approximately 25\% of the impact produced by the recycling system, while Scenario 2 (pessimistic scenario of virgin filament) represents approximately 60\% of the impact produced by Scenario 3.
+
+\begin{figure}[H]
+
+{\centering \includegraphics[width=0.8\linewidth,]{Figures/Figure-3} 
+
+}
+
+\caption{Comparison of the impact profile of each of the studied scenarios}\label{fig:figure3}
+\end{figure}
 
 \hypertarget{interpretation-and-recommendations}{%
 \subsection{Interpretation and Recommendations}\label{interpretation-and-recommendations}}
@@ -382,56 +550,131 @@ Regarding the other impact categories present in the ReCiPe methodology, it is n
 \hypertarget{sensitivity-analysis}{%
 \subsubsection{Sensitivity analysis}\label{sensitivity-analysis}}
 
-In order to evaluate the response of each of the systems to context variations, a sensitivity analysis has been conducted. The sensitivity analysis consists of analyzing the results of the system against the variation of one of the parameters. This activity allows us to identify the key contextual parameters that affect the results of the evaluation. These results can be favorable as well as negative, being able to identify the effect called transfer of impacts. This effect consists in the fact that while in a specific impact category a reduction in the level of emissions is achieved through a change of parameters (technology, raw material, process, type of energy), at the same time there is one or multiple impacts in which an increase in the emissions or impacts produced can be reflected. This effect (impact transfer) is fundamental when proposing improvements in products or services.
+In order to evaluate the response of each of the systems to context variations, a sensitivity analysis has been conducted.
+The sensitivity analysis consists of analyzing the results of the system against the variation of one of the parameters.
+This activity allows us to identify the key contextual parameters that affect the results of the evaluation.
+These results can be favorable as well as negative, being able to identify the effect called transfer of impacts.
+This effect consists in the fact that while in a specific impact category a reduction in the level of emissions is achieved through a change of parameters (technology, raw material, process, type of energy), at the same time there is one or multiple impacts in which an increase in the emissions or impacts produced can be reflected.
+This effect (impact transfer) is fundamental when proposing improvements in products or services.
 In this study, to have a better visualization of the transfer of impacts, the complete set of impacts evaluated by the ReCiPe (H) methodology have been taken into account.
 
 \hypertarget{location-of-pla-production}{%
 \paragraph{Location of PLA production}\label{location-of-pla-production}}
 
-A recent project by Total Corbion has been proposed in Grandpuits (Seine-et-Marne). The purpose of this project is to build a polylactic acid (PLA) production plant with a capacity of up to 100,000 tons per year. This first European plant is to be installed in France . Considering this, a sensitivity analysis has been performed for this scenario. In this new scenario, the PLA production facility is situated in France at Total's Grandpuits facility.
-Figure 4 shows the result of the change in the location of the PLA production plant (from the United States to France). To represent the sensitivity of the system, only the first scenario was considered because it has a logistics chain with less impact than Scenario 2. Thus, it is interesting to see the changes with respect to this scenario. As can be observed, the result has a relatively small variation. Even though an improvement was obtained in some categories, such as particle formation, use of fossil raw materials, or ozone depletion, the result is relatively small. The impact was not greatly reduced with respect to Scenario 1 because PLA production is the main source of impact in this scenario.
+A recent project by Total Corbion has been proposed in Grandpuits (Seine-et-Marne).
+The purpose of this project is to build a polylactic acid (PLA) production plant with a capacity of up to 100,000 tons per year.
+This first European plant is to be installed in France \footnote{https://www.usinenouvelle.com/article/bientot-du-pla-made-in-france.N1216857}.
+Considering this, a sensitivity analysis has been performed for this scenario.
+In this new scenario, the PLA production facility is situated in France at Total's Grandpuits facility.
 
-In conclusion, it was observed that there is a slight improvement in the environmental performance of the production system, but it is not sufficiently attractive with respect to the level of impact obtained in the recycling of plastic to produce filament. To obtain a significant improvement, it is necessary to continue optimizing the PLA production process, which is enabled mainly by technological advances. This can be a great solution only if it manages to identify a slight transfer of impacts.
+Figure \ref{fig:figure4} shows the result of the change in the location of the PLA production plant (from the United States to France).
+To represent the sensitivity of the system, only the first scenario was considered because it has a logistics chain with less impact than Scenario 2.
+Thus, it is interesting to see the changes with respect to this scenario.
+As can be observed, the result has a relatively small variation.
+Even though an improvement was obtained in some categories, such as particle formation, use of fossil raw materials, or ozone depletion, the result is relatively small.
+The impact was not greatly reduced with respect to Scenario 1 because PLA production is the main source of impact in this scenario.
+
+In conclusion, it was observed that there is a slight improvement in the environmental performance of the production system, but it is not sufficiently attractive with respect to the level of impact obtained in the recycling of plastic to produce filament.
+To obtain a significant improvement, it is necessary to continue optimizing the PLA production process, which is enabled mainly by technological advances.
+This can be a great solution only if it manages to identify a slight transfer of impacts.
+
+\begin{figure}[H]
+
+{\centering \includegraphics[width=0.9\linewidth,]{Figures/Figure-4} 
+
+}
+
+\caption{Comparison of the impact profile of each of the studied scenarios}\label{fig:figure4}
+\end{figure}
 
 \hypertarget{energy-source}{%
 \paragraph{Energy Source}\label{energy-source}}
 
-The results presented in Section 4.3.2 have shown that distributed plastic recycling to produce filament demonstrates broad environmental advantages compared to production from virgin plastic. In almost all impact categories it had an impact of less than 5\% of the impact caused by virgin filament production systems, except in the category related to the emission of radioactive particles. These emissions are closely related to the production of electricity from nuclear energy, which in France accounts for 68\% of the total energy produced in the country. In 2020, renewable energies represented 23.4\% of the total electrical energy and increased strongly compared to 2019. Wind power production increased by 17.3\% and solar power production by 2.3\% . For this reason, it is key to see the response of the system and the possible transfer of impacts when using other forms of energy production, including mainly the use of clean energy (solar and wind).
-Figure 5 presents the environmental performance of the recycling system using three different types of energy (nuclear, wind, and solar).
+The results presented in Section \ref{impact} have shown that distributed plastic recycling to produce filament demonstrates broad environmental advantages compared to production from virgin plastic.
+In almost all impact categories it had an impact of less than 5\% of the impact caused by virgin filament production systems, except in the category related to the emission of radioactive particles.
+These emissions are closely related to the production of electricity from nuclear energy, which in France accounts for 77.5\% of the total energy produced in the country.
+Currently, the french electricity system produce is 77.7\% nuclear, 9.7\% hydro power, 3.8\% wind power, 3.5\% natural gas, 2.2\% coal, 1.5\% solar PV, 1.3\% biofuels and wastes, and 0.3\% oil (\protect\hyperlink{ref-pereira2020}{Pereira and Marques, 2020}).
+For this reason, it is key to see the response of the system and the possible transfer of impacts when using other forms of energy production, including mainly the use of clean energy (solar and wind).
+Figure \ref{fig:figure5} presents the environmental performance of the recycling system using three different types of energy (nuclear, wind, and solar).
 
-As can be observed in Figure 5, solar energy and wind energy have different responses with respect to the use of nuclear energy. On the one hand, the solar energy (shown in yellow) considerably improves the environmental performance of the system, especially in the category of radioactive emissions, which are reduced by approximately 98\%. It is important to remember that this category is the critical point in the comparison of the two filament production systems. In addition, a considerable improvement can be observed in the categories that consider ozone depletion and water use, with reductions of more than 70\%. No transfer of impacts is observed in any of the impacts evaluated. According to the impacts assessed, there is no transfer of impacts to other categories, this being a more environmentally friendly option than the use of nuclear energy. On the other hand, wind energy (shown in blue) also achieves significant reductions in the categories of impacts related to radioactive ion emissions, ozone depletion, and water use. However, on this occasion, a transfer of significant impacts can be observed since the impact category measuring, for example, ecotoxicity in water (marine and fresh) increases its impact by 80\% with respect to the use of nuclear energy, while the need for metals increases by 40\%.
+\begin{figure}[H]
 
-In conclusion, the use of solar energy may seem the best option among the energy sources evaluated. This type of energy presents a circumstantial improvement in the critical point of the use of nuclear energy without suffering a transfer of impacts. The use of wind energy does not have the same result; although it manages to reduce radioactive emissions, the use of this type of energy increases the toxicity present in the water, which can directly affect various ecosystems as well as human health. To determine if this type of energy is suitable for the recycled filament production system, it is necessary to deepen the comparison between these two ways of producing electricity.
+{\centering \includegraphics[width=0.9\linewidth,]{Figures/Figure-5} 
 
-\hypertarget{discussion}{%
-\section{Discussion}\label{discussion}}
+}
 
-Distributed recycling via additive manufacturing (DRAM) has been considered by different authors as an alternative to increase the low plastic recycling rates in the world. Several researchers have studied this recycling approach from a technical and logistical perspective (Cruz Sanchez et al., 2020; Santander et al., 2020). Other studies that evaluated the environmental impact of this recycling approach only took the recovery and recycling stages into consideration (M. A. Kreiger et al.~2014; Kerdlap et al.~2021). However, an assessment of the positive and negative environmental impacts of implementing this plastic recycling approach with consideration for the whole chain (recovery, recycling, and use) had not been conducted, until now.
-In this study, a life cycle assessment has been conducted in order to evaluate the environmental impact of implementing a DRAM system to produce recycled PLA filament, compared to traditional virgin PLA filament production systems. In order to carry out this case study, a favorable context was defined in which a considerable amount of plastic is treated, 3D printing is widely used, and there is a dedicated space for plastic recycling via 3D printing.
+\caption{Sensitivity analysis respect to the type of energy used}\label{fig:figure5}
+\end{figure}
 
-The results of the environmental assessment of this system have shown that the recycling system for filament production reduces the impacts produced by the best scenario of filament production from virgin plastic by at least 97\%. The categories of impacts considered were greenhouse gas emissions (climate change), consumption of fossil materials (fossil depletion), overfeeding of aquatic ecosystems (potential eutrophication), and water consumption (water depletion). On the other hand, there is a transfer of significant impacts that is not considered in the ``relevant'' impacts of the production system, since, due to the use of nuclear energy to produce electricity in France, the emissions of radioactive ions increased by 280\%, which means that the recycling process has worse environmental performance in this category.
-Despite the assumptions made, the scenarios related to virgin filament production have a major drawback, which is that their most impactful or most influential phase in multiple categories is the production of plastic. For this reason, the change in the location of the production plant only produces a minor environmental improvement. This means that, in order to improve the environmental performance of these systems, it is essential to develop new technologies and optimize the polylactide acid production processes.
-For the recycling system, the sensitivity analysis performed has shown that the integration of solar energy can greatly reduce the impacts produced using nuclear energy, making it an extremely viable alternative for the recycling system. Wind energy, on the other hand, has a significant transfer of impact to the toxicity present in different types of water, which does not allow us to define in the first instance whether it would be more convenient. In addition, the results showed that the DRAM approach is advantageous considering other energy sources (other than nuclear) that are used in other parts of the world.
-The environmental assessment carried out in this study extends the results obtained by M. A. Kreiger et al.~(2014) and Kerdlap et al.~(2021), showing, based on LCA indicators, the environmental benefits posed by distributed plastic recycling, and more specifically, by implementing a DRAM system. In addition, the environmental benefits are independent of the energy source considered.
-Therefore, this study indicates that, in environmental terms and under certain conditions, the implementation of DRAMs would have a positive impact on the area of application and could have positive impacts in other contexts. Most notably, to the best of our knowledge, this is the first study to investigate the multidimensional environmental impact of implementing DRAM. The results show a huge potential, in environmental terms, of implementing DRAM and suggest the application of this recycling approach in different contexts, mainly due to the results obtained when considering various energy sources.
+As can be observed in Figure \ref{fig:figure5}, solar energy and wind energy have different responses with respect to the use of nuclear energy.
+On the one hand, the solar energy (shown in yellow) considerably improves the environmental performance of the system, especially in the category of radioactive emissions, which are reduced by approximately 98\%.
+It is important to remember that this category is the critical point in the comparison of the two filament production systems.
+In addition, a considerable improvement can be observed in the categories that consider ozone depletion and water use, with reductions of more than 70\%.
+No transfer of impacts is observed in any of the impacts evaluated.
+According to the impacts assessed, there is no transfer of impacts to other categories, this being a more environmentally friendly option than the use of nuclear energy.
+On the other hand, wind energy (shown in blue) also achieves significant reductions in the categories of impacts related to radioactive ion emissions, ozone depletion, and water use.
+However, on this occasion, a transfer of significant impacts can be observed since the impact category measuring, for example, ecotoxicity in water (marine and fresh) increases its impact by 80\% with respect to the use of nuclear energy, while the need for metals increases by 40\%.
+
+In conclusion, the use of solar energy may seem the best option among the energy sources evaluated.
+This type of energy presents a circumstantial improvement in the critical point of the use of nuclear energy without suffering a transfer of impacts.
+The use of wind energy does not have the same result; although it manages to reduce radioactive emissions, the use of this type of energy increases the toxicity present in the water, which can directly affect various ecosystems as well as human health.
+To determine if this type of energy is suitable for the recycled filament production system, it is necessary to deepen the comparison between these two ways of producing electricity.
+
+\hypertarget{Discussion}{%
+\section{Discussion}\label{Discussion}}
+
+Distributed recycling via additive manufacturing (DRAM) is been considered by different authors as an additional path to increase the low plastic recycling rates given the major democratization of material extrusion based systems (\protect\hyperlink{ref-Beltran2021}{Beltrán et al., 2021}; \protect\hyperlink{ref-Pinho2020}{Pinho et al., 2020}; \protect\hyperlink{ref-Wu2021a}{Wu et al., 2022}).
+Several researchers have studied this recycling approach from a technical and logistical perspective (\protect\hyperlink{ref-Mohammed2022}{Mohammed et al., 2022}; \protect\hyperlink{ref-Stefaniak2022}{Stefaniak et al., 2022}; \protect\hyperlink{ref-Wu2021a}{Wu et al., 2022}).
+Other studies that evaluated the environmental impact of this recycling approach only took the recovery and recycling stages into consideration (\protect\hyperlink{ref-Kerdlap2021}{Kerdlap et al., 2021}; \protect\hyperlink{ref-Kreiger2014}{Kreiger et al., 2014}; \protect\hyperlink{ref-Kreiger2013}{Kreiger and Pearce, 2013}).
+However, an assessment of the positive and negative environmental impacts of implementing this plastic recycling approach with consideration for the whole chain (recovery, recycling, and use) had not been conducted, until now.
+In this study, a life cycle assessment has been conducted in order to evaluate the environmental impact of implementing a DRAM system to produce recycled PLA filament, compared to traditional virgin PLA filament production systems.
+In order to carry out this case study, a favorable context was defined in which a considerable amount of plastic is treated, 3D printing is widely used, and there is a dedicated space for plastic recycling via 3D printing.
+
+The results of the environmental assessment of this system have shown that the recycling system for filament production reduces the impacts produced by the best scenario of filament production from virgin plastic by at least 97\%.
+The categories of impacts considered were greenhouse gas emissions (climate change), consumption of fossil materials (fossil depletion), overfeeding of aquatic ecosystems (potential eutrophication), and water consumption (water depletion).
+On the other hand, there is a transfer of significant impacts that is not considered in the relevant impacts of the production system, since, due to the use of nuclear energy to produce electricity in France, the emissions of radioactive ions increased by 280\%, which means that the recycling process has worse environmental performance in this category.
+Despite the assumptions made, the scenarios related to virgin filament production have a major drawback, which is that their most impactful or most influential phase in multiple categories is the production of plastic.
+For this reason, the change in the location of the production plant only produces a minor environmental improvement.
+This means that, in order to improve the environmental performance of these systems, it is essential to develop new technologies and optimize the polylactide acid production processes.
+
+For the recycling system, the sensitivity analysis performed has shown that the integration of solar energy can greatly reduce the impacts produced using nuclear energy, making it an extremely viable alternative for the recycling system.
+Wind energy, on the other hand, has a significant transfer of impact to the toxicity present in different types of water, which does not allow us to define in the first instance whether it would be more convenient.
+In addition, the results showed that the DRAM approach is advantageous considering other energy sources (other than nuclear) that are used in other parts of the world.
+The environmental assessment carried out in this study extends the results obtained by Kreiger et al. (\protect\hyperlink{ref-Kreiger2014}{2014}) and Kerdlap et al. (\protect\hyperlink{ref-Kerdlap2021}{2021}), showing, based on LCA indicators, the environmental benefits posed by distributed plastic recycling, and more specifically, by implementing a DRAM system.
+In addition, the environmental benefits are independent of the energy source considered.
+Therefore, this study indicates that, in environmental terms and under certain conditions, the implementation of DRAMs would have a positive impact on the area of application and could have positive impacts in other contexts.
+Most notably, to the best of our knowledge, this is the first study to investigate the multidimensional environmental impact of implementing DRAM.
+The results show a huge potential, in environmental terms, of implementing DRAM and suggest the application of this recycling approach in different contexts, mainly due to the results obtained when considering various energy sources.
 However, this study is not exempt of limits to be considered in future works. For this reason, the following recommendations can be followed:
 
 \begin{itemize}
-\tightlist
 \item
   In order to reduce the complexity of the system studied, in different hypotheses, such as in the recycling system, we considered only one material collected in a clean state and fixed demand from schools. However, in the virgin production system the entire supply and production chain was formulated through hypotheses. Future research could conduct an environmental assessment incorporating these complexities.
 \item
   This study is limited to the comparison of DRAM with virgin filament production. It would be interesting to evaluate the environmental performance of a DRAM system with respect to other possible life-ends for PLA, such as incineration, landfill, or even a system where virgin material is incorporated into the recycling process. This is because the mixture of virgin and recycled material allows for considerable improvement in filament properties and printing quality.
 \item
-  Finally, this evaluation was carried out by placing the DRAM system in the specific context of a developed country. It could be interesting to perform the same analysis in developing countries, which currently have major problems in the treatment of plastic waste (Ritchie et al., 2018).
+  Finally, this evaluation was carried out by placing the DRAM system in the specific context of a developed country. It could be interesting to perform the same analysis in developing countries, which currently have major problems in the treatment of plastic waste.
 \end{itemize}
 
 \hypertarget{conclusions}{%
 \section{Conclusions}\label{conclusions}}
 
-Using the LCA methodology, this work has demonstrated the environmental benefits of a distributed closed-loop supply chain network for plastic recycling using open-source 3D printing technologies in a specific context.
+Using the LCA methodology, this work evaluated the environmental benefits of a distributed closed-loop supply chain network for plastic recycling using open-source 3D printing technologies in a specific context.
+The use of polylactic acid (PLA) in the context of Nancy, France considered in the analysis based on three scenarios (two virgin and one recycled).
+The impact categories studied were climate change, resources depletion (fossil and water) and eutrophication potential (freshwater and marine).
+The results shown that distributed plastic recycling to produce filament demonstrates broad environmental advantages compared to production from virgin plastic.
+The comparison shows a reduction of up to 97\% in most of the impacts considered for the study.
+However, given the french electrical mix, the recycling system has a greater impact than the virgin scenario for the Ion Radiation category.
+Additionally, the sensitivity analysis suggested minor environmental benefits if the production of virgin PLA is placed from USA to France.
+
 The results obtained by the application of the LCA methodology to the case study and its sensitivity analysis suggest the application of this recycling approach in various energy contexts (solar, wind, and nuclear), acting in parallel to the existing centralized plastic recycling networks in order to increase plastic recycling rates, which are currently low.
-As already mentioned in the discussion section, it would be interesting for future works to reduce the assumptions used with respect to the production of virgin filament and to integrate the current complexity of carrying out the plastic recycling process. Furthermore, assessing the impacts of this system in various areas allows us to obtain a global vision of the performance of this system and to determine which context would be most favorable for its development.
+It seems interesting for future works to reduce the assumptions used with respect to the production of virgin filament and to integrate the current complexity of carrying out the plastic recycling process.
+Furthermore, assessing the impacts of this system in various areas allows us to obtain a global vision of the performance of this system and to determine which context would be most favorable for its development.
+
+\newpage
+
+\hypertarget{references}{%
+\section{References}\label{references}}
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
@@ -444,17 +687,38 @@ Andrady, A.L., Neal, M. a, 2009. Applications and societal benefits of plastics.
 \leavevmode\vadjust pre{\hypertarget{ref-Arena2003}{}}%
 Arena, U., Mastellone, M.L., Perugini, F., 2003. Life {Cycle} assessment of a plastic packaging recycling system. The International Journal of Life Cycle Assessment 8, 92--98. \url{https://doi.org/10.1007/BF02978432}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Bikas2016}{}}%
-Bikas, H., Stavropoulos, P., Chryssolouris, G., 2016. Additive manufacturing methods and modeling approaches: {A} critical review. International Journal of Advanced Manufacturing Technology 83, 389--405. \url{https://doi.org/10.1007/s00170-015-7576-2}
+\leavevmode\vadjust pre{\hypertarget{ref-Beltran2021}{}}%
+Beltrán, F.R., Arrieta, M.P., Moreno, E., Gaspar, G., Muneta, L.M., Carrasco-Gallego, R., Yáñez, S., Hidalgo-Carvajal, D., de la Orden, M.U., Urreaga, J.M., 2021. Technical evaluation of mechanical recycling of pla 3d printing wastes. Polymers 13. \url{https://doi.org/10.3390/polym13081247}
+
+\leavevmode\vadjust pre{\hypertarget{ref-bikas2016}{}}%
+Bikas, H., Stavropoulos, P., Chryssolouris, G., 2016. Additive manufacturing methods and modelling approaches: A critical review. The International Journal of Advanced Manufacturing Technology 83, 389--405. \url{https://doi.org/10.1007/s00170-015-7576-2}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Bishop2021}{}}%
+Bishop, G., Styles, D., Lens, P.N.L., 2021. Environmental performance comparison of bioplastics and petrochemical plastics: {A} review of life cycle assessment ({LCA}) methodological decisions. Resources, Conservation and Recycling 168, 105451. \url{https://doi.org/10.1016/j.resconrec.2021.105451}
 
 \leavevmode\vadjust pre{\hypertarget{ref-BonninRoca2019}{}}%
 Bonnín Roca, J., Vaishnav, P., Laureijs, R.E., Mendonça, J., Fuchs, E.R.H., 2019. Technology cost drivers for a potential transition to decentralized manufacturing. Additive Manufacturing 28, 136--151. \url{https://doi.org/10.1016/j.addma.2019.04.010}
+
+\leavevmode\vadjust pre{\hypertarget{ref-canado2022}{}}%
+Cañado, N., Lizundia, E., Akizu-Gardoki, O., Minguez, R., Lekube, B., Arrillaga, A., Iturrondobeitia, M., 2022. {3D} printing to enable the reuse of marine plastic waste with reduced environmental impacts. Journal of Industrial Ecology n/a. \url{https://doi.org/10.1111/jiec.13302}
+
+\leavevmode\vadjust pre{\hypertarget{ref-canope2022}{}}%
+Canopé, 2022. « FabLab à l'école » : un atelier de fabrication dans votre établissement {[}WWW Document{]}. URL \url{https://www.reseau-canope.fr/academie-de-nantes/atelier-canope-44-nantes/actualites/article/fablab-a-lecole-un-atelier-de-fabrication-dans-votre-etablissement-4.html} (accessed 9.20.2022).
+
+\leavevmode\vadjust pre{\hypertarget{ref-carlssonreich2005}{}}%
+Carlsson Reich, M., 2005. Economic assessment of municipal waste management systems---case studies using a combination of life cycle assessment ({LCA}) and life cycle costing ({LCC}). Journal of Cleaner Production, Environmental {Assessments} and {Waste Management} 13, 253--263. \url{https://doi.org/10.1016/j.jclepro.2004.02.015}
+
+\leavevmode\vadjust pre{\hypertarget{ref-cerdas2017}{}}%
+Cerdas, F., Juraschek, M., Thiede, S., Herrmann, C., 2017. Life {Cycle Assessment} of {3D Printed Products} in a {Distributed Manufacturing System}. Journal of Industrial Ecology 21, S80--S93. \url{https://doi.org/10.1111/jiec.12618}
 
 \leavevmode\vadjust pre{\hypertarget{ref-Confente2020}{}}%
 Confente, I., Scarpi, D., Russo, I., 2020. Marketing a new generation of bio-plastics products for a circular economy: {The} role of green self-identity, self-congruity, and perceived value. Journal of Business Research 112, 431--439. \url{https://doi.org/10.1016/j.jbusres.2019.10.030}
 
 \leavevmode\vadjust pre{\hypertarget{ref-corvellec2021}{}}%
 Corvellec, H., Stowell, A.F., Johansson, N., 2021. Critiques of the circular economy. Journal of Industrial Ecology. \url{https://doi.org/10.1111/JIEC.13187}
+
+\leavevmode\vadjust pre{\hypertarget{ref-coskun2022}{}}%
+Coskun, A., Metta, J., Bakırlıoğlu, Y., Çay, D., Bachus, K., 2022. Make it a circular city: {Experiences} and challenges from {European} cities striving for sustainability through promoting circular making. Resources, Conservation and Recycling 185, 106495. \url{https://doi.org/10.1016/j.resconrec.2022.106495}
 
 \leavevmode\vadjust pre{\hypertarget{ref-CruzSanchez2020}{}}%
 Cruz Sanchez, F.A., Boudaoud, H., Camargo, M., Pearce, J.M., 2020. Plastic recycling in additive manufacturing: {A} systematic literature review and opportunities for the circular economy. Journal of Cleaner Production 264, 121602. \url{https://doi.org/10.1016/j.jclepro.2020.121602}
@@ -465,6 +729,15 @@ Cruz Sanchez, F.A., Boudaoud, H., Hoppe, S., Camargo, M., 2017. Polymer recyclin
 \leavevmode\vadjust pre{\hypertarget{ref-DeVargasMores2018}{}}%
 de Vargas Mores, G., Finocchio, C.P.S., Barichello, R., Pedrozo, E.A., 2018. Sustainability and innovation in the {Brazilian} supply chain of green plastic. Journal of Cleaner Production 177, 12--18. \url{https://doi.org/10.1016/j.jclepro.2017.12.138}
 
+\leavevmode\vadjust pre{\hypertarget{ref-dehghanian2009}{}}%
+Dehghanian, F., Mansour, S., 2009. Designing sustainable recovery network of end-of-life products using genetic algorithm. Resources, Conservation and Recycling 53, 559--570. \url{https://doi.org/10.1016/j.resconrec.2009.04.007}
+
+\leavevmode\vadjust pre{\hypertarget{ref-dekker2020}{}}%
+Dekker, E., Zijp, M.C., van de Kamp, M.E., Temme, E.H.M., van Zelm, R., 2020. A taste of the new {ReCiPe} for life cycle assessment: Consequences of the updated impact assessment method on food product {LCAs}. Int J Life Cycle Assess 25, 2315--2324. \url{https://doi.org/10.1007/s11367-019-01653-3}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Despeisse2016}{}}%
+Despeisse, M., Baumers, M., Brown, P., Charnley, F., Ford, S.J., Garmulewicz, A., Knowles, S., Minshall, T.H.W., Mortara, L., Reed-Tsochas, F.P., Rowley, J., 2017. Unlocking value for a circular economy through {3D} printing: {A} research agenda. Technological Forecasting and Social Change 115, 75--84. \url{https://doi.org/10.1016/j.techfore.2016.09.021}
+
 \leavevmode\vadjust pre{\hypertarget{ref-EC2018}{}}%
 European Commission, 2018. A european strategy for plastics in a circular economy, COM (2018). {European Commission}, {Brussels}. \url{https://doi.org/10.1021/acs.est.7b02368}
 
@@ -474,32 +747,68 @@ Filho, W.L., Salvia, A.L., Bonoli, A., Saari, U.A., Voronova, V., Klõga, M., Ku
 \leavevmode\vadjust pre{\hypertarget{ref-Friedrich2020}{}}%
 Friedrich, D., 2020. How regulatory measures towards biobased packaging influence the strategic behaviour of the retail industry: {A} microempirical study. Journal of Cleaner Production 260, 121128. \url{https://doi.org/10.1016/j.jclepro.2020.121128}
 
+\leavevmode\vadjust pre{\hypertarget{ref-Garmulewicz2018}{}}%
+Garmulewicz, A., Holweg, M., Veldhuis, H., Yang, A., 2018. Disruptive {Technology} as an {Enabler} of the {Circular Economy}: {What Potential Does 3D Printing Hold}? California Management Review 60, 112--132. \url{https://doi.org/10.1177/0008125617752695}
+
 \leavevmode\vadjust pre{\hypertarget{ref-Geyer2017}{}}%
 Geyer, R., Jambeck, J.R., Law, K.L., 2017. Production, use, and fate of all plastics ever made. Science Advances 3, e1700782. \url{https://doi.org/10.1126/sciadv.1700782}
 
 \leavevmode\vadjust pre{\hypertarget{ref-Giampietro2020}{}}%
 Giampietro, M., Funtowicz, S.O., 2020. From elite folk science to the policy legend of the circular economy. Environmental Science and Policy 109, 64--72. \url{https://doi.org/10.1016/j.envsci.2020.04.012}
 
+\leavevmode\vadjust pre{\hypertarget{ref-goedkoop2009}{}}%
+Goedkoop, M., Heijungs, R., Huijbregts, M., 2009. Report {I}: {Characterisation} 132.
+
 \leavevmode\vadjust pre{\hypertarget{ref-Gong2020}{}}%
 Gong, Y., Putnam, E., You, W., Zhao, C., 2020. Investigation into circular economy of plastics: {The} case of the {UK} fast moving consumer goods industry. Journal of Cleaner Production 244, 118941. \url{https://doi.org/10.1016/j.jclepro.2019.118941}
+
+\leavevmode\vadjust pre{\hypertarget{ref-gontard2022}{}}%
+Gontard, N., David, G., Guilbert, A., Sohn, J., 2022. Recognizing the long-term impacts of plastic particles for preventing distortion in decision-making. Nat Sustain 5, 472--478. \url{https://doi.org/10.1038/s41893-022-00863-2}
+
+\leavevmode\vadjust pre{\hypertarget{ref-guinee2002}{}}%
+Guinée, J.B., 2002. \href{https://books.google.com?id=Q1VYuV5vc8UC}{Handbook on {Life Cycle Assessment}: {Operational Guide} to the {ISO Standards}}. {Springer Science \& Business Media}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-hamilton2019}{}}%
+Hamilton, L.A., Steven, F., 2019. \href{https://policycommons.net/artifacts/2485040/untitled/3507468/}{Plastic \& {Climate}: {The} hidden costs of a plastic planet \textbar{} {Policy Commons}}. {Center for International Environmental Law}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-Hart2018}{}}%
 Hart, K.R., Frketic, J.B., Brown, J.R., 2018. Recycling meal-ready-to-eat ({MRE}) pouches into polymer filament for material extrusion additive manufacturing. Additive Manufacturing 21, 536--543. \url{https://doi.org/10.1016/j.addma.2018.04.011}
 
+\leavevmode\vadjust pre{\hypertarget{ref-hassini2012}{}}%
+Hassini, E., Surti, C., Searcy, C., 2012. A literature review and a case study of sustainable supply chains with a focus on metrics. International Journal of Production Economics, Sustainable {Development} of {Manufacturing} and {Services} 140, 69--82. \url{https://doi.org/10.1016/j.ijpe.2012.01.042}
+
 \leavevmode\vadjust pre{\hypertarget{ref-Hopewell2009}{}}%
 Hopewell, J., Dvorak, R., Kosior, E., 2009. Plastics recycling: Challenges and opportunities. Philosophical Transactions of the Royal Society B: Biological Sciences 364, 2115--2126. \url{https://doi.org/10.1098/rstb.2008.0311}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Hunt2015}{}}%
+Hunt, E.J., Zhang, C., Anzalone, N., Pearce, J.M., 2015. Polymer recycling codes for distributed manufacturing with 3-{D} printers. Resources, Conservation and Recycling 97, 24--30. \url{https://doi.org/10.1016/j.resconrec.2015.02.004}
 
 \leavevmode\vadjust pre{\hypertarget{ref-Huysveld2019}{}}%
 Huysveld, S., Hubo, S., Ragaert, K., Dewulf, J., 2019. Advancing circular economy benefit indicators and application on open-loop recycling of mixed and contaminated plastic waste fractions. Journal of Cleaner Production 211, 1--13. \url{https://doi.org/10.1016/j.jclepro.2018.11.110}
 
+\leavevmode\vadjust pre{\hypertarget{ref-ILCD2011}{}}%
+IES, 2010. \href{https://data.europa.eu/doi/10.2788/38479}{International {Reference Life Cycle Data System} ({ILCD}) {Handbook} :general guide for life cycle assessment : Detailed guidance}. {Publications Office of the European Union}, {LU}.
+
 \leavevmode\vadjust pre{\hypertarget{ref-Iles2013}{}}%
 Iles, A., Martin, A.N., 2013. Expanding bioplastics production: Sustainable business innovation in the chemical industry. Journal of Cleaner Production 45, 38--49. \url{https://doi.org/10.1016/j.jclepro.2012.05.008}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Jaafarnia2021}{}}%
+Jaafarnia, M., Shende, A., Boroomand, S., 2021. The {Redesign Decision-Making Cycle}: {A} perspective on predicting prosumer household {3D} printer waste. Sustainable Production and Consumption 27, 1349--1356. \url{https://doi.org/10.1016/j.spc.2021.03.012}
+
+\leavevmode\vadjust pre{\hypertarget{ref-jambeck2015}{}}%
+Jambeck, J.R., Geyer, R., Wilcox, C., Siegler, T.R., Perryman, M., Andrady, A., Narayan, R., Law, K.L., 2015. Plastic waste inputs from land into the ocean. Science 347, 768--771. \url{https://doi.org/10.1126/science.1260352}
 
 \leavevmode\vadjust pre{\hypertarget{ref-JustinoNetto2021}{}}%
 Justino Netto, J.M., Idogava, H.T., Frezzatto Santos, L.E., Silveira, Z. de C., Romio, P., Alves, J.L., 2021. Screw-assisted {3D} printing with granulated materials: A systematic review. The International Journal of Advanced Manufacturing Technology 1--17. \url{https://doi.org/10.1007/s00170-021-07365-z}
 
 \leavevmode\vadjust pre{\hypertarget{ref-Kasmi2021}{}}%
 Kasmi, F., Osorio, F., Dupont, L., Marche, B., Camargo, M., 2021. Innovation {Spaces} as {Drivers} of {Eco-innovations Supporting} the {Circular Economy}: {A Systematic Literature Review}. Journal of Innovation Economics \& Management Prépublica, Ij--XLII. \url{https://doi.org/10.3917/jie.pr1.0113}
+
+\leavevmode\vadjust pre{\hypertarget{ref-kellens2017}{}}%
+Kellens, K., Baumers, M., Gutowski, T.G., Flanagan, W., Lifset, R., Duflou, J.R., 2017. Environmental {Dimensions} of {Additive Manufacturing}: {Mapping Application Domains} and {Their Environmental Implications}. Journal of Industrial Ecology 21, S49--S68. \url{https://doi.org/10.1111/jiec.12629}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Kerdlap2021}{}}%
+Kerdlap, P., Purnama, A.R., Low, J.S.C., Tan, D.Z.L., Barlow, C.Y., Ramakrishna, S., 2021. Comparing the environmental performance of distributed versus centralized plastic recycling systems: {Applying} hybrid simulation modeling to life cycle assessment. Journal of Industrial Ecology. \url{https://doi.org/10.1111/jiec.13151}
 
 \leavevmode\vadjust pre{\hypertarget{ref-Kostakis2013b}{}}%
 Kostakis, V., 2013. At the {Turning Point} of the {Current Techno-Economic Para-} digm : {Commons-Based Peer Production} , {Desktop Manufac-} turing and the {Role} of {Civil Society} in the {Perezian Frame-} work 11, 173--190.
@@ -519,8 +828,23 @@ Kreiger, M., Pearce, J.M., 2013. Environmental {Impacts} of {Distributed Manufac
 \leavevmode\vadjust pre{\hypertarget{ref-Kumar2021}{}}%
 Kumar, R., Verma, A., Shome, A., Sinha, R., Sinha, S., Jha, P.K., Kumar, R., Kumar, P., Shubham, Das, S., Sharma, P., Vara Prasad, P.V., 2021. Impacts of {Plastic Pollution} on {Ecosystem Services}, {Sustainable Development Goals}, and {Need} to {Focus} on {Circular Economy} and {Policy Interventions}. Sustainability 13, 9963. \url{https://doi.org/10.3390/su13179963}
 
+\leavevmode\vadjust pre{\hypertarget{ref-lopez2022}{}}%
+López, V.M., Carou, D., Cruz S, F.A., 2022. Feasibility study on the use of recycled materials for prototyping purposes: {A} comparative study based on the tensile strength. Proceedings of the Institution of Mechanical Engineers, Part B: Journal of Engineering Manufacture 09544054221113378. \url{https://doi.org/10.1177/09544054221113378}
+
 \leavevmode\vadjust pre{\hypertarget{ref-Ma2020}{}}%
 Ma, X., Park, C., Moultrie, J., 2020. Factors for eliminating plastic in packaging: {The European FMCG} experts' view. Journal of Cleaner Production 256, 120492. \url{https://doi.org/10.1016/j.jclepro.2020.120492}
+
+\leavevmode\vadjust pre{\hypertarget{ref-maga2019}{}}%
+Maga, D., Hiebel, M., Thonemann, N., 2019. Life cycle assessment of recycling options for polylactic acid. Resources, Conservation and Recycling 149, 86--96. \url{https://doi.org/10.1016/j.resconrec.2019.05.018}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Mahmud2021}{}}%
+Mahmud, R., Moni, S.M., High, K., Carbajales-Dale, M., 2021. Integration of techno-economic analysis and life cycle assessment for sustainable process design -- {A} review. Journal of Cleaner Production 317, 128247. \url{https://doi.org/10.1016/j.jclepro.2021.128247}
+
+\leavevmode\vadjust pre{\hypertarget{ref-matthews2020}{}}%
+Matthews, C., Moran, F., Jaiswal, A.K., 2020. A {Review} on {European Union}'s {Strategy} for {Plastics} in a {Circular Economy} and its {Impact} on {Food Safety}. Journal of Cleaner Production 283, 125263. \url{https://doi.org/10.1016/j.jclepro.2020.125263}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Mohammed2022}{}}%
+Mohammed, M., Wilson, D., Gomez-Kervin, E., Petsiuk, A., Dick, R., Pearce, J.M., 2022. Sustainability and feasibility assessment of distributed {E-waste} recycling using additive manufacturing in a {Bi-continental} context. Additive Manufacturing 50, 102548. \url{https://doi.org/10.1016/j.addma.2021.102548}
 
 \leavevmode\vadjust pre{\hypertarget{ref-Paletta2019}{}}%
 Paletta, A., Leal Filho, W., Balogun, A.L., Foschi, E., Bonoli, A., 2019. Barriers and challenges to plastics valorisation in the context of a circular economy: {Case} studies from {Italy}. Journal of Cleaner Production 241, 118149. \url{https://doi.org/10.1016/j.jclepro.2019.118149}
@@ -531,14 +855,32 @@ Pavlo, S., Fabio, C., Hakim, B., Mauricio, C., 2018. {3D-Printing Based Distribu
 \leavevmode\vadjust pre{\hypertarget{ref-Pazienza2020}{}}%
 Pazienza, P., De Lucia, C., 2020. The {EU} policy for a plastic economy: {Reflections} on a sectoral implementation strategy. Business Strategy and the Environment 29, 779--788. \url{https://doi.org/10.1002/bse.2445}
 
+\leavevmode\vadjust pre{\hypertarget{ref-pennington2004}{}}%
+Pennington, D.W., Potting, J., Finnveden, G., Lindeijer, E., Jolliet, O., Rydberg, T., Rebitzer, G., 2004. Life cycle assessment {Part} 2: {Current} impact assessment practice. Environment International 30, 721--739. \url{https://doi.org/10.1016/j.envint.2003.12.009}
+
+\leavevmode\vadjust pre{\hypertarget{ref-pereira2020}{}}%
+Pereira, D.S., Marques, A.C., 2020. Could electricity demand contribute to diversifying the mix and mitigating {CO2} emissions? {A} fresh daily analysis of the {French} electricity system. Energy Policy 142, 111475. \url{https://doi.org/10.1016/j.enpol.2020.111475}
+
 \leavevmode\vadjust pre{\hypertarget{ref-Petersen2017a}{}}%
 Petersen, E., Pearce, J., 2017. Emergence of {Home Manufacturing} in the {Developed World}: {Return} on {Investment} for {Open-Source} 3-{D Printers}. Technologies 5, 7. \url{https://doi.org/10.3390/technologies5010007}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Pinho2020}{}}%
+Pinho, A.C., Amaro, A.M., Piedade, A.P., 2020. {3D} printing goes greener: {Study} of the properties of post-consumer recycled polymers for the manufacturing of engineering components. Waste Management 118, 426--434. \url{https://doi.org/10.1016/j.wasman.2020.09.003}
 
 \leavevmode\vadjust pre{\hypertarget{ref-pintodacosta2020}{}}%
 Pinto Da Costa, J., Rocha-Santos, T., Duarte, A.C., Chemistry, D. of, CESAM, Aveiro, U. of, Portugal, 2020. \href{https://policycommons.net/artifacts/1426661/the-environmental-impacts-of-plastics-and-micro-plastics-use-waste-and-pollution/2041108/}{The environmental impacts of plastics and micro-plastics use, waste and pollution: {EU} and national measures}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-PlascticEurope2020}{}}%
 Plasctic Europe -, 2020. Plastics -- the {Facts} 2020 {An} analysis of {European Production} demand and waste data {[}WWW Document{]}. URL \url{https://plasticseurope.org/knowledge-hub/plastics-the-facts-2020/} (accessed 3.7.2022).
+
+\leavevmode\vadjust pre{\hypertarget{ref-Pryshlakivsky2021}{}}%
+Pryshlakivsky, J., Searcy, C., 2021. Life {Cycle Assessment} as a decision-making tool: {Practitioner} and managerial considerations. Journal of Cleaner Production 309, 127344. \url{https://doi.org/10.1016/j.jclepro.2021.127344}
+
+\leavevmode\vadjust pre{\hypertarget{ref-quinlan2017}{}}%
+Quinlan, H.E., Hasan, T., Jaddou, J., Hart, A.J., 2017. Industrial and {Consumer Uses} of {Additive Manufacturing}: {A Discussion} of {Capabilities}, {Trajectories}, and {Challenges}. Journal of Industrial Ecology 21, S15--S20. \url{https://doi.org/10.1111/jiec.12609}
+
+\leavevmode\vadjust pre{\hypertarget{ref-Saade2020}{}}%
+Saade, M.R.M., Yahia, A., Amor, B., 2020. How has {LCA} been applied to {3D} printing? {A} systematic literature review and recommendations for future studies. Journal of Cleaner Production 244, 118803. \url{https://doi.org/10.1016/j.jclepro.2019.118803}
 
 \leavevmode\vadjust pre{\hypertarget{ref-Santander2020}{}}%
 Santander, P., Cruz Sanchez, F.A., Boudaoud, H., Camargo, M., 2020. Closed loop supply chain network for local and distributed plastic recycling for {3D} printing: A {MILP-based} optimization approach. Resources, Conservation and Recycling 154, 104531. \url{https://doi.org/10.1016/j.resconrec.2019.104531}
@@ -549,8 +891,17 @@ Shi, H., Yu, D., Yin, L., Sui, Y., Liu, Y., Qiao, S., Wang, W., Zheng, W., Ding,
 \leavevmode\vadjust pre{\hypertarget{ref-Singh2017b}{}}%
 Singh, N., Hui, D., Singh, R., Ahuja, I.P.S., Feo, L., Fraternali, F., 2017. Recycling of plastic solid waste: {A} state of art review and future applications. Composites Part B: Engineering 115, 409--422. \url{https://doi.org/10.1016/j.compositesb.2016.09.013}
 
+\leavevmode\vadjust pre{\hypertarget{ref-Stefaniak2022}{}}%
+Stefaniak, A.B., Bowers, L.N., Cottrell, G., Erdem, E., Knepp, A.K., Martin, S.B., Pretty, J., Duling, M.G., Arnold, E.D., Wilson, Z., Krider, B., Fortner, A.R., LeBouf, R.F., Virji, M.A., Sirinterlikci, A., 2022. Towards sustainable additive manufacturing: {The} need for awareness of particle and vapor releases during polymer recycling, making filament, and fused filament fabrication 3-{D} printing. Resources, Conservation and Recycling 176, 105911. \url{https://doi.org/10.1016/j.resconrec.2021.105911}
+
 \leavevmode\vadjust pre{\hypertarget{ref-Thompson2009a}{}}%
 Thompson, R.C., Swan, S.H., Moore, C.J., vom Saal, F.S., 2009. Our plastic age. Philosophical Transactions of the Royal Society B: Biological Sciences 364, 1973--1976. \url{https://doi.org/10.1098/rstb.2009.0054}
+
+\leavevmode\vadjust pre{\hypertarget{ref-vink2015}{}}%
+Vink, E.T.H., Davies, S., 2015. Life {Cycle Inventory} and {Impact Assessment Data} for 2014 {Ingeo}™ {Polylactide Production}. Industrial Biotechnology 11, 167--180. \url{https://doi.org/10.1089/ind.2015.0003}
+
+\leavevmode\vadjust pre{\hypertarget{ref-vink2003}{}}%
+Vink, E.T.H., Rábago, K.R., Glassner, D.A., Gruber, P.R., 2003. Applications of life cycle assessment to {NatureWorks}™ polylactide ({PLA}) production. Polymer Degradation and Stability 80, 403--419. \url{https://doi.org/10.1016/S0141-3910(02)00372-5}
 
 \leavevmode\vadjust pre{\hypertarget{ref-vuori2022}{}}%
 Vuori, L., Ollikainen, M., 2022. How to remove microplastics in wastewater? {A} cost-effectiveness analysis. Ecological Economics 192, 107246. \url{https://doi.org/10.1016/J.ECOLECON.2021.107246}
@@ -561,6 +912,9 @@ Wang, C., Huang, R., Sun, R., Yang, J., Dionysiou, D.D., 2022. Microplastics sep
 \leavevmode\vadjust pre{\hypertarget{ref-Woern2017}{}}%
 Woern, A., Pearce, J., 2017. Distributed {Manufacturing} of {Flexible Products}: {Technical Feasibility} and {Economic Viability}. Technologies 5, 71. \url{https://doi.org/10.3390/technologies5040071}
 
+\leavevmode\vadjust pre{\hypertarget{ref-Wu2021a}{}}%
+Wu, H., Mehrabi, H., Karagiannidis, P., Naveed, N., 2022. Additive manufacturing of recycled plastics: {Strategies} towards a more sustainable future. Journal of Cleaner Production 335, 130236. \url{https://doi.org/10.1016/j.jclepro.2021.130236}
+
 \leavevmode\vadjust pre{\hypertarget{ref-zhang2022b}{}}%
 Zhang, J., Wang, X., Xue, W., Xu, L., Ding, W., Zhao, M., Liu, S., Zou, G., Chen, Y., 2022. Microplastics pollution in soil increases dramatically with long-term application of organic composts in a wheat--maize rotation. Journal of Cleaner Production 356, 131889. \url{https://doi.org/10.1016/J.JCLEPRO.2022.131889}
 
@@ -568,6 +922,12 @@ Zhang, J., Wang, X., Xue, W., Xu, L., Ding, W., Zhao, M., Liu, S., Zou, G., Chen
 Zhong, S., Pearce, J.M., 2018. Tightening the loop on the circular economy: {Coupled} distributed recycling and manufacturing with recyclebot and {RepRap} 3-{D} printing. Resources, Conservation and Recycling 128, 48--58. \url{https://doi.org/10.1016/j.resconrec.2017.09.023}
 
 \end{CSLReferences}
+
+\newpage
+
+\appendix
+
+\includepdf[pages={1-2}]{Annex/Annex-1.pdf}
 
 
 \end{document}
