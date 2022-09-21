@@ -605,7 +605,7 @@ Furthermore, assessing the impacts of this system in various areas allows us to 
 
 
 
-# Acknowledgements
+# Acknowledgements {.unnumbered}
 This project has received funding from the European Union's Horizon 2020 research and innovation programme under the grant agreement No 869952 and from the ICEEL Carnot Institute in France under the reference « Everest Bio » project. 
 
 # Declaration of Competing Interest {.unnumbered}
@@ -613,12 +613,16 @@ This project has received funding from the European Union's Horizon 2020 researc
 The authors declare that they have no known competing financial
 interests or personal relationships that could have appeared to influence the work reported in this paper.
 
+# Highlights {.unnumbered}
+-	A comparative LCA for distributed recycling via additive manufacturing (DRAM) 
+-	Three scenarios are considered (two virgin and one recycled)
+- DRAM impacts are less than 5% regarding virgin supply chain except in one category
 
 
 
 \newpage
 
-# References
+# References {.unnumbered}
 
 
 <div id="refs"></div>

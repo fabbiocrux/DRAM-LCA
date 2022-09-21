@@ -1,0 +1,142 @@
+\documentclass[]{elsarticle} %review=doublespace preprint=single 5p=2 column
+%%% Begin My package additions %%%%%%%%%%%%%%%%%%%
+
+\usepackage[hyphens]{url}
+
+
+\usepackage{lineno} % add
+
+\usepackage{graphicx}
+%%%%%%%%%%%%%%%% end my additions to header
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \usepackage{fontspec}
+  \ifxetex
+    \usepackage{xltxtra,xunicode}
+  \fi
+  \defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+  \newcommand{\euro}{€}
+\fi
+% use microtype if available
+\IfFileExists{microtype.sty}{\usepackage{microtype}}{}
+\usepackage[left=3.5cm,right=3cm,top=2cm,bottom=2.5cm]{geometry}
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
+
+\ifxetex
+  \usepackage[setpagesize=false, % page size defined by xetex
+              unicode=false, % unicode breaks when used with xetex
+              xetex]{hyperref}
+\else
+  \usepackage[unicode=true]{hyperref}
+\fi
+\hypersetup{breaklinks=true,
+            bookmarks=true,
+            pdfauthor={},
+            pdftitle={},
+            colorlinks=true,
+            urlcolor=blue,
+            linkcolor=blue,
+            pdfborder={0 0 0}}
+
+\setcounter{secnumdepth}{5}
+% Pandoc toggle for numbering sections (defaults to be off)
+
+
+% tightlist command for lists without linebreak
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% From pandoc table feature
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+
+
+
+
+
+\begin{document}
+
+\begin{titlepage}
+%	\begin{flushright}
+\begin{center}
+		Title page for: \large\textit{Resources, Conservation and Recycling} \\
+\end{center}
+		\Large\textbf{Title: Life Cycle Assessment of Distributed Plastic Recycling via Additive Manufacturing}\\
+
+\normalsize\textbf{Cristian Caceres Mendoza}\\
+Université de Lorraine - ERPI -  F-54000, Nancy, France.\\
+Email: \url{cristian.caceres@usach.cl}\\
+
+
+\normalsize\textbf{Pavlo Santander}\\
+University of Santiago of Chile (USACH),Faculty of Engineering; Industrial Engineering Department, Chile\\
+Email: \url{pavlo.santander@usach.cl}\\
+
+\textbf{Fabio A. Cruz Sanchez}\\
+Université de Lorraine - ERPI -  F-54000, Nancy, France.\\
+Email: \url{cruzsanc1@univ-lorraine.fr}\\
+
+\textbf{Nadège Troussier}\\
+CREIDD, UR InSyTE, University of Technology of Troyes, 12 rue Marie Curie, 10010 Troyes, France\\
+Email: \url{Nadege.TROUSSIER@ensam.eu}\\
+
+
+\textbf{Hakim Boudaoud}\\
+Université de Lorraine - ERPI -  F-54000, Nancy, France.\\
+Email: \url{hakim.boudaoud@univ-lorraine.fr}\\
+
+\textbf{Mauricio Camargo}\\
+Université de Lorraine - ERPI -  F-54000, Nancy, France.\\
+Email: \url{mauricio.camargo@univ-lorraine.fr}\\[2mm]
+
+
+\textbf{Keywords:} LCA; Distributed Recycling; Plastic; Additive Manufacturing, Circular Economy\\
+
+
+\textbf{Corresponding Author:}\\
+Cristian Caceres Mendoza \\
+Université de Lorraine, Équipe Recherche sur les Processus Innovatifs, ERPI. F-54000 Nancy, France \\
+Tel: +33 6 42 90 92 15 \\
+Email: \url{cristian.caceres@usach.cl}\\[3mm]
+
+
+
+\vfill
+%	\end{flushright}
+\end{titlepage}
+
+
+
+\begin{frontmatter}
+
+  \title{}
+      \cortext[cor1]{Corresponding author}
+  
+  \begin{abstract}
+  
+  \end{abstract}
+  
+ \end{frontmatter}
+
+
+
+
+\end{document}
