@@ -1,0 +1,1113 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2023.2.16)  23 FEB 2023 02:04
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**LCA-DRAM.tex
+(./LCA-DRAM.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-02-07> (./elsarticle.cls
+Document Class: elsarticle 2020/11/20, 3.3: Elsevier Ltd
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-02-07 L3 programming layer (loader) 
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count185
+\l__pdf_internal_box=\box51
+)) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-02-02 L3 Experimental document command parser
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count186
+)
+\@bls=\dimen140
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\c@figure=\count193
+\c@table=\count194
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen141
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen142
+\Gin@req@width=\dimen143
+)
+\c@tnote=\count195
+\c@fnote=\count196
+\c@cnote=\count197
+\c@ead=\count198
+\c@author=\count199
+\@eadauthor=\toks17
+\c@affn=\count266
+\absbox=\box52
+\elsarticlehighlightsbox=\box53
+\elsarticlegrabsbox=\box54
+\keybox=\box55
+\Columnwidth=\dimen144
+\space@left=\dimen145
+\els@boxa=\box56
+\els@boxb=\box57
+\leftMargin=\dimen146
+\@enLab=\toks18
+\@sep=\skip50
+\@@sep=\skip51
+(./LCA-DRAM.spl) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip52
+\bibsep=\skip53
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count267
+)
+\splwrite=\write3
+\openout3 = `LCA-DRAM.spl'.
+
+\appnamewidth=\dimen147
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2023/01/19 line numbers on paragraphs v5.1
+\linenopenalty=\count268
+\output=\toks19
+\linenoprevgraf=\count269
+\linenumbersep=\dimen148
+\linenumberwidth=\dimen149
+\c@linenumber=\count270
+\c@pagewiselinenumber=\count271
+\c@LN@truepage=\count272
+\c@internallinenumber=\count273
+\c@internallinenumbers=\count274
+\quotelinenumbersep=\dimen150
+\bframerule=\dimen151
+\bframesep=\dimen152
+\bframebox=\box58
+LaTeX Info: Redefining \\ on input line 3131.
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks20
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2022/04/08 v2.17n AMS math features
+\@mathmargin=\skip54
+For additional information on amsmath, use the `?' option.
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks21
+\ex@=\dimen153
+)) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen154
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count275
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count276
+\leftroot@=\count277
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count278
+\DOTSCASE@=\count279
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box59
+\strutbox@=\box60
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen155
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count280
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count281
+\dotsspace@=\muskip17
+\c@parentequation=\count282
+\dspbrk@lvl=\count283
+\tag@help=\toks22
+\row@=\count284
+\column@=\count285
+\maxfields@=\count286
+\andhelp@=\toks23
+\eqnshift@=\dimen156
+\alignsep@=\dimen157
+\tagshift@=\dimen158
+\tagwidth@=\dimen159
+\totwidth@=\dimen160
+\lineht@=\dimen161
+\@envbody=\toks24
+\multlinegap=\skip55
+\multlinetaggap=\skip56
+\mathdisplay@stack=\toks25
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+\linenoamsmath@ams@eqpen=\count287
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2021/02/14 v1.3d Input encoding file
+\inpenc@prehook=\toks26
+\inpenc@posthook=\toks27
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2022/06/23 v3.0f Micro-typographical refinements (RS)
+\MT@toks=\toks28
+\MT@tempbox=\box61
+\MT@count=\count288
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1045.
+LaTeX Info: Redefining \leftprotrusion on input line 1046.
+LaTeX Info: Redefining \rightprotrusion on input line 1056.
+LaTeX Info: Redefining \textls on input line 1234.
+\MT@outer@kern=\dimen162
+LaTeX Info: Redefining \textmicrotypecontext on input line 1858.
+\MT@listname@count=\count289
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2022/06/23 v3.0f Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 900.
+LaTeX Info: Redefining \lslig on input line 900.
+\MT@outer@space=\skip57
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2022/06/23 v3.0f microtype main configuration file (RS)
+)) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count290
+\Gm@cntv=\count291
+\c@Gm@tempcnt=\count292
+\Gm@bindingoffset=\dimen163
+\Gm@wd@mp=\dimen164
+\Gm@odd@mp=\dimen165
+\Gm@even@mp=\dimen166
+\Gm@layoutwidth=\dimen167
+\Gm@layoutheight=\dimen168
+\Gm@layouthoffset=\dimen169
+\Gm@layoutvoffset=\dimen170
+\Gm@dimlist=\toks29
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2023-02-07 v7.00v Hypertext links for LaTeX
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count293
+)
+\@linkdim=\dimen171
+\Hy@linkcounter=\count294
+\Hy@pagecounter=\count295
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2023-02-07 v7.00v Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
+)
+\Hy@SavedSpaceFactor=\count296
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2023-02-07 v7.00v Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4060.
+Package hyperref Info: Hyper figures OFF on input line 4177.
+Package hyperref Info: Link nesting OFF on input line 4182.
+Package hyperref Info: Hyper index ON on input line 4185.
+Package hyperref Info: Plain pages OFF on input line 4192.
+Package hyperref Info: Backreferencing OFF on input line 4197.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4425.
+\c@Hy@tempcnt=\count297
+LaTeX Info: Redefining \url on input line 4763.
+\XeTeXLinkMargin=\dimen172
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count298
+\Field@Width=\dimen173
+\Fld@charsize=\dimen174
+Package hyperref Info: Hyper figures OFF on input line 6042.
+Package hyperref Info: Link nesting OFF on input line 6047.
+Package hyperref Info: Hyper index ON on input line 6050.
+Package hyperref Info: backreferencing OFF on input line 6057.
+Package hyperref Info: Link coloring OFF on input line 6062.
+Package hyperref Info: Link coloring with OCG OFF on input line 6067.
+Package hyperref Info: PDF/A mode OFF on input line 6072.
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
+package with kernel methods
+)
+\Hy@abspage=\count299
+\c@Item=\count300
+\c@Hfootnote=\count301
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2023-02-07 v7.00v Hyperref driver for pdfTeX
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
+with kernel methods
+)
+\Fld@listcount=\count302
+\c@bookmark@seq@number=\count303
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
+)
+\Hy@SectionHShift=\skip58
+)
+Package hyperref Info: Option `breaklinks' set `true' on input line 48.
+
+Package hyperref Warning: Option `bookmarks' has already been used,
+(hyperref)                setting the option has no effect on input line 48.
+
+Package hyperref Info: Option `colorlinks' set `true' on input line 48.
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip59
+\LTright=\skip60
+\LTpre=\skip61
+\LTpost=\skip62
+\LTchunksize=\count304
+\LTcapwidth=\dimen175
+\LT@head=\box62
+\LT@firsthead=\box63
+\LT@foot=\box64
+\LT@lastfoot=\box65
+\LT@gbox=\box66
+\LT@cols=\count305
+\LT@rows=\count306
+\c@LT@tables=\count307
+\c@LT@chunks=\count308
+\LT@p@ftn=\toks30
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen176
+\lightrulewidth=\dimen177
+\cmidrulewidth=\dimen178
+\belowrulesep=\dimen179
+\belowbottomsep=\dimen180
+\aboverulesep=\dimen181
+\abovetopsep=\dimen182
+\cmidrulesep=\dimen183
+\cmidrulekern=\dimen184
+\defaultaddspace=\dimen185
+\@cmidla=\count309
+\@cmidlb=\count310
+\@aboverulesep=\dimen186
+\@belowrulesep=\dimen187
+\@thisruleclass=\count311
+\@lastruleclass=\count312
+\@thisrulewidth=\dimen188
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen189
+\ar@mcellbox=\box67
+\extrarowheight=\dimen190
+\NC@list=\toks31
+\extratabsurround=\skip63
+\backup@length=\skip64
+\ar@cellbox=\box68
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count313
+\calc@Bcount=\count314
+\calc@Adimen=\dimen191
+\calc@Bdimen=\dimen192
+\calc@Askip=\skip65
+\calc@Bskip=\skip66
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count315
+\calc@Cskip=\skip67
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box69
+\fn@width=\dimen193
+)
+\cslhangindent=\skip68
+\csllabelwidth=\skip69
+\cslentryspacingunit=\skip70
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2022/12/19 v0.5x Insert pages of external PDF documents (AM)
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen194
+\ESO@tempdimb=\dimen195
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 227.
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1357.
+Package xcolor Info: Model `RGB' extended on input line 1369.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1372.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
+))
+\AM@pagewidth=\dimen196
+\AM@pageheight=\dimen197
+\AM@fboxrule=\dimen198
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2022/12/19 v0.5x Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count316
+\AM@pagebox=\box70
+\AM@global@opts=\toks32
+\AM@pagecnt=\count317
+\AM@toc@title=\toks33
+\AM@lof@heading=\toks34
+\c@AM@survey=\count318
+\AM@templatesizebox=\box71
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count319
+\float@exts=\toks35
+\float@box=\box72
+\@float@everytoks=\toks36
+\@floatcapt=\box73
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2023/02/13 3.86 The Babel package
+\babel@savecnt=\count320
+\U@D=\dimen199
+\l@unhyphenated=\language4
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count321
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/generic/babel-english/english.ldf
+Language: english 2017/06/06 v3.3r English support from the babel system
+Package babel Info: Hyphen rules for 'british' set to \l@english
+(babel)             (\language0). Reported on input line 82.
+Package babel Info: Hyphen rules for 'UKenglish' set to \l@english
+(babel)             (\language0). Reported on input line 83.
+Package babel Info: Hyphen rules for 'canadian' set to \l@english
+(babel)             (\language0). Reported on input line 102.
+Package babel Info: Hyphen rules for 'australian' set to \l@english
+(babel)             (\language0). Reported on input line 105.
+Package babel Info: Hyphen rules for 'newzealand' set to \l@english
+(babel)             (\language0). Reported on input line 108.
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/generic/babel-french/french.ldf
+Language: french 2023/01/02 v3.5p French support from the babel system
+Package babel Info: Hyphen rules for 'acadian' set to \l@french
+(babel)             (\language3). Reported on input line 91.
+Package babel Info: Hyphen rules for 'canadien' set to \l@french
+(babel)             (\language3). Reported on input line 92.
+\FB@nonchar=\count322
+Package babel Info: Making : an active character on input line 395.
+Package babel Info: Making ; an active character on input line 396.
+Package babel Info: Making ! an active character on input line 397.
+Package babel Info: Making ? an active character on input line 398.
+\FBguill@level=\count323
+\FBold@everypar=\toks37
+\FB@Mht=\dimen256
+\mc@charclass=\count324
+\mc@charfam=\count325
+\mc@charslot=\count326
+\std@mcc=\count327
+\dec@mcc=\count328
+\listindentFB=\dimen257
+\descindentFB=\dimen258
+\labelindentFB=\dimen259
+\labelwidthFB=\dimen260
+\leftmarginFB=\dimen261
+\parindentFFN=\dimen262
+\FBfnindent=\dimen263
+)) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/generic/babel/locale/fr/babel-french.tex
+Package babel Info: Importing font and identification data for french
+(babel)             from babel-fr.ini. Reported on input line 11.
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/generic/babel/locale/en/babel-english.tex
+Package babel Info: Importing font and identification data for english
+(babel)             from babel-en.ini. Reported on input line 11.
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/carlisle/scalefnt.sty) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip71
+\multirow@cntb=\count329
+\multirow@dima=\skip72
+\bigstrutjot=\dimen264
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen265
+\WF@size=\dimen266
+\c@WF@wrappedlines=\count330
+\WF@box=\box74
+\WF@everypar=\toks38
+Package: wrapfig 2003/01/31  v 3.6
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+\everycr=\toks39
+\minrowclearance=\skip73
+\rownum=\count331
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box75
+\sift@deathcycles=\count332
+\@vwid@loff=\dimen267
+\@vwid@roff=\dimen268
+)
+\c@taburow=\count333
+\tabu@nbcols=\count334
+\tabu@cnt=\count335
+\tabu@Xcol=\count336
+\tabu@alloc=\count337
+\tabu@nested=\count338
+\tabu@target=\dimen269
+\tabu@spreadtarget=\dimen270
+\tabu@naturalX=\dimen271
+\tabucolX=\dimen272
+\tabu@Xsum=\dimen273
+\extrarowdepth=\dimen274
+\abovetabulinesep=\dimen275
+\belowtabulinesep=\dimen276
+\tabustrutrule=\dimen277
+\tabu@thebody=\toks40
+\tabu@footnotes=\toks41
+\tabu@box=\box76
+\tabu@arstrutbox=\box77
+\tabu@hleads=\box78
+\tabu@vleads=\box79
+\tabu@cellskip=\skip74
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box80
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/threeparttablex/threeparttablex.sty
+Package: threeparttablex 2013/07/23 v0.3 by daleif
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\TPTL@width=\skip75
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box81
+\UL@hyphenbox=\box82
+\UL@skip=\skip76
+\UL@hook=\toks42
+\UL@height=\dimen278
+\UL@pe=\count339
+\UL@pixel=\dimen279
+\ULC@box=\box83
+Package: ulem 2019/11/18
+\ULdepth=\dimen280
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen281
+\c@nlinenum=\count340
+\TeXr@lab=\toks43
+)
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 126.
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) (./LCA-DRAM.aux)
+\openout1 = `LCA-DRAM.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 126.
+LaTeX Font Info:    ... okay on input line 126.
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+LaTeX Info: Redefining \microtypecontext on input line 126.
+Package microtype Info: Applying patch `item' on input line 126.
+Package microtype Info: Applying patch `toc' on input line 126.
+Package microtype Info: Applying patch `eqnum' on input line 126.
+Package microtype Info: Applying patch `footnote' on input line 126.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `alltext-nott'.
+LaTeX Info: Redefining \showhyphens on input line 126.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of interword spacing.
+Package microtype Info: No adjustment of character kerning.
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 472.03123pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 681.15898pt, 56.9055pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=472.03123pt
+* \textheight=681.15898pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=44.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=24.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package hyperref Info: Link coloring ON on input line 126.
+(./LCA-DRAM.out) (./LCA-DRAM.out)
+\@outlinefile=\write4
+\openout4 = `LCA-DRAM.out'.
+
+LaTeX Info: Redefining \degres on input line 126.
+
+Package french.ldf Warning: Figures' and tables' captions might look like
+(french.ldf)                `Figure 1:' in French instead of `Figure 1 :'.
+(french.ldf)                If this happens, to fix this issue
+(french.ldf)                switch to LuaLaTeX or XeLaTeX or
+(french.ldf)                try to add \usepackage{caption} or
+(french.ldf)                ... leave it as it is; reported on input line 126.
+
+LaTeX Info: Redefining \up on input line 126.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 168.
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 168.
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 168.
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 168.
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 168.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 168.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 168.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 168.
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 168.
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 168.
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 168.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 168.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 168.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 182.
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \hbox (2.61107pt too wide) has occurred while \output is active
+[] 
+ []
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<let>-command' on input line 182.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\comma' on input line 182.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\<def>-command' on input line 182.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@fnmark' on input line 182.
+
+[1
+
+
+{/Users/fabio/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/10'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <9> on input line 257.
+
+Overfull \hbox (2.8341pt too wide) in paragraph at lines 272--272
+[]\T1/lmr/bx/n/9 (-20) Comparaison|  
+ []
+
+
+Overfull \hbox (37.53453pt too wide) in paragraph at lines 272--272
+[]\T1/lmr/bx/n/9 (-20) Economique 
+ []
+
+
+Overfull \hbox (1.69969pt too wide) in paragraph at lines 272--272
+\T1/lmr/bx/n/9 (-20) pect|  
+ []
+
+
+Overfull \hbox (4.50209pt too wide) in paragraph at lines 272--272
+[]\T1/lmr/bx/n/9 (-20) CED|  
+ []
+
+
+Overfull \hbox (4.55605pt too wide) in paragraph at lines 272--272
+[]\T1/lmr/bx/n/9 (-20) APO|  
+ []
+
+
+Overfull \hbox (8.22122pt too wide) in paragraph at lines 272--272
+[]\T1/lmr/bx/n/9 (-20) GWP|  
+ []
+
+
+Overfull \hbox (4.71236pt too wide) in paragraph at lines 272--272
+[]\T1/lmr/bx/n/9 (-20) ADP|  
+ []
+
+
+Overfull \hbox (3.8009pt too wide) in paragraph at lines 272--272
+[]\T1/lmr/bx/n/9 (-20) FDP|  
+ []
+
+
+Overfull \hbox (4.65793pt too wide) in paragraph at lines 272--272
+[]\T1/lmr/bx/n/9 (-20) HTP|  
+ []
+
+
+Overfull \hbox (21.12189pt too wide) in paragraph at lines 272--272
+[]\T1/lmr/bx/n/9 (-20) MAETP|  
+ []
+
+
+Overfull \hbox (16.60555pt too wide) in paragraph at lines 272--272
+[]\T1/lmr/bx/n/9 (-20) FAETP|  
+ []
+
+
+Overfull \hbox (31.74014pt too wide) in paragraph at lines 272--272
+[]\T1/lmr/bx/n/9 (-20) FEP/MEP|  
+ []
+
+
+Overfull \hbox (2.98177pt too wide) in paragraph at lines 272--272
+[]\T1/lmr/bx/n/9 (-20) TEP|  
+ []
+
+
+Overfull \hbox (7.4621pt too wide) in paragraph at lines 272--272
+[]\T1/lmr/bx/n/9 (-20) WDP|  
+ []
+
+
+Overfull \hbox (23.87976pt too wide) in paragraph at lines 272--272
+[]\T1/lmr/bx/n/9 (-20) IRP_HE|  
+ []
+
+
+Overfull \hbox (3.42746pt too wide) in paragraph at lines 272--272
+[]\T1/lmr/m/n/9 (-20) Product 
+ []
+
+
+Overfull \hbox (3.42746pt too wide) in paragraph at lines 272--272
+[]\T1/lmr/m/n/9 (-20) Product 
+ []
+
+
+Overfull \hbox (3.42746pt too wide) in paragraph at lines 272--272
+[]\T1/lmr/m/n/9 (-20) Product 
+ []
+
+
+Overfull \hbox (5.92123pt too wide) in paragraph at lines 272--272
+[]\T1/lmr/m/n/9 (-20) Regional 
+ []
+
+
+Overfull \hbox (3.42746pt too wide) in paragraph at lines 272--272
+[]\T1/lmr/m/n/9 (-20) Product 
+ []
+
+
+Overfull \hbox (3.42746pt too wide) in paragraph at lines 272--272
+[]\T1/lmr/m/n/9 (-20) Product 
+ []
+
+
+LaTeX Warning: Float too large for page by 13.4893pt on input line 273.
+
+[6
+pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.275 \end{landscape}
+                     ] [7
+
+
+]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 313.
+(/Users/fabio/Library/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [8] [9]
+<Figures/Figure-1.jpeg, id=356, 1263.72125pt x 628.3475pt>
+File: Figures/Figure-1.jpeg Graphic file (type jpg)
+<use Figures/Figure-1.jpeg>
+Package pdftex.def Info: Figures/Figure-1.jpeg  used on input line 386.
+(pdftex.def)             Requested size: 472.03123pt x 234.6997pt.
+[10
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.394 ...cted impact categories}\label{impactcat}}
+                                                   <./Figures/Figure-1.jpeg>] [11]
+<Figures/Scenarios.png, id=384, 964.476pt x 534.798pt>
+File: Figures/Scenarios.png Graphic file (type png)
+<use Figures/Scenarios.png>
+Package pdftex.def Info: Figures/Scenarios.png  used on input line 433.
+(pdftex.def)             Requested size: 424.82523pt x 235.56482pt.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/lmr/m/sc/9'.
+(microtype)             Ignoring protrusion settings for this character.
+
+Overfull \hbox (4.8094pt too wide) in paragraph at lines 445--445
+[]|\T1/lmr/m/n/9 (-20) Scenario|  
+ []
+
+[12
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.456 \end{longtable}
+                      <./Figures/Scenarios.png>] [13]
+Overfull \vbox (11.0pt too high) detected at line 551
+ []
+
+
+Overfull \vbox (11.0pt too high) detected at line 559
+ []
+
+<Figures/Figure-3.png, id=428, 448.512pt x 277.035pt>
+File: Figures/Figure-3.png Graphic file (type png)
+<use Figures/Figure-3.png>
+Package pdftex.def Info: Figures/Figure-3.png  used on input line 579.
+(pdftex.def)             Requested size: 377.62642pt x 233.25311pt.
+[14
+pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.585 
+      ] [15
+pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.585 
+      ] [16
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.615 
+       <./Figures/Figure-3.png>]
+<Figures/Figure-4.png, id=453, 410.53375pt x 226.8475pt>
+File: Figures/Figure-4.png Graphic file (type png)
+<use Figures/Figure-4.png>
+Package pdftex.def Info: Figures/Figure-4.png  used on input line 622.
+(pdftex.def)             Requested size: 424.82523pt x 234.7424pt.
+<Figures/Figure-5.png, id=457, 443.6575pt x 260.975pt>
+File: Figures/Figure-5.png Graphic file (type png)
+<use Figures/Figure-5.png>
+Package pdftex.def Info: Figures/Figure-5.png  used on input line 641.
+(pdftex.def)             Requested size: 424.82523pt x 249.89601pt.
+[17
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.647 
+       <./Figures/Figure-4.png>] [18
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.671 
+       <./Figures/Figure-5.png>] [19] [20] [21]
+Overfull \hbox (21.60983pt too wide) in paragraph at lines 772--774
+\T1/lmr/m/n/12 (-20) Do-cu-ment]. URL [][]$\T1/lmtt/m/n/12 https : / / www . reseau -[] canope . fr / academie -[] de -[] nantes / atelier -[] canope -[]
+ []
+
+
+Overfull \hbox (15.99344pt too wide) in paragraph at lines 772--774
+\T1/lmtt/m/n/12 44 -[] nantes / actualites / article / fablab -[] a -[] lecole -[] un -[] atelier -[] de -[] fabrication -[] dans -[]
+ []
+
+[22] [23] [24] [25] [26]
+Overfull \hbox (0.7972pt too wide) in paragraph at lines 964--966
+[]\T1/lmr/m/n/12 (-20) Vuori, L., Ol-li-kai-nen, M., 2022. How to re-move mi-cro-plas-tics in was-te-wa-ter ? A cost-effectiveness
+ []
+
+[27]
+<Annex/Annex-1.pdf, id=685, 614.295pt x 794.97pt>
+File: Annex/Annex-1.pdf Graphic file (type pdf)
+<use Annex/Annex-1.pdf>
+Package pdftex.def Info: Annex/Annex-1.pdf  used on input line 988.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Annex/Annex-1.pdf Graphic file (type pdf)
+<use Annex/Annex-1.pdf>
+Package pdftex.def Info: Annex/Annex-1.pdf  used on input line 988.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+<Annex/Annex-1.pdf, id=688, page=1, 614.295pt x 794.97pt>
+File: Annex/Annex-1.pdf Graphic file (type pdf)
+<use Annex/Annex-1.pdf, page 1>
+Package pdftex.def Info: Annex/Annex-1.pdf , page1 used on input line 988.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: Annex/Annex-1.pdf Graphic file (type pdf)
+<use Annex/Annex-1.pdf, page 1>
+Package pdftex.def Info: Annex/Annex-1.pdf , page1 used on input line 988.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Annex/Annex-1.pdf Graphic file (type pdf)
+<use Annex/Annex-1.pdf, page 1>
+Package pdftex.def Info: Annex/Annex-1.pdf , page1 used on input line 988.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Annex/Annex-1.pdf Graphic file (type pdf)
+<use Annex/Annex-1.pdf, page 1>
+Package pdftex.def Info: Annex/Annex-1.pdf , page1 used on input line 988.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Annex/Annex-1.pdf Graphic file (type pdf)
+<use Annex/Annex-1.pdf, page 1>
+Package pdftex.def Info: Annex/Annex-1.pdf , page1 used on input line 988.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[28 <./Annex/Annex-1.pdf>]
+<Annex/Annex-1.pdf, id=713, page=2, 614.295pt x 794.97pt>
+File: Annex/Annex-1.pdf Graphic file (type pdf)
+<use Annex/Annex-1.pdf, page 2>
+Package pdftex.def Info: Annex/Annex-1.pdf , page2 used on input line 988.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Annex/Annex-1.pdf Graphic file (type pdf)
+<use Annex/Annex-1.pdf, page 2>
+Package pdftex.def Info: Annex/Annex-1.pdf , page2 used on input line 988.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: Annex/Annex-1.pdf Graphic file (type pdf)
+<use Annex/Annex-1.pdf, page 2>
+Package pdftex.def Info: Annex/Annex-1.pdf , page2 used on input line 988.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[29 <./Annex/Annex-1.pdf>] (./LCA-DRAM.aux)
+Package rerunfilecheck Info: File `LCA-DRAM.out' has not changed.
+(rerunfilecheck)             Checksum: A803F72A6831CC337F30366E252C75DB;3832.
+ ) 
+Here is how much of TeX's memory you used:
+ 18730 strings out of 477969
+ 303941 string characters out of 5837840
+ 1887346 words of memory out of 5000000
+ 38150 multiletter control sequences out of 15000+600000
+ 597751 words of font info for 193 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 75i,17n,76p,1821b,627s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{ref-Vink2003} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{ref-Top2022} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{ref-Kuclourya2022} has been referenced but does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{ref-Hermman2020} has been referenced but does not exist, replaced by a fixed one
+
+{/Users/fabio/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/Users/fabio/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/Users/fabio/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/Users/fabio/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/Users/fabio/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</Users/fabio/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/fabio/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></Users/fabio/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></Users/fabio/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></Users/fabio/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb></Users/fabio/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb></Users/fabio/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb></Users/fabio/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb></Users/fabio/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb></Users/fabio/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.pfb></Users/fabio/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri12.pfb></Users/fabio/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri7.pfb></Users/fabio/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmss8.pfb></Users/fabio/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></Users/fabio/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></Users/fabio/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on LCA-DRAM.pdf (29 pages, 4572963 bytes).
+PDF statistics:
+ 842 PDF objects out of 1000 (max. 8388607)
+ 739 compressed objects within 8 object streams
+ 190 named destinations out of 1000 (max. 500000)
+ 46307 words of extra memory for PDF output out of 51595 (max. 10000000)
+

@@ -1,18 +1,23 @@
 ---
 title: "Word"
-format: 
-  docx:
+format:
+  pdf: 
     toc: false
-    number-sections: false
-    highlight-style: github
-    linkcolor: blue
-    urlcolor: blue
-    link-citations: yes
+  # docx:
+  #   toc: false
+  #   number-sections: false
+  #   highlight-style: github
+  #   linkcolor: blue
+  #   urlcolor: blue
+  #   link-citations: yes
 bibliography: library2.bib
 always_allow_html: true
 ---
 
 ```{r setup, include=FALSE, echo=FALSE}
+
+library(revtools)
+screen_abstracts()
 
 library(kableExtra)
 library(tidyverse)
